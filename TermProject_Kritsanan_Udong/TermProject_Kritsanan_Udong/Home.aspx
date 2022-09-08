@@ -20,7 +20,7 @@
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
 <div class="btn-group mx-auto text-secondary" role="group" aria-label="Basic checkbox toggle button group">
   <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-  <label class="btn btn-outline-secondary border-0 text-dark" for="btncheck1"> หน้าหลัก </label>
+  <label class="btn btn-outline-secondary border-0 text-dark" for="btncheck1"> หน้าหลัก hello</label>
 
   <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
   <label class="btn btn-outline-secondary border-0 text-dark" for="btncheck2"> เกี่ยวกับจังหวัดตาก </label>
