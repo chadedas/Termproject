@@ -1,41 +1,47 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Home.aspx.vb" Inherits="TermProject_Kritsanan_Udong.Bootstrap" %>
 
 <!DOCTYPE html>
+<!-- LINK IMPORT BOOTSTRAP -->
+<script src="javascript/bootstrap.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link href="Content/bootstrap.css" rel="stylesheet" />
-    <script src="Scripts/bootstrap.js"></script>
-    <!-- <script src="Scripts/test.js" asp-append-version="true"></script> -->
-    
-    <title></title>
+    <title>Tak</title>
 </head>
     <form id="form1" runat="server"> 
-<body onload="getItem3()">
+<body>
 
     <div class="alert alert-primary" role="alert">
   A simple primary alert—check it out!
 </div>
 <header class="p-3 mb-2 bg-light text-dark bg-opacity-75 sticky-top py-3">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
-<div class="btn-group mx-auto text-secondary" role="group" aria-label="Basic checkbox toggle button group">
-  <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-  <label class="btn btn-outline-secondary border-0 text-dark" for="btncheck1"> หน้าหลัก hello</label>
+      <div class="btn-group mx-auto" role="group" aria-label="Basic radio toggle button group">
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="on" checked>
+  <label class="btn btn-outline-secondary border-0 text-dark" for="btnradio1">หน้าหลัก</label>
 
-  <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-  <label class="btn btn-outline-secondary border-0 text-dark" for="btncheck2"> เกี่ยวกับจังหวัดตาก </label>
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+  <label class="btn btn-outline-secondary border-0 text-dark" for="btnradio2">เกี่ยวกับจังหวัดตาก</label>
 
-  <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-  <label class="btn btn-outline-secondary border-0 text-dark" for="btncheck3"> สถานที่ท่องเที่ยว </label>
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+  <label class="btn btn-outline-secondary border-0 text-dark" for="btnradio3">สถานที่ท่องเที่ยว</label>
 
-  <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-  <label class="btn btn-outline-secondary border-0 text-dark" for="btncheck3"> ผลิตภัณฑ์ตำบล </label>
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+  <label class="btn btn-outline-secondary border-0 text-dark" for="btnradio4">ผลิตภัณฑ์ตำบล</label>
 
-  <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
-  <label class="btn btn-outline-secondary border-0 text-dark" for="btncheck3"> รีวิวที่พัก </label> 
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+  <label class="btn btn-outline-secondary border-0 text-dark" for="btnradio5">รีวิวที่พัก</label>
+
+
+
+</div>
+
 </div>
       <div class="">
-          <asp:Button ID="Button1" runat="server" Text="เข้าสู่ระบบ" CssClass="btn btn-outline-primary"/>
+          <asp:Button ID="Button1" runat="server" Text="เข้าสู่ระบบ" CssClass="btn btn-outline-primary btnclick"/>
       </div>
       
     
@@ -76,7 +82,7 @@
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title btnclick" id="xxx">Card title</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         <p><a class="btn btn-secondary mx-5 my-auto" href="#">สถานที่ท่องเที่ยว »</a></p>
       </div>
@@ -88,13 +94,14 @@
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
   <div class="container marketing">
-
+      <textarea type="text" class="ppp" ></textarea>
+      <p class="text-danger mx-3 noobtext"></p>
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
         <img src="allPicture/tak_tav1.jpg" width="130" height="130" class="rounded-circle py-1"/>
         <h5 class="fw-bold">สะพานสมโภชน์กรุงรัตนโกสินทร์</h5>
-        <p>เป็นสะพานไม้แขวนด้วยลวดสลิง สำหรับเดินข้ามแม่น้ำปิงที่ชาวเมืองตากใช้สัญจรไปมา สะพานแห่งนี้ชื่อว่าเป็นจุดชมวิวแม่น้ำปิงที่ได้ชื่อว่าสวยที่สุดของจังหวัดตาก</p>
+        <p class="detail_1">เป็นสะพานไม้แขวนด้วยลวดสลิง สำหรับเดินข้ามแม่น้ำปิงที่ชาวเมืองตากใช้สัญจรไปมา สะพานแห่งนี้ชื่อว่าเป็นจุดชมวิวแม่น้ำปิงที่ได้ชื่อว่าสวยที่สุดของจังหวัดตาก</p>
         <p><a class="btn btn-secondary m-auto" href="#">View details »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
@@ -166,8 +173,51 @@
   </footer>
 </main>
     </form>
+
 </body>
+
+
     <script type="text/javascript" asp-append-version="true">
+        $(document).ready(function () {
+
+            $('.detail_1').html(localStorage.getItem('data'))
+
+            $('.ppp').val(localStorage.getItem('data'))
+
+            
+        });
+
+        $(document).on('keyup', '.ppp', function () {
+            $('.detail_1').html($(this).val())
+
+            if (event.keyCode === 13) {
+                //alert('อัพเดตสำเร็จ')
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: 'top-center',
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.addEventListener('mouseenter', Swal.stopTimer)
+                        toast.addEventListener('mouseleave', Swal.resumeTimer)
+                    }
+                })
+
+                Toast.fire({
+                    icon: 'success',
+                    title: 'อัพเดตสำเร็จ'
+                }).then((result) => {
+                    //localStorage.setItem('data', $(this).val())
+                    location.reload()
+                    alert(551)
+                })
+
+
+                
+            }
+
+        })
 
         // composition api //
         /*const getItems2 = (e, f, g) => { //แสดงข้อมูล
@@ -186,16 +236,17 @@
         }
 
 
+
         //no async await
-        // error 100%
+        // error 100% 
         function getItem4() { //ดึงข้อมูล
             const data = localStorage.getItem('data')
             alert(data)
 
             localStorage.removeItem('data')
             localStorage.setItem('data', 'เค้ก')
-
-            
+  
         }
     </script>
+
 </html>
