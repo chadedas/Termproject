@@ -50,10 +50,10 @@
 
         
 <main class="text-secondary">
-<div class="card mb-3 py-4 my-4 mx-auto border-0 py-2" style="max-width: 1000px;">
+<div class="card mb-3 py-4 my-auto mx-auto border-0 py-2" style="max-width: 1000px;">
   <div class="row g-0">
-    <div class="col-md-4">
-<div id="carouselExampleIndicators" class="carousel slide mx-auto" data-bs-ride="true">
+    <div class="col-md-4 my-auto">
+<div id="carouselExampleIndicators" class="carousel slide mx-auto my-auto" data-bs-ride="true">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -81,39 +81,60 @@
 </div>
     </div>
     <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title btnclick" id="xxx">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p><a class="btn btn-secondary mx-5 my-auto" href="#">สถานที่ท่องเที่ยว »</a></p>
+      <div class="card-body mx-auto my-auto">
+        <ul class="list-group list-group-flush">
+        <marquee direction="left" class="list-group-item list-group-item-info rounded">ยินดีต้อนรับเข้าสู่เว็ปไซต์</marquee>
+            </ul>
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item w-75"><small>แก้ไขข้อมูลเกี่ยวกับศาลสมเด็จพระเจ้าตากสิน</small></li>
+            <li class="list-group-item w-25 text-center"><small>25/09/2565</small></li>
+            </ul>
+            <ul class="list-group list-group-horizontal">
+          <li class="list-group-item w-75"><small>แก้ไขข้อมูลเกี่ยวกับศาลสมเด็จพระเจ้าตากสิน</small></li>
+            <li class="list-group-item w-25 text-center"><small>25/09/2565</small></li>
+                </ul>
+                <ul class="list-group list-group-horizontal">
+          <li class="list-group-item w-75"><small>แก้ไขข้อมูลเกี่ยวกับศาลสมเด็จพระเจ้าตากสิน</small></li>
+            <li class="list-group-item w-25 text-center"><small>25/09/2565</small></li>
+                    </ul>
+                          <ul class="list-group list-group-horizontal">
+          <li class="list-group-item w-75"><small>แก้ไขข้อมูลเกี่ยวกับศาลสมเด็จพระเจ้าตากสิน</small></li>
+            <li class="list-group-item w-25 text-center"><small>25/09/2565</small></li>
+                    </ul>
       </div>
     </div>
   </div>
 </div>
+    <div class="container">
+    <hr class="featurette-divider">
+        </div>
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
   <div class="container marketing">
-      <textarea type="text" class="ppp" ></textarea>
+
+      <!--<textarea type="text" class="ppp" ></textarea>
       <p class="text-danger mx-3 noobtext"></p>
+
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
         <img src="allPicture/tak_tav1.jpg" width="130" height="130" class="rounded-circle py-1"/>
         <h5 class="fw-bold">สะพานสมโภชน์กรุงรัตนโกสินทร์</h5>
-        <p class="detail_1">เป็นสะพานไม้แขวนด้วยลวดสลิง สำหรับเดินข้ามแม่น้ำปิงที่ชาวเมืองตากใช้สัญจรไปมา สะพานแห่งนี้ชื่อว่าเป็นจุดชมวิวแม่น้ำปิงที่ได้ชื่อว่าสวยที่สุดของจังหวัดตาก</p>
+        <p class="detail_1"></p>
         <p><a class="btn btn-secondary m-auto" href="#">View details »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img src="allPicture/tak_tav2.jpg" width="130" height="130" class="rounded-circle py-1"/>
-        <h5 class="fw-bold">ศาลสมเด็จพระเจ้าตากสินมหาราช</h5>
-        <p>ศาลสมเด็จพระเจ้าตากสินมหาราช  สถานที่ศักดิ์สิทธิ์เป็นที่เคารพของคนจังหวัดตาก และคนไทยทั่วไปที่ผ่านไปจะต้องแวะกราบไหว้สักการะขอพรพระองค์ท่าน ภายในสถานที่ร่มรื่น มีลานจอดรถจัดไว้รองรับ</p>
+        <h5 class="fw-bold"></h5>
+        <p></p>
         <p><a class="btn btn-secondary m-auto" href="#">View details »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img src="allPicture/tak_tav3.jpg" width="130" height="130" class="rounded-circle py-1"/>
-        <h5 class="fw-bold">พิพิธภัณฑ์เมืองเฉลิมพระเกียรติ</h5>
-        <p>พิพิธภัณฑ์เมืองเฉลิมพระเกียรติ จังหวัดตากอาคารที่ตั้งโดดเด่นด้วยเอกลักษณ์และสถาปัตยกรรมแบบบ้านไม้โบราณที่แปลกตา สร้างขึ้นมาเพื่อเฉลิมพระเกียรติพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช </p>
+        <h5 class="fw-bold"></h5>
+        <p> </p>
         <p><a class="btn btn-secondary" href="#">View details »</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
@@ -122,40 +143,41 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette">
+    <div class="row featurette py-5">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2 class="featurette-heading fw-normal lh-1">สะพานสมโภชน์กรุงรัตนโกสินทร์</h2>
+        <p class="lead w-100">สะพานสมโภชน์กรุงรัตนโกสินทร์ 200 ปี   ตั้งอยู่ในอำเภอเมืองตาก เป็นสะพานไม้แขวนด้วยลวดสลิง สำหรับเดินข้ามแม่น้ำปิงที่ชาวเมืองตากใช้สัญจรไปมา รวมถึงเป็นสถานที่พักผ่อนหย่อนใจโดยเฉพาะในยามเย็น  สะพานแห่งนี้ชื่อว่าเป็นจุดชมวิวแม่น้ำปิงที่ได้ชื่อว่าสวยที่สุดของจังหวัดตาก พร้อมไปกับการชมบรรยากาศพระอาทิตย์ตกหลากสีสันได้อย่างงดงาม ในช่วงกลางคืนมีการประดับไฟสวยงาม ทำให้ตัวสะพานแลดูสว่างไสวโดดเด่นเหนือผืนน้ำสีเข้ม</p>
+        <p><a class="btn btn-secondary m-auto" href="#">ข้อมูลเพิ่มเติม »</a></p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <img src="allPicture/tak_tav1.jpg" width="500" height="500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-5"/>
       </div>
     </div>
 
     <hr class="featurette-divider">
 
-    <div class="row featurette">
+    <div class="row featurette py-5">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2 class="featurette-heading fw-normal lh-1">ศาลสมเด็จพระเจ้าตากสินมหาราช</h2>
+        <p class="lead">ศาลสมเด็จพระเจ้าตากสินมหาราช  สถานที่ศักดิ์สิทธิ์เป็นที่เคารพของคนจังหวัดตาก และคนไทยทั่วไปที่ผ่านไปจะต้องแวะกราบไหว้สักการะขอพรพระองค์ท่าน ภายในสถานที่ร่มรื่น มีลานจอดรถจัดไว้รองรับ ตัวศาลเป็นศาลาจตุรมุข หน้าศาลแขวนโคมจีนสีแดง ภายในมีภาพพระประวัติพระเจ้าตาก ด้านหลังศาลมีรูปปั้น และตุ๊กตาม้าศึก ช้างศึกจำนวนมากที่ผู้คนนำมาถวาย ภายในศาลประดิษฐาน พะบรมรูปสมเด็จพระเจ้าตากสินมหาราชขนาดใหญ่กว่าพระองค์จริงเล็กน้อย ในพระอิริยาบถที่กำลังประทับอยู่บนราชอาสน์ มีพระแสงดาบพาดอยู่ที่พระเพลา เป็นอีกหนึ่งสถานที่ในเมืองตากที่ต้องแวะมาเพื่อความเป็นสิริมงคลในชีวิต</p>
+      <p><a class="btn btn-secondary m-auto" href="#">ข้อมูลเพิ่มเติม »</a></p>
       </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+        <img src="allPicture/tak_tav2.jpg" width="500" height="500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-5"/>
 
       </div>
     </div>
 
     <hr class="featurette-divider">
 
-    <div class="row featurette">
+    <div class="row featurette py-5">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+        <h2 class="featurette-heading fw-normal lh-1">พิพิธภัณฑ์เมืองเฉลิมพระเกียรติ</h2>
+        <p class="lead">พิพิธภัณฑ์เมืองเฉลิมพระเกียรติ จังหวัดตากอาคารที่ตั้งโดดเด่นด้วยเอกลักษณ์และสถาปัตยกรรมแบบบ้านไม้โบราณที่แปลกตา สร้างขึ้นมาเพื่อเฉลิมพระเกียรติพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช เนื่องในโอกาสมหามงคลเฉลิมพระชนมพรรษา 80 พรรษา โดยปรับปรุงอาคารจวนผู้ว่าราชการจังหวัดตาก(หลังเก่า) มาเป็นพิพิธภัณฑ์ เนื่องจากอดีตสถานที่ดังกล่าวเคยเป็นเรือนประทับ ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดชและสมเด็จพระนางเจ้าสิริกิติ์  พระบรมราชชนนีพันปีหลวง เมื่อครั้งเสด็จเมืองตาก เมื่อปี พ.ศ.2501</p>
+          <p><a class="btn btn-secondary m-auto" href="#">ข้อมูลเพิ่มเติม »</a></p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <img src="allPicture/tak_tav3.jpg" width="500" height="500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-5"/>
       </div>
     </div>
 
