@@ -92,11 +92,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="allPicture\bormor.jpg" />
-    <Content Include="allPicture\benq3_1.jpg" />
-    <Content Include="allPicture\benq3_3.JPG" />
-    <Content Include="allPicture\benq3_4.jpg" />
-    <Content Include="allPicture\images.jpg" />
+    <Content Include="allPicture\product1.jpg" />
     <Content Include="allPicture\tak_tav1.jpg" />
     <Content Include="allPicture\tak_tav2.jpg" />
     <Content Include="allPicture\tak_tav3.jpg" />

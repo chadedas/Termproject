@@ -120,8 +120,8 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <img src="allPicture/tak_tav1.jpg" width="130" height="130" class="rounded-circle py-1"/>
-        <h5 class="fw-bold">สะพานสมโภชน์กรุงรัตนโกสินทร์</h5>
+        <img src="allPicture/product1.jpg" width="130" height="130" class="rounded-circle py-1"/>
+        <h5 class="fw-bold">เมี่ยงจอมพล</h5>
         <p class="detail_1"></p>
         <p><a class="btn btn-secondary m-auto" href="#">View details »</a></p>
       </div><!-- /.col-lg-4 -->
