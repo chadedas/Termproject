@@ -123,3 +123,4 @@ F:\github\Termproject\TermProject_Kritsanan_Udong\TermProject_Kritsanan_Udong\ob
 F:\github\Termproject\TermProject_Kritsanan_Udong\TermProject_Kritsanan_Udong\obj\Debug\TermProject_Kritsanan_Udong.dll
 F:\github\Termproject\TermProject_Kritsanan_Udong\TermProject_Kritsanan_Udong\obj\Debug\TermProject_Kritsanan_Udong.xml
 F:\github\Termproject\TermProject_Kritsanan_Udong\TermProject_Kritsanan_Udong\obj\Debug\TermProject_Kritsanan_Udong.pdb
+F:\github\Termproject\TermProject_Kritsanan_Udong\TermProject_Kritsanan_Udong\bin\TermProject_Kritsanan_Udong.dll.config

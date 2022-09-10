@@ -40,8 +40,8 @@
 </div>
 
 </div>
-      <div class="">
-          <asp:Button ID="Button1" runat="server" Text="เข้าสู่ระบบ" CssClass="btn btn-outline-primary btnclick"/>
+      <div class="password" onclick="password">
+          <asp:Button ID="Button1" runat="server" Text="เข้าสู่ระบบ" CssClass="btn btn-outline-primary btnclick password"/>
       </div>
       
     
@@ -61,13 +61,13 @@
   </div>
   <div class="carousel-inner align-content-center">
     <div class="carousel-item active">
-      <img src="allPicture/benq3_1.jpg" class="d-block h-100 rounded w-100" alt="...">
+      <img src="allPicture/tak_tav1.jpg" class="d-block h-100 rounded-4 w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="allPicture/benq3_3.jpg" class="d-block h-100 rounded w-100" alt="...">
+      <img src="allPicture/tak_tav2.jpg" class="d-block h-100 rounded-4 w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="allPicture/benq3_4.jpg" class="d-block h-100 rounded w-100" alt="...">
+      <img src="allPicture/tak_tav3.jpg" class="d-block h-100 rounded-4 w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -118,31 +118,32 @@
       <p class="text-danger mx-3 noobtext"></p>
 
     <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
+    <div class="row text-center mx-auto">
+    <h2 class="py-3 fw-bold">ผลิตภัณฑ์ตำบล</h2>
+      <div class="col-lg-4 ">
         <img src="allPicture/product1.jpg" width="130" height="130" class="rounded-circle py-1"/>
         <h5 class="fw-bold">เมี่ยงจอมพล</h5>
-        <p class="detail_1"></p>
-        <p><a class="btn btn-secondary m-auto" href="#">View details »</a></p>
+          <!--<p class="detail_1">เมี่ยงคำเมืองตากหรือเรียกอีกชื่อหนึ่งว่า เมี่ยงจอมพล</p>-->
+        <p>เมี่ยงคำเมืองตากหรือเรียกอีกชื่อหนึ่งว่า เมี่ยงจอมพล</p>
+        <p><a class="btn btn-secondary m-auto" href="#">ข้อมูลเพิ่มเติม »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <img src="allPicture/tak_tav2.jpg" width="130" height="130" class="rounded-circle py-1"/>
-        <h5 class="fw-bold"></h5>
-        <p></p>
-        <p><a class="btn btn-secondary m-auto" href="#">View details »</a></p>
+        <img src="allPicture/product2.jpg" width="130" height="130" class="rounded-circle py-1"/>
+        <h5 class="fw-bold">กล้วยกวน</h5>
+        <p>กล้วยกวนเป็นสินค้า OTOP ประเภท 3 ดาว ของจังหวัดตาก</p>
+        <p><a class="btn btn-secondary m-auto" href="#">ข้อมูลเพิ่มเติม »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <img src="allPicture/tak_tav3.jpg" width="130" height="130" class="rounded-circle py-1"/>
-        <h5 class="fw-bold"></h5>
-        <p> </p>
-        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        <img src="allPicture/product3.jpg" width="130" height="130" class="rounded-circle py-1"/>
+        <h5 class="fw-bold">ส้มลิ้ม</h5>
+        <p>อร่อย เจ้าเก่า สืบทอดกันมาช้านาน ต้องส้มลิ้มจากเมืองตาก</p>
+        <p><a class="btn btn-secondary" href="#">ข้อมูลเพิ่มเติม »</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
     <!-- START THE FEATURETTES -->
 
-    <hr class="featurette-divider">
-
+    <hr class="featurette-divider py-3">
     <div class="row featurette py-5">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">สะพานสมโภชน์กรุงรัตนโกสินทร์</h2>
@@ -240,6 +241,22 @@
             }
 
         })
+
+        const { value: password } = await Swal.fire({
+            title: 'Enter your password',
+            input: 'password',
+            inputLabel: 'Password',
+            inputPlaceholder: 'Enter your password',
+            inputAttributes: {
+                maxlength: 10,
+                autocapitalize: 'off',
+                autocorrect: 'off'
+            }
+        })
+
+        if (password) {
+            Swal.fire(`Entered password: ${password}`)
+        }
 
         // composition api //
         /*const getItems2 = (e, f, g) => { //แสดงข้อมูล
