@@ -37,6 +37,15 @@ TermProject_Kritsanan_Udong
  Returns the Asp log object.
  </summary>
 </member>
+<member name="F:TermProject_Kritsanan_Udong.Adminhome._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:TermProject_Kritsanan_Udong.Bootstrap._form1">
 <summary>
 form1 control.
@@ -58,6 +67,33 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:TermProject_Kritsanan_Udong.Login._form1">
 <summary>
 form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Login._TextBox1">
+<summary>
+TextBox1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Login._TextBox2">
+<summary>
+TextBox2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Login._Button1">
+<summary>
+Button1 control.
 </summary>
 <remarks>
 Auto-generated field.
