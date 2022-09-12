@@ -117,13 +117,13 @@
       <div class="col-lg-4">
         <img src="allPicture/product2.jpg" width="130" height="130" class="rounded-circle py-1"/>
         <h5 class="fw-bold">กล้วยกวน</h5>
-        <p>กล้วยกวนเป็นสินค้า OTOP ประเภท 3 ดาว ของจังหวัดตาก</p>
+        <p>กล้วยกวนเป็นสินค้า OTOP ประเภท 3 ดาว</p>
         <p><a class="btn btn-secondary m-auto" href="#">ข้อมูลเพิ่มเติม »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img src="allPicture/product3.jpg" width="130" height="130" class="rounded-circle py-1"/>
         <h5 class="fw-bold">ส้มลิ้ม</h5>
-        <p>อร่อย เจ้าเก่า สืบทอดกันมาช้านาน ต้องส้มลิ้มจากเมืองตาก</p>
+        <p>อร่อย เจ้าเก่า สืบทอดกันมาช้านาน ต้องส้มลิ้ม</p>
         <p><a class="btn btn-secondary" href="#">ข้อมูลเพิ่มเติม »</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->

@@ -122,6 +122,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="javascript\bootstrap.js" />
     <Content Include="Login.aspx" />
+    <Content Include="Tourist_All.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -130,6 +131,13 @@
     </Compile>
     <Compile Include="Administator\Adminhome.aspx.vb">
       <DependentUpon>Adminhome.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Tourist_All.aspx.designer.vb">
+      <DependentUpon>Tourist_All.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tourist_All.aspx.vb">
+      <DependentUpon>Tourist_All.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="userDataclass.designer.vb">
