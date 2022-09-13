@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Tourist_All
+Partial Public Class Product_All
 
     '''<summary>
     '''form1 control.

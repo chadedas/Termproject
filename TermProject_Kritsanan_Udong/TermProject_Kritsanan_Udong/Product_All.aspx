@@ -1,6 +1,7 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Home.aspx.vb" Inherits="TermProject_Kritsanan_Udong.Bootstrap" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Product_All.aspx.vb" Inherits="TermProject_Kritsanan_Udong.Product_All" %>
 
 <!DOCTYPE html>
+
 <!-- LINK IMPORT BOOTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -37,12 +38,11 @@
     border-radius: 5px !important;
 }
     </style>
-
     <form id="form1" runat="server"> 
 <body>
 
     <div class="alert alert-primary bg_top text-center" role="alert">
-  หน้าปกติ
+  หน้าผลิตภัณฑ์สินค้า
 </div>
 <header class="p-3 mb-2 bg-light text-dark bg-opacity-90 sticky-top py-3 navbar_page">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
@@ -52,8 +52,7 @@
 
   <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio2">เกี่ยวกับจังหวัดตาก</label>
 
-  <a href="Tourist_All.aspx">
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">สถานที่ท่องเที่ยว</label></a>
+  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">สถานที่ท่องเที่ยว</label>
 
   <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio4">ผลิตภัณฑ์ตำบล</label>
 
@@ -61,103 +60,13 @@
 
 
 </div>
-      <div mx-2>
       <asp:Button ID="Button1" runat="server" Text="เข้าสู่ระบบ" CssClass="btn btn-outline-primary btnclick"/>
-          </div>
   </nav>
 </header>
 
     
 <main class="text-secondary" style="background-color:ghostwhite">
 <div class=" container marketing rounded-1 px-2" style="background-color:white">
-<div class="card mb-3 py-4 my-auto mx-auto border-0" style="max-width: 1000px; background-color:white">
-  <div class="row g-0">
-    <div class="col-md-4 my-auto">
-<div id="carouselExampleIndicators" class="carousel slide mx-auto my-auto" data-bs-ride="true">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner align-content-center">
-    <div class="carousel-item active">
-      <img src="allPicture/tak_tav1.jpg" class="d-block h-100 rounded-4 w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="allPicture/tak_tav2.jpg" class="d-block h-100 rounded-4 w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="allPicture/tak_tav3.jpg" class="d-block h-100 rounded-4 w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-    </div>
-    <div class="col-md-8">
-      <div class="card-body mx-auto my-auto">
-        <ul class="list-group list-group-flush">
-        <marquee direction="left" class="list-group-item list-group-item-info rounded">ยินดีต้อนรับเข้าสู่เว็ปไซต์</marquee>
-            </ul>
-        <ul class="list-group list-group-horizontal">
-          <li class="list-group-item w-75"><small>แก้ไขข้อมูลเกี่ยวกับศาลสมเด็จพระเจ้าตากสิน</small></li>
-            <li class="list-group-item w-25 text-center"><small>25/09/2565</small></li>
-            </ul>
-            <ul class="list-group list-group-horizontal">
-          <li class="list-group-item w-75"><small>แก้ไขข้อมูลเกี่ยวกับศาลสมเด็จพระเจ้าตากสิน</small></li>
-            <li class="list-group-item w-25 text-center"><small>25/09/2565</small></li>
-                </ul>
-                <ul class="list-group list-group-horizontal">
-          <li class="list-group-item w-75"><small>แก้ไขข้อมูลเกี่ยวกับศาลสมเด็จพระเจ้าตากสิน</small></li>
-            <li class="list-group-item w-25 text-center"><small>25/09/2565</small></li>
-                    </ul>
-                          <ul class="list-group list-group-horizontal">
-          <li class="list-group-item w-75"><small>แก้ไขข้อมูลเกี่ยวกับศาลสมเด็จพระเจ้าตากสิน</small></li>
-            <li class="list-group-item w-25 text-center blue100"><small>25/09/2565</small></li>
-                    </ul>
-      </div>
-    </div>
-  </div>
-</div>
-    <div class="container">
-    <hr class="featurette-divider">
-        </div>
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row text-center mx-auto">
-    <h2 class="py-3 fw-bold">ผลิตภัณฑ์ตำบล</h2>
-      <div class="col-lg-4 ">
-        <img src="allPicture/product1.jpg" width="130" height="130" class="rounded-circle py-1"/>
-        <h5 class="fw-bold">เมี่ยงจอมพล</h5>
-          <!--<p class="detail_1">เมี่ยงคำเมืองตากหรือเรียกอีกชื่อหนึ่งว่า เมี่ยงจอมพล</p>-->
-        <p>เมี่ยงคำเมืองตากหรือเรียกอีกชื่อหนึ่งว่า เมี่ยงจอมพล</p>
-        <p><a class="btn btn-secondary m-auto" href="#">ข้อมูลเพิ่มเติม »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img src="allPicture/product2.jpg" width="130" height="130" class="rounded-circle py-1"/>
-        <h5 class="fw-bold">กล้วยกวน</h5>
-        <p>กล้วยกวนเป็นสินค้า OTOP ประเภท 3 ดาว</p>
-        <p><a class="btn btn-secondary m-auto" href="#">ข้อมูลเพิ่มเติม »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img src="allPicture/product3.jpg" width="130" height="130" class="rounded-circle py-1"/>
-        <h5 class="fw-bold">ส้มลิ้ม</h5>
-        <p>อร่อย เจ้าเก่า สืบทอดกันมาช้านาน ต้องส้มลิ้ม</p>
-        <p><a class="btn btn-secondary" href="#">ข้อมูลเพิ่มเติม »</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider py-3">
     <div class="row featurette py-5">
       <div class="col-md-7 px-5">
         <h2 class="featurette-heading fw-normal lh-1">สะพานสมโภชน์กรุงรัตนโกสินทร์</h2>
@@ -202,7 +111,6 @@
 
   </div><!-- /.container -->
 
-
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
@@ -212,90 +120,26 @@
     </form>
 
 </body>
+        <script type="text/javascript" asp-append-version="true">
+            $(document).ready(function () {
 
-
-    <script type="text/javascript" asp-append-version="true">
-        $(document).ready(function () {
-            
-            $(window).scroll(function () {
-                let height = $(window).scrollTop();
-                //console.log('height', height)
-                if (height >= 65) {
-                    $('.navbar_page').addClass('shadow_nav')
-                    //console.log(1)
-                } else {
-                    //console.log(0)
-                    $('.navbar_page').removeClass('shadow_nav')
-                }
-            });
-
-            $('.detail_1').html(localStorage.getItem('data'))
-
-            $('.ppp').val(localStorage.getItem('data'))
-
-            
-        });
-
-        $(document).on('keyup', '.ppp', function () {
-            //$('.detail_1').html($(this).val())
-
-            if (event.keyCode === 13) {
-                //alert('อัพเดตสำเร็จ')
-                const Toast = Swal.mixin({
-                    toast: true,
-                    position: 'top-center',
-                    showConfirmButton: false,
-                    timer: 3000,
-                    timerProgressBar: true,
-                    didOpen: (toast) => {
-                        toast.addEventListener('mouseenter', Swal.stopTimer)
-                        toast.addEventListener('mouseleave', Swal.resumeTimer)
+                $(window).scroll(function () {
+                    let height = $(window).scrollTop();
+                    //console.log('height', height)
+                    if (height >= 65) {
+                        $('.navbar_page').addClass('shadow_nav')
+                        //console.log(1)
+                    } else {
+                        //console.log(0)
+                        $('.navbar_page').removeClass('shadow_nav')
                     }
-                })
+                });
 
-                Toast.fire({
-                    icon: 'success',
-                    title: 'อัพเดตสำเร็จ'
-                }).then((result) => {
-                    //localStorage.setItem('data', $(this).val())
-                    location.reload()
-                    alert(551)
-                })
+                $('.detail_1').html(localStorage.getItem('data'))
+
+                $('.ppp').val(localStorage.getItem('data'))
 
 
-                
-            }
-
-        })
-        
-
-        // composition api //
-        /*const getItems2 = (e, f, g) => { //แสดงข้อมูล
-            const data = localStorage.getItem('data')
-            alert(data)
-        }*/
-
-        //method function
-        //async await
-        function getItem3() { //ดึงข้อมูล
-            alert(555)
-        }
-
-
-
-        //no async await
-        // error 100% 
-        function getItem4() { //ดึงข้อมูล
-            const data = localStorage.getItem('data')
-            alert(data)
-
-            localStorage.removeItem('data')
-            localStorage.setItem('data', 'เค้ก')
-  
-        }
-
-
-
-
-    </script>
+            });
+        </script>
 </html>
