@@ -121,8 +121,8 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="javascript\bootstrap.js" />
-    <Content Include="Login.aspx" />
     <Content Include="Product_All.aspx" />
+    <Content Include="Register.aspx" />
     <Content Include="Tourist_All.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -139,6 +139,13 @@
     </Compile>
     <Compile Include="Product_All.aspx.vb">
       <DependentUpon>Product_All.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Tourist_All.aspx.designer.vb">
@@ -158,13 +165,6 @@
     </Compile>
     <Compile Include="Home.aspx.vb">
       <DependentUpon>Home.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.vb">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.vb">
-      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
