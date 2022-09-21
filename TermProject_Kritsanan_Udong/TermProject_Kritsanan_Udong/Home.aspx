@@ -60,6 +60,7 @@
       <div mx-2>
       <button type="button" Text="เข้าสู่ระบบ" class="btn btn-outline-primary btnclick" data-bs-toggle="modal" data-bs-target="#modalLoginForm">เข้าสู่ระบบ
 </button>
+          <asp:Button ID="Button1" runat="server" Text="สมัครสมาชิก" CssClass="btn btn-outline-primary btnclick"/>
           </div>
   </nav>
 </header>

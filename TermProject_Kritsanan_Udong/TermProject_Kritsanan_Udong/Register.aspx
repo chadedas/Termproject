@@ -30,10 +30,10 @@
             background-color: #3784f5;
         }
         .btn:first-child:hover, :not(.btn-check)+.btn:hover {
-    background: #3784f5;
-    color: white !important;
-    border-radius: 5px !important;
-}
+            background: #3784f5;
+            color: white !important;
+            border-radius: 5px !important;
+        }
     </style>
     <form id="form1" runat="server"> 
 <body>
@@ -65,8 +65,8 @@
 <main class="text-secondary" style="background-color:ghostwhite">
 
     <main class="text-secondary" style="background-color:ghostwhite">
-<div class=" container marketing rounded-1 px-2" style="background-color:white">
-    <div class="row featurette py-2">
+<div class=" container marketing rounded-1 px-2 " style="background-color:white">
+    <div class="row featurette py-2 justify-content-center">
       <div class="col-md-7 px-2">
         
       </div>
@@ -76,14 +76,14 @@
     </div>
     
 
-    <div class="row featurette py-2">
+    <div class="row featurette py-2 justify-content-center">
       <div class="col-md-7 order-md-2 px-5">
 <div class="form-floating py-2">
-<asp:TextBox ID="TextBox1" placeholder="Leave a comment here" runat="server" CssClass="form-control was-validated" TextMode="Email"></asp:TextBox>
+<asp:TextBox ID="TextBox1" placeholder="อีเมล" runat="server" CssClass="form-control was-validated" TextMode="Email"></asp:TextBox>
 <label for="TextBox3" class="form-label">อีเมล</label>
 </div>
 <div class="form-floating py-0">
-<asp:TextBox ID="TextBox2" placeholder="Leave a comment here" runat="server" CssClass="form-control was-validated" TextMode="Password" aria-describedby="passwordHelpBlock"></asp:TextBox>
+<asp:TextBox ID="TextBox2" placeholder="รหัสผ่าน" runat="server" CssClass="form-control was-validated" TextMode="Password" aria-describedby="passwordHelpBlock"></asp:TextBox>
 <label for="TextBox2" class="form-label">รหัสผ่าน</label>
 <div id="passwordHelpBlock" class="form-text">
   รหัสผ่านของคุณต้องมีความยาว 8-20 อักขระ ประกอบด้วยตัวอักษรและตัวเลขเท่านั้น
@@ -91,20 +91,20 @@
 </div>
 
 <div class="form-floating py-0">
-<asp:TextBox ID="TextBox3" placeholder="Leave a comment here" runat="server" CssClass="form-control was-validated" TextMode="Password"></asp:TextBox>
+<asp:TextBox ID="TextBox3" placeholder="ยืนยันรหัสผ่าน" runat="server" CssClass="form-control was-validated" TextMode="Password"></asp:TextBox>
 <label for="TextBox3" class="form-label">ยืนยันรหัสผ่าน</label>
 </div>
 
           <div class="form-floating py-2">
-<asp:TextBox ID="TextBox4" placeholder="Leave a comment here" runat="server" CssClass="form-control was-validated" TextMode="Date"></asp:TextBox>
+<asp:TextBox ID="TextBox4" placeholder="วันเดือนปีเกิด" runat="server" CssClass="form-control was-validated" TextMode="Date"></asp:TextBox>
 <label for="TextBox4" class="form-label">วันเดือนปีเกิด</label>
 </div>
 
-                    <div class="form-floating py-2">
-<asp:TextBox ID="TextBox5" placeholder="Leave a comment here" runat="server" CssClass="form-control was-validated" TextMode="Phone"></asp:TextBox>
+<div class="form-floating py-2">
+<asp:TextBox ID="TextBox5" placeholder="เบอร์โทร" runat="server" CssClass="form-control was-validated" TextMode="Phone"></asp:TextBox>
 <label for="TextBox5" class="form-label">เบอร์โทร</label>
-</div>
-          <div class="py-3"><asp:Button ID="Button2" runat="server" Text="สมัครสมาชิก" CssClass="btn btn-primary mx-3 border-0"/></div>
+
+          <div class="py-3 text-center"><asp:Button ID="Button2" runat="server" Text="สมัครสมาชิก" CssClass="btn btn-primary mx-3 border-0"/></div>
           
           
       </div>
