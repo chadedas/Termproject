@@ -16,13 +16,9 @@
     <title>Tak</title>
 </head>
     <style>
-                html,body {
+        html,body {
             font-family: 'Kanit', sans-serif;
           }
-        .bgtak {
- background-image: url("allPicture/tak1.jpg");
- background-color: #cccccc;
-}
         .bg-opacity-90 {
             opacity: 0.9 !important;
         }

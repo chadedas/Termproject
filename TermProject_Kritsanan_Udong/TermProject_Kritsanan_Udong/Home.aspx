@@ -15,13 +15,9 @@
     <title>Tak</title>
 </head>
     <style>
-                html,body {
+        html,body {
             font-family: 'Kanit', sans-serif;
-          }
-        .bgtak {
- background-image: url("allPicture/tak1.jpg");
- background-color: #cccccc;
-}
+        }
         .bg-opacity-90 {
             opacity: 0.9 !important;
         }
@@ -32,10 +28,10 @@
             background-color: #3784f5;
         }
         .btn:first-child:hover, :not(.btn-check)+.btn:hover {
-    background: #3784f5;
-    color: white !important;
-    border-radius: 5px !important;
-}
+            background: #3784f5;
+            color: white !important;
+            border-radius: 5px !important;
+        }
     </style>
 
     <form id="form1" runat="server"> 
@@ -208,6 +204,44 @@
     <p class="float-end"><a href="#">Back to top</a></p>
     <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
   </footer>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+  Launch demo modal
+</button>
+
+    <!-- model -->
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">เข้าสู่ระบบ</h4>
+        <button type="button" class="btn-close" aria-label="Close"></button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control was-validated" TextMode="Email"></asp:TextBox>
+          <label data-error="wrong" data-success="right" for="defaultForm-email">อีเมล</label>
+        </div>
+          
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+            <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control was-validated" TextMode="Password"></asp:TextBox>
+          <label data-error="wrong" data-success="right" for="defaultForm-pass">รหัสผ่าน</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-default">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Test -->
+
 </main>
     </form>
 
