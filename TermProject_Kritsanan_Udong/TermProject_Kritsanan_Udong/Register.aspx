@@ -57,7 +57,8 @@
 
 
 </div>
-      <asp:Button ID="Button1" runat="server" Text="เข้าสู่ระบบ" CssClass="btn btn-outline-primary btnclick"/>
+      <button type="button" Text="เข้าสู่ระบบ" class="btn btn-outline-primary btnclick" data-bs-toggle="modal" data-bs-target="#modalLoginForm">เข้าสู่ระบบ
+</button>
   </nav>
 </header>
 
@@ -114,6 +115,34 @@
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
+
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">เข้าสู่ระบบ</h4>
+      </div>
+      <div class="modal-body mx-3 text-center">
+        <div class="md-form mb-5 text-start form-floating">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <asp:TextBox ID="TextBox6" runat="server" placeholder="Leave a comment here" CssClass="form-control was-validated" TextMode="Email"></asp:TextBox>
+          <label data-error="wrong" data-success="right" for="TextBox1">อีเมล</label>
+        </div>
+        <div class="md-form mb-4 text-start form-floating">
+          <i class="fas fa-lock prefix grey-text"></i>
+            <asp:TextBox ID="TextBox7" runat="server" placeholder="Leave a comment here" CssClass="form-control was-validated" TextMode="Password"></asp:TextBox>
+          <label data-error="wrong" data-success="right" for="TextBox2">รหัสผ่าน</label>
+        </div>
+          <label>ยังไม่มีรหัส ?<a href="Register.aspx" class="link-primary">
+          <asp:Label ID="Label1" runat="server" Text="สมัครสมาชิก" CssClass="btnclick"></asp:Label></a></label>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-default">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
   <!-- FOOTER -->

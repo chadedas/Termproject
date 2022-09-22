@@ -201,43 +201,74 @@
   </div><!-- /.container -->
 
 
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-  </footer>
+<footer class="bg-light text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">ABOUT WEBSITE</h5>
+
+        <p>
+          เว็ปไซต์จัดทำโดย กฤษนันท์ อุดง ทำขึ้นมาเพื่อส่งงานให้กับ<br />อาจารย์ Natthawoot Punroob ในรายวิชา Web Programming
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">ABOUT Us</h5>
+
+        <p>
+          นายกฤษนันท์ อุดง ปวส.เทคนิคคอมพิวเตอร์ ปี2 เทอม1 ปีการศึกษา2565
+        </p>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-dark" href="https://www.facebook.com/ngBIBIe/">Kritsanan Udong</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 
 <!-- Button trigger modal -->
 
 
     <!-- model -->
-<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">เข้าสู่ระบบ</h4>
-      </div>
-      <div class="modal-body mx-3 text-center">
-        <div class="md-form mb-5 text-start form-floating">
-          <i class="fas fa-envelope prefix grey-text"></i>
-          <asp:TextBox ID="TextBox1" runat="server" placeholder="Leave a comment here" CssClass="form-control was-validated" TextMode="Email"></asp:TextBox>
-          <label data-error="wrong" data-success="right" for="TextBox1">อีเมล</label>
+        <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">เข้าสู่ระบบ</h4>
+              </div>
+              <div class="modal-body mx-3 text-center">
+                <div class="md-form mb-5 text-start form-floating">
+                  <i class="fas fa-envelope prefix grey-text"></i>
+                  <asp:TextBox ID="TextBox1" runat="server" placeholder="Leave a comment here" CssClass="form-control was-validated" TextMode="Email"></asp:TextBox>
+                  <label data-error="wrong" data-success="right" for="TextBox1">อีเมล</label>
+                </div>
+                <div class="md-form mb-4 text-start form-floating">
+                  <i class="fas fa-lock prefix grey-text"></i>
+                    <asp:TextBox ID="TextBox2" runat="server" placeholder="Leave a comment here" CssClass="form-control was-validated" TextMode="Password"></asp:TextBox>
+                  <label data-error="wrong" data-success="right" for="TextBox2">รหัสผ่าน</label>
+                </div>
+                  <label>ยังไม่มีรหัส ?<a href="Register.aspx" class="link-primary">
+                  <asp:Label ID="Label1" runat="server" Text="สมัครสมาชิก" CssClass="btnclick"></asp:Label></a></label>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-default">Login</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="md-form mb-4 text-start form-floating">
-          <i class="fas fa-lock prefix grey-text"></i>
-            <asp:TextBox ID="TextBox2" runat="server" placeholder="Leave a comment here" CssClass="form-control was-validated" TextMode="Password"></asp:TextBox>
-          <label data-error="wrong" data-success="right" for="TextBox2">รหัสผ่าน</label>
-        </div>
-          <label>ยังไม่มีรหัส ?<a href="Register.aspx" class="link-primary">
-          <asp:Label ID="Label1" runat="server" Text="สมัครสมาชิก" CssClass="btnclick"></asp:Label></a></label>
-      </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <button class="btn btn-default">Login</button>
-      </div>
-    </div>
-  </div>
-</div>
 
     <!-- Test -->
 
