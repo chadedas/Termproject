@@ -81,7 +81,7 @@
       <div class="col-md-7 order-md-2 px-5">
 <div class="form-floating py-2">
 <asp:TextBox ID="TextBox1" placeholder="อีเมล" runat="server" CssClass="form-control was-validated" TextMode="Email"></asp:TextBox>
-<label for="TextBox3" class="form-label">อีเมล</label>
+<label for="TextBox1" class="form-label">อีเมล</label>
 </div>
 <div class="form-floating py-0">
 <asp:TextBox ID="TextBox2" placeholder="รหัสผ่าน" runat="server" CssClass="form-control was-validated" TextMode="Password" aria-describedby="passwordHelpBlock"></asp:TextBox>
@@ -105,7 +105,7 @@
 <asp:TextBox ID="TextBox5" placeholder="เบอร์โทร" runat="server" CssClass="form-control was-validated" TextMode="Phone"></asp:TextBox>
 <label for="TextBox5" class="form-label">เบอร์โทร</label>
 
-          <div class="py-3 text-center"><asp:Button ID="Button2" runat="server" Text="สมัครสมาชิก" CssClass="btn btn-primary mx-3 border-0"/></div>
+          <div class="py-3 text-center"><asp:Button ID="Button1" runat="server" Text="สมัครสมาชิก" CssClass="btn btn-primary mx-3 border-0"/></div>
           
           
       </div>
@@ -146,10 +146,15 @@
 
 
   <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-  </footer>
+<figure class="text-center">
+  <blockquote class="blockquote">
+    <p><br />Create By Kritsanan Udong</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+     <cite title="Source Title">ทำขึ้นเพื่อส่งเทอมโปรเจครายวิชาเว็ปโปรแกรมมิ่งอาจารย์ Natthawoot Punroob</cite>
+  </figcaption>
+</figure>
+</footer>
 </main>
     </form>
 

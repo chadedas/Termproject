@@ -37,6 +37,24 @@ TermProject_Kritsanan_Udong
  Returns the Asp log object.
  </summary>
 </member>
+<member name="F:TermProject_Kritsanan_Udong.AboutTak._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.AboutTak._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:TermProject_Kritsanan_Udong.Adminhome._form1">
 <summary>
 form1 control.
@@ -67,15 +85,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:TermProject_Kritsanan_Udong.Register._form1">
 <summary>
 form1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Register._Button1">
-<summary>
-Button1 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -127,9 +136,36 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:TermProject_Kritsanan_Udong.Register._Button2">
+<member name="F:TermProject_Kritsanan_Udong.Register._Button1">
 <summary>
-Button2 control.
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Register._TextBox6">
+<summary>
+TextBox6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Register._TextBox7">
+<summary>
+TextBox7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Register._Label1">
+<summary>
+Label1 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -146,6 +182,24 @@ To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:TermProject_Kritsanan_Udong.Tourist_All._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Tourist_All_2._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Tourist_All_2._Button1">
 <summary>
 Button1 control.
 </summary>

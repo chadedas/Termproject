@@ -93,15 +93,30 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AboutTak.aspx" />
     <Content Include="Administator\Adminhome.aspx" />
+    <Content Include="allPicture\agoda-booking-bt-min.png" />
+    <Content Include="allPicture\booking-bt-min.png" />
+    <Content Include="allPicture\hotal_tav1_1.jpg" />
+    <Content Include="allPicture\hotal_tav1_2.jpg" />
+    <Content Include="allPicture\hotal_tav1_3.jpg" />
+    <Content Include="allPicture\hotal_tav1_4.jpg" />
     <Content Include="allPicture\product1.jpg" />
+    <Content Include="allPicture\product2.jpg" />
+    <Content Include="allPicture\product3.jpg" />
     <Content Include="allPicture\tak1.jpg" />
+    <Content Include="allPicture\TakAbout1.png" />
+    <Content Include="allPicture\TakAbout2.jpg" />
+    <Content Include="allPicture\TakAbout3.jpg" />
     <Content Include="allPicture\tak_tav1.jpg" />
+    <Content Include="allPicture\tak_tav1_2.jpg" />
+    <Content Include="allPicture\tak_tav1_3.jpg" />
+    <Content Include="allPicture\tak_tav1_4.jpg" />
     <Content Include="allPicture\tak_tav2.jpg" />
     <Content Include="allPicture\tak_tav3.jpg" />
-    <Content Include="App_Data\userDatabase.mdf" />
-    <Content Include="App_Data\userDatabase_log.ldf">
-      <DependentUpon>userDatabase.mdf</DependentUpon>
+    <Content Include="App_Data\userSQL.mdf" />
+    <Content Include="App_Data\userSQL_log.ldf">
+      <DependentUpon>userSQL.mdf</DependentUpon>
     </Content>
     <Content Include="Home.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -123,10 +138,18 @@
     <Content Include="javascript\bootstrap.js" />
     <Content Include="Product_All.aspx" />
     <Content Include="Register.aspx" />
-    <Content Include="Tourist_All.aspx" />
+    <Content Include="Tourist_List\Tourist_All.aspx" />
+    <Content Include="Tourist_List\Tourist_All_2.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutTak.aspx.designer.vb">
+      <DependentUpon>AboutTak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AboutTak.aspx.vb">
+      <DependentUpon>AboutTak.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Administator\Adminhome.aspx.designer.vb">
       <DependentUpon>Adminhome.aspx</DependentUpon>
     </Compile>
@@ -148,11 +171,18 @@
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Tourist_All.aspx.designer.vb">
+    <Compile Include="Tourist_List\Tourist_All.aspx.designer.vb">
       <DependentUpon>Tourist_All.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tourist_All.aspx.vb">
+    <Compile Include="Tourist_List\Tourist_All.aspx.vb">
       <DependentUpon>Tourist_All.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Tourist_List\Tourist_All_2.aspx.designer.vb">
+      <DependentUpon>Tourist_All_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tourist_List\Tourist_All_2.aspx.vb">
+      <DependentUpon>Tourist_All_2.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="userDataclass.designer.vb">

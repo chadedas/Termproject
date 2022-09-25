@@ -46,12 +46,13 @@
   <a href="Home.aspx">
   <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio1">หน้าหลัก</label></a>
 
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio2">เกี่ยวกับจังหวัดตาก</label>
+  <a href="AboutTak.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio2">เกี่ยวกับจังหวัดตาก</label></a>
 
-  <a href="Tourist_All.aspx">
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">สถานที่ท่องเที่ยว</label></a>
-
+  <a href="Tourist_List/Tourist_All.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">สถานที่ท่องเที่ยว</label></a>
+  
+          
   <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio4">ผลิตภัณฑ์ตำบล</label>
+  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">ประเพณีสำคัญ</label>
 
   <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio5">รีวิวที่พัก</label>
 
@@ -201,42 +202,14 @@
   </div><!-- /.container -->
 
 
-<footer class="bg-light text-center text-lg-start">
-  <!-- Grid container -->
-  <div class="container p-4">
-    <!--Grid row-->
-    <div class="row">
-      <!--Grid column-->
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">ABOUT WEBSITE</h5>
-
-        <p>
-          เว็ปไซต์จัดทำโดย กฤษนันท์ อุดง ทำขึ้นมาเพื่อส่งงานให้กับ<br />อาจารย์ Natthawoot Punroob ในรายวิชา Web Programming
-        </p>
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">ABOUT Us</h5>
-
-        <p>
-          นายกฤษนันท์ อุดง ปวส.เทคนิคคอมพิวเตอร์ ปี2 เทอม1 ปีการศึกษา2565
-        </p>
-      </div>
-      <!--Grid column-->
-    </div>
-    <!--Grid row-->
-  </div>
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2022 Copyright:
-    <a class="text-dark" href="https://www.facebook.com/ngBIBIe/">Kritsanan Udong</a>
-  </div>
-  <!-- Copyright -->
-</footer>
+<figure class="text-center">
+  <blockquote class="blockquote">
+    <p><br />Create By Kritsanan Udong</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+     <cite title="Source Title">ทำขึ้นเพื่อส่งเทอมโปรเจครายวิชาเว็ปโปรแกรมมิ่งอาจารย์ Natthawoot Punroob</cite>
+  </figcaption>
+</figure>
 
 <!-- Button trigger modal -->
 

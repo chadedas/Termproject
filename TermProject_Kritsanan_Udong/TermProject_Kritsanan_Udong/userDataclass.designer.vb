@@ -22,7 +22,7 @@ Imports System.Linq.Expressions
 Imports System.Reflection
 
 
-<Global.System.Data.Linq.Mapping.DatabaseAttribute(Name:="userDatabase")>  _
+<Global.System.Data.Linq.Mapping.DatabaseAttribute(Name:="userSQL")>  _
 Partial Public Class DataClasses1DataContext
 	Inherits System.Data.Linq.DataContext
 	
@@ -40,7 +40,7 @@ Partial Public Class DataClasses1DataContext
   #End Region
 	
 	Public Sub New()
-		MyBase.New(Global.System.Configuration.ConfigurationManager.ConnectionStrings("userDatabaseConnectionString").ConnectionString, mappingSource)
+		MyBase.New(Global.System.Configuration.ConfigurationManager.ConnectionStrings("userSQLConnectionString").ConnectionString, mappingSource)
 		OnCreated
 	End Sub
 	
@@ -77,15 +77,15 @@ Partial Public Class Table
 	
 	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
 	
-	Private _user_Id As Integer
-	
-	Private _user_username As String
+	Private _user_email As String
 	
 	Private _user_password As String
 	
 	Private _user_type As String
 	
-	Private _user_nameAndSirname As String
+	Private _user_birthdate As String
+	
+	Private _user_phonenumber As String
 	
     #Region "Extensibility Method Definitions"
     Partial Private Sub OnLoaded()
@@ -94,13 +94,9 @@ Partial Public Class Table
     End Sub
     Partial Private Sub OnCreated()
     End Sub
-    Partial Private Sub Onuser_IdChanging(value As Integer)
+    Partial Private Sub Onuser_emailChanging(value As String)
     End Sub
-    Partial Private Sub Onuser_IdChanged()
-    End Sub
-    Partial Private Sub Onuser_usernameChanging(value As String)
-    End Sub
-    Partial Private Sub Onuser_usernameChanged()
+    Partial Private Sub Onuser_emailChanged()
     End Sub
     Partial Private Sub Onuser_passwordChanging(value As String)
     End Sub
@@ -110,9 +106,13 @@ Partial Public Class Table
     End Sub
     Partial Private Sub Onuser_typeChanged()
     End Sub
-    Partial Private Sub Onuser_nameAndSirnameChanging(value As String)
+    Partial Private Sub Onuser_birthdateChanging(value As String)
     End Sub
-    Partial Private Sub Onuser_nameAndSirnameChanged()
+    Partial Private Sub Onuser_birthdateChanged()
+    End Sub
+    Partial Private Sub Onuser_phonenumberChanging(value As String)
+    End Sub
+    Partial Private Sub Onuser_phonenumberChanged()
     End Sub
     #End Region
 	
@@ -121,35 +121,18 @@ Partial Public Class Table
 		OnCreated
 	End Sub
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_Id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property user_Id() As Integer
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_email", DbType:="NChar(40) NOT NULL", CanBeNull:=false, IsPrimaryKey:=true)>  _
+	Public Property user_email() As String
 		Get
-			Return Me._user_Id
+			Return Me._user_email
 		End Get
 		Set
-			If ((Me._user_Id = value)  _
-						= false) Then
-				Me.Onuser_IdChanging(value)
+			If (String.Equals(Me._user_email, value) = false) Then
+				Me.Onuser_emailChanging(value)
 				Me.SendPropertyChanging
-				Me._user_Id = value
-				Me.SendPropertyChanged("user_Id")
-				Me.Onuser_IdChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_username", DbType:="NChar(20)")>  _
-	Public Property user_username() As String
-		Get
-			Return Me._user_username
-		End Get
-		Set
-			If (String.Equals(Me._user_username, value) = false) Then
-				Me.Onuser_usernameChanging(value)
-				Me.SendPropertyChanging
-				Me._user_username = value
-				Me.SendPropertyChanged("user_username")
-				Me.Onuser_usernameChanged
+				Me._user_email = value
+				Me.SendPropertyChanged("user_email")
+				Me.Onuser_emailChanged
 			End If
 		End Set
 	End Property
@@ -186,18 +169,34 @@ Partial Public Class Table
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_nameAndSirname", DbType:="NChar(50)")>  _
-	Public Property user_nameAndSirname() As String
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_birthdate", DbType:="NChar(10)")>  _
+	Public Property user_birthdate() As String
 		Get
-			Return Me._user_nameAndSirname
+			Return Me._user_birthdate
 		End Get
 		Set
-			If (String.Equals(Me._user_nameAndSirname, value) = false) Then
-				Me.Onuser_nameAndSirnameChanging(value)
+			If (String.Equals(Me._user_birthdate, value) = false) Then
+				Me.Onuser_birthdateChanging(value)
 				Me.SendPropertyChanging
-				Me._user_nameAndSirname = value
-				Me.SendPropertyChanged("user_nameAndSirname")
-				Me.Onuser_nameAndSirnameChanged
+				Me._user_birthdate = value
+				Me.SendPropertyChanged("user_birthdate")
+				Me.Onuser_birthdateChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_phonenumber", DbType:="NChar(20)")>  _
+	Public Property user_phonenumber() As String
+		Get
+			Return Me._user_phonenumber
+		End Get
+		Set
+			If (String.Equals(Me._user_phonenumber, value) = false) Then
+				Me.Onuser_phonenumberChanging(value)
+				Me.SendPropertyChanging
+				Me._user_phonenumber = value
+				Me.SendPropertyChanged("user_phonenumber")
+				Me.Onuser_phonenumberChanged
 			End If
 		End Set
 	End Property
