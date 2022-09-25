@@ -73,8 +73,21 @@
                 ที่มีทั้งสวนสุขภาพ สนามกีฬาหลากหลายชนิด ขนานไปกับลำน้ำปิงด้วยค่ะ รวมทั้ง อาคารกิตติคุณ 
                 สำหรับจัดกิจกรรมต่างๆ เป็นอาคารทรงหมวก 5 เหลี่ยมทรงสูง เสมือนหมวกของสมเด็จพระเจ้าตากสินมหาราชที่สวยงามและเป็นสถานที่สำคัญของจังหวัดตาก</h6><br />
                 <hr class="featurette-divider">
+
+                    <div class="row featurette py-5">
+      <div class="col-md-7 px-5">
+        <h4 class="featurette-heading fw-normal lh-1">คาเฟ่สวนเฉลิมพระเกียรติฯ</h4>
+        <h6 class=" text-start mx-5">เป็นคาเฟ่ที่อยู่บริเวณสวนเฉลิมพระเกียรติฯ บรรยากาศค่อนค่างดีเนื่องจากอยู่ในแหล่งไม้อุดมสมบูรณ์และใกล้ๆกับแม่น้ำปิง</h6><a class="btn btn-secondary m-auto" href="#">ข้อมูลเพิ่มเติม »</a></p>
+      </div>
+      <div class="col-md-5">
+        <img src="../allPicture/tak_tav1_3.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
+        </div>
+                        <img src="../allPicture/tak_tav1_3.jpg" />
+    </div>
+
                 <h4 class="py-0">คาเฟ่สวนเฉลิมพระเกียรติฯ</h4>
                 <img src="../allPicture/tak_tav1_3.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
+
                 <hr class="featurette-divider">
                 <h4 class="py-0">อาคารกิตติคุณ</h4>
                 <img src="../allPicture/tak_tav1_4.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
