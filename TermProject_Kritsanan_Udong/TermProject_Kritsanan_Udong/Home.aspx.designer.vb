@@ -23,6 +23,15 @@ Partial Public Class Bootstrap
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
+    '''Label1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Button1 control.
     '''</summary>
     '''<remarks>
@@ -32,29 +41,389 @@ Partial Public Class Bootstrap
     Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''TextBox1 control.
+    '''history1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents history1 As Global.System.Web.UI.WebControls.FormView
 
     '''<summary>
-    '''TextBox2 control.
+    '''History1_Home control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TextBox2 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents History1_Home As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''Label1 control.
+    '''history1date control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents history1date As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''History1Date_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents History1Date_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''history2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents history2 As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''History2_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents History2_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''history2date control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents history2date As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''History2Date_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents History2Date_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''history3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents history3 As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''History3_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents History3_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''history3date control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents history3date As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''History3Date_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents History3Date_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''history4 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents history4 As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''History4_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents History4_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''history4date control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents history4date As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''History4Date_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents History4Date_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''ProductName1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ProductName1 As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''ProductName1_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ProductName1_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Product1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Product1 As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''Product1_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Product1_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''ProductName2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ProductName2 As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''ProductName2_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ProductName2_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Product2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Product2 As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''Product2_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Product2_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''ProductName3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ProductName3 As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''ProductName3_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ProductName3_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Product3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Product3 As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''Product3_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Product3_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Tav1_Name control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Tav1_Name As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''Tav1Name_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Tav1Name_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Tav1_Details control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Tav1_Details As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''Tav1Details_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Tav1Details_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Tav2_Name control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Tav2_Name As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''Tav2Name_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Tav2Name_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Tav2_Details control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Tav2_Details As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''Tav2Details_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Tav2Details_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Tav3_Name control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Tav3_Name As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''Tav3Name_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Tav3Name_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Tav3_Details control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Tav3_Details As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''Tav3Details_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Tav3Details_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''FormView1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents FormView1 As Global.System.Web.UI.WebControls.FormView
+
+    '''<summary>
+    '''Product1Image_Home control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Product1Image_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''FileUpload1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents FileUpload1 As Global.System.Web.UI.WebControls.FileUpload
 End Class

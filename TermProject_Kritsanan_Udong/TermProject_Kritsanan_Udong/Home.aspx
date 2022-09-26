@@ -15,19 +15,23 @@
     <title>Tak</title>
 </head>
     <style>
-        html,body {
+        html, body {
             font-family: 'Kanit', sans-serif;
         }
+
         .bg-opacity-90 {
             opacity: 0.9 !important;
         }
+
         .shadow_nav {
             box-shadow: 0px 10px 15px rgb(0 0 0 / 7%);
         }
+
         .bg_top {
             background-color: #3784f5;
         }
-        .btn:first-child:hover, :not(.btn-check)+.btn:hover {
+
+        .btn:first-child:hover, :not(.btn-check) + .btn:hover {
             background: #3784f5;
             color: white !important;
             border-radius: 5px !important;
@@ -50,9 +54,11 @@
   <a href="../Tradition_List/Tradition.aspx"<label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">ประเพณีสำคัญ</label></a>
   <a href="../Hotel/Hotel1.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio5">รีวิวที่พัก</label></a>
 </div>
-      <div mx-2>
-          <asp:Button ID="Button1" runat="server" Text="ออกจากระบบ" CssClass="btn btn-outline-primary btnclick"/>
+      <div class="mx-2">
+          
+            <asp:Label ID="Label1" runat="server" Text="Name" CssClass="mx-3 text-decoration-underline"></asp:Label><asp:Button ID="Button1" runat="server" Text="ออกจากระบบ" CssClass="btn btn-outline-primary btnclick"/>
           </div>
+      
   </nav>
 </header>
 
@@ -83,10 +89,10 @@
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
     </div>
     <div class="col-md-8">
@@ -95,20 +101,190 @@
         <marquee direction="left" class="list-group-item list-group-item-info rounded">ยินดีต้อนรับเข้าสู่เว็ปไซต์</marquee>
             </ul>
         <ul class="list-group list-group-horizontal">
-          <li class="list-group-item w-75"><small>แก้ไขข้อมูลเกี่ยวกับศาลสมเด็จพระเจ้าตากสิน</small></li>
-            <li class="list-group-item w-25 text-center"><small>25/09/2565</small></li>
+          <li class="list-group-item w-75"><small>
+              <asp:FormView ID="history1" runat="server" DataSourceID="History1_Home">
+                  <EditItemTemplate>
+                      <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
+                      <br />
+                      <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                      &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                  </EditItemTemplate>
+                  <InsertItemTemplate>
+                      <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
+                      <br />
+                      <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                      &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                  </InsertItemTemplate>
+                  <ItemTemplate>
+                      <asp:Label ID="History_FormLabel" runat="server" Text='<%# Bind("History_Form") %>' />
+                      <br />
+                  </ItemTemplate>
+              </asp:FormView>
+              <asp:SqlDataSource ID="History1_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Form] FROM [Home_History]"></asp:SqlDataSource>
+              </small></li>
+
+            <li class="list-group-item w-25 text-center"><small>
+                <center>
+                <asp:FormView ID="history1date" runat="server" DataSourceID="History1Date_Home">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
+                        <br />
+                        <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                        &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                    </EditItemTemplate>
+                    <InsertItemTemplate>
+                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
+                        <br />
+                        <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                        &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                    </InsertItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="History_DateLabel" runat="server" Text='<%# Bind("History_Date") %>' />
+                        <br />
+                    </ItemTemplate>
+                </asp:FormView>
+                <asp:SqlDataSource ID="History1Date_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Date] FROM [Home_History]"></asp:SqlDataSource>
+            </center></small></li>
             </ul>
             <ul class="list-group list-group-horizontal">
-          <li class="list-group-item w-75"><small>แก้ไขข้อมูลเกี่ยวกับศาลสมเด็จพระเจ้าตากสิน</small></li>
-            <li class="list-group-item w-25 text-center"><small>25/09/2565</small></li>
+          <li class="list-group-item w-75"><small>
+              <asp:FormView ID="history2" runat="server" DataSourceID="History2_Home">
+              <EditItemTemplate>
+                  <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
+                  <br />
+                  <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                  &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+              </EditItemTemplate>
+              <InsertItemTemplate>
+                  <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
+                  <br />
+                  <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                  &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+              </InsertItemTemplate>
+              <ItemTemplate>
+                  <asp:Label ID="History_FormLabel" runat="server" Text='<%# Bind("History_Form") %>' />
+                  <br />
+
+              </ItemTemplate>
+              </asp:FormView>
+              <asp:SqlDataSource ID="History2_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Form] FROM [Home_History]"></asp:SqlDataSource>
+              </small></li>
+            <li class="list-group-item w-25 text-center"><small>
+                <center>
+                <asp:FormView ID="history2date" runat="server" DataSourceID="History2Date_Home">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
+                        <br />
+                        <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                        &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                    </EditItemTemplate>
+                    <InsertItemTemplate>
+                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
+                        <br />
+                        <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                        &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                    </InsertItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="History_DateLabel" runat="server" Text='<%# Bind("History_Date") %>' />
+                        <br />
+
+                    </ItemTemplate>
+                </asp:FormView>
+                <asp:SqlDataSource ID="History2Date_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Date] FROM [Home_History]"></asp:SqlDataSource>
+            </center></small></li>
                 </ul>
                 <ul class="list-group list-group-horizontal">
-          <li class="list-group-item w-75"><small>แก้ไขข้อมูลเกี่ยวกับศาลสมเด็จพระเจ้าตากสิน</small></li>
-            <li class="list-group-item w-25 text-center"><small>25/09/2565</small></li>
+          <li class="list-group-item w-75"><small>
+              <asp:FormView ID="history3" runat="server" DataSourceID="History3_Home">
+                  <EditItemTemplate>
+                      <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
+                      <br />
+                      <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                      &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                  </EditItemTemplate>
+                  <InsertItemTemplate>
+                      <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
+                      <br />
+                      <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                      &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                  </InsertItemTemplate>
+                  <ItemTemplate>
+                      <asp:Label ID="History_FormLabel" runat="server" Text='<%# Bind("History_Form") %>' />
+                      <br />
+
+                  </ItemTemplate>
+              </asp:FormView>
+              <asp:SqlDataSource ID="History3_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Form] FROM [Home_History]"></asp:SqlDataSource>
+          </small></li>
+            <li class="list-group-item w-25 text-center"><small><center>
+                <asp:FormView ID="history3date" runat="server" DataSourceID="History3Date_Home">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
+                        <br />
+                        <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                        &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                    </EditItemTemplate>
+                    <InsertItemTemplate>
+                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
+                        <br />
+                        <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                        &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                    </InsertItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="History_DateLabel" runat="server" Text='<%# Bind("History_Date") %>' />
+                        <br />
+
+                    </ItemTemplate>
+                </asp:FormView>
+                <asp:SqlDataSource ID="History3Date_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Date] FROM [Home_History]"></asp:SqlDataSource>
+            </center></small></li>
                     </ul>
                           <ul class="list-group list-group-horizontal">
-          <li class="list-group-item w-75"><small>แก้ไขข้อมูลเกี่ยวกับศาลสมเด็จพระเจ้าตากสิน</small></li>
-            <li class="list-group-item w-25 text-center blue100"><small>25/09/2565</small></li>
+          <li class="list-group-item w-75"><small>
+              <asp:FormView ID="history4" runat="server" DataSourceID="History4_Home">
+                  <EditItemTemplate>
+                      <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
+                      <br />
+                      <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                      &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                  </EditItemTemplate>
+                  <InsertItemTemplate>
+                      <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
+                      <br />
+                      <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                      &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                  </InsertItemTemplate>
+                  <ItemTemplate>
+                      <asp:Label ID="History_FormLabel" runat="server" Text='<%# Bind("History_Form") %>' />
+                      <br />
+
+                  </ItemTemplate>
+              </asp:FormView>
+              <asp:SqlDataSource ID="History4_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Form] FROM [Home_History]"></asp:SqlDataSource>
+          </small></li>
+            <li class="list-group-item w-25 text-center blue100"><small><center>
+                <asp:FormView ID="history4date" runat="server" DataSourceID="History4Date_Home">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
+                        <br />
+                        <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                        &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                    </EditItemTemplate>
+                    <InsertItemTemplate>
+                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
+                        <br />
+                        <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                        &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                    </InsertItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="History_DateLabel" runat="server" Text='<%# Bind("History_Date") %>' />
+                        <br />
+                    </ItemTemplate>
+                </asp:FormView>
+                <asp:SqlDataSource ID="History4Date_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Date] FROM [Home_History]"></asp:SqlDataSource>
+            </center></small>
+
+            </li>
                     </ul>
       </div>
     </div>
@@ -124,23 +300,177 @@
     <!-- Three columns of text below the carousel -->
     <div class="row text-center mx-auto">
     <h2 class="py-3 fw-bold">ผลิตภัณฑ์ตำบล</h2>
-      <div class="col-lg-4 ">
+        <div class="col-lg-4 ">
         <img src="allPicture/product1.jpg" width="130" height="130" class="rounded-circle py-1"/>
-        <h5 class="fw-bold">เมี่ยงจอมพล</h5>
-          <!--<p class="detail_1">เมี่ยงคำเมืองตากหรือเรียกอีกชื่อหนึ่งว่า เมี่ยงจอมพล</p>-->
-        <p>เมี่ยงคำเมืองตากหรือเรียกอีกชื่อหนึ่งว่า เมี่ยงจอมพล</p>
+        <h5 class="fw-bold">          <center>
+            <asp:FormView ID="ProductName1" runat="server" DataSourceID="ProductName1_Home">
+                <EditItemTemplate>
+                    <asp:TextBox ID="Product_NameTextBox" runat="server" Text='<%# Bind("Product_Name") %>' />
+                    <br />
+                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </EditItemTemplate>
+                <InsertItemTemplate>
+                    <asp:TextBox ID="Product_NameTextBox" runat="server" Text='<%# Bind("Product_Name") %>' />
+                    <br />
+                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </InsertItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Product_NameLabel" runat="server" Text='<%# Bind("Product_Name") %>' />
+                    <br />
+                </ItemTemplate>
+            </asp:FormView>
+            <asp:SqlDataSource ID="ProductName1_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Product_Name] FROM [Home_Product] WHERE ([Product_ID] = @Product_ID)">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="1" Name="Product_ID" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+            </center>
+        </h5>
+          <p><center>
+
+            <asp:FormView ID="Product1" runat="server" DataSourceID="Product1_Home" CssClass="justify-content-center">
+                <EditItemTemplate>
+                    <asp:TextBox ID="Product_DetailsTextBox" runat="server" Text='<%# Bind("Product_Details") %>' />
+                    <br />
+                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </EditItemTemplate>
+                <InsertItemTemplate>
+                    <asp:TextBox ID="Product_DetailsTextBox" runat="server" Text='<%# Bind("Product_Details") %>' />
+                    <br />
+                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </InsertItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Product_DetailsLabel" CssClass="h6" runat="server" Text='<%# Bind("Product_Details") %>' />
+                    <br />
+                </ItemTemplate>
+            </asp:FormView>
+            <asp:SqlDataSource ID="Product1_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Product_Details] FROM [Home_Product] WHERE ([Product_ID] = @Product_ID)">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="1" Name="Product_ID" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+              </center>
+              </p>
         <p><a class="btn btn-secondary m-auto" href="Product_List/Product_All.aspx">ข้อมูลเพิ่มเติม »</a></p>
       </div><!-- /.col-lg-4 -->
+
       <div class="col-lg-4">
         <img src="allPicture/product2.jpg" width="130" height="130" class="rounded-circle py-1"/>
-        <h5 class="fw-bold">กล้วยกวน</h5>
-        <p>กล้วยกวนเป็นสินค้า OTOP ประเภท 3 ดาว</p>
+        <h5 class="fw-bold">
+            <center>
+            <asp:FormView ID="ProductName2" runat="server" DataSourceID="ProductName2_Home">
+                <EditItemTemplate>
+                    <asp:TextBox ID="Product_NameTextBox" runat="server" Text='<%# Bind("Product_Name") %>' />
+                    <br />
+                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </EditItemTemplate>
+                <InsertItemTemplate>
+                    <asp:TextBox ID="Product_NameTextBox" runat="server" Text='<%# Bind("Product_Name") %>' />
+                    <br />
+                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </InsertItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Product_NameLabel" runat="server" Text='<%# Bind("Product_Name") %>' />
+                    <br />
+
+                </ItemTemplate>
+            </asp:FormView>
+            <asp:SqlDataSource ID="ProductName2_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Product_Name] FROM [Home_Product] WHERE ([Product_ID] = @Product_ID)">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="2" Name="Product_ID" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource></center>
+        </h5><p><center>
+
+            <asp:FormView ID="Product2" runat="server" DataSourceID="Product2_Home">
+                <EditItemTemplate>
+                    <asp:TextBox ID="Product_DetailsTextBox" runat="server" Text='<%# Bind("Product_Details") %>' />
+                    <br />
+                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </EditItemTemplate>
+                <InsertItemTemplate>
+                    <asp:TextBox ID="Product_DetailsTextBox" runat="server" Text='<%# Bind("Product_Details") %>' />
+                    <br />
+                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </InsertItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Product_DetailsLabel" CssClass="h6" runat="server" Text='<%# Bind("Product_Details") %>' />
+                    <br />
+                </ItemTemplate>
+            </asp:FormView>
+            <asp:SqlDataSource ID="Product2_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Product_Details] FROM [Home_Product] WHERE ([Product_ID] = @Product_ID)">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="2" Name="Product_ID" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+           </center>
+            </p>
         <p><a class="btn btn-secondary m-auto" href="Product_List/Product_All_2.aspx">ข้อมูลเพิ่มเติม »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img src="allPicture/product3.jpg" width="130" height="130" class="rounded-circle py-1"/>
-        <h5 class="fw-bold">ส้มลิ้ม</h5>
-        <p>อร่อย เจ้าเก่า สืบทอดกันมาช้านาน ต้องส้มลิ้ม</p>
+        <h5 class="fw-bold"><center>
+            <asp:FormView ID="ProductName3" runat="server" DataSourceID="ProductName3_Home">
+                <EditItemTemplate>
+                    <asp:TextBox ID="Product_NameTextBox" runat="server" Text='<%# Bind("Product_Name") %>' />
+                    <br />
+                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </EditItemTemplate>
+                <InsertItemTemplate>
+                    <asp:TextBox ID="Product_NameTextBox" runat="server" Text='<%# Bind("Product_Name") %>' />
+                    <br />
+                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </InsertItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Product_NameLabel" runat="server" Text='<%# Bind("Product_Name") %>' />
+                    <br />
+
+                </ItemTemplate>
+            </asp:FormView>
+            <asp:SqlDataSource ID="ProductName3_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Product_Name] FROM [Home_Product] WHERE ([Product_ID] = @Product_ID)">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="3" Name="Product_ID" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+            </center>
+        </h5>
+        <p><center>
+            <asp:FormView ID="Product3" runat="server" DataSourceID="Product3_Home">
+                <EditItemTemplate>
+                    <asp:TextBox ID="Product_DetailsTextBox" runat="server" Text='<%# Bind("Product_Details") %>' />
+                    <br />
+                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </EditItemTemplate>
+                <InsertItemTemplate>
+                    <asp:TextBox ID="Product_DetailsTextBox" runat="server" Text='<%# Bind("Product_Details") %>' />
+                    <br />
+                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </InsertItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Product_DetailsLabel" CssClass="h6" runat="server" Text='<%# Bind("Product_Details") %>' />
+                    <br />
+
+                </ItemTemplate>
+            </asp:FormView>
+            <asp:SqlDataSource ID="Product3_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Product_Details] FROM [Home_Product] WHERE ([Product_ID] = @Product_ID)">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="3" Name="Product_ID" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+            </center>
+        </p>
         <p><a class="btn btn-secondary" href="Product_List/Product_All_3.aspx">ข้อมูลเพิ่มเติม »</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
@@ -149,8 +479,58 @@
     <hr class="featurette-divider py-3">
     <div class="row featurette py-5">
       <div class="col-md-7 px-5">
-        <h2 class="featurette-heading fw-normal lh-1">สะพานสมโภชน์กรุงรัตนโกสินทร์</h2>
-        <p class="lead w-100">สะพานสมโภชน์กรุงรัตนโกสินทร์ 200 ปี   ตั้งอยู่ในอำเภอเมืองตาก เป็นสะพานไม้แขวนด้วยลวดสลิง สำหรับเดินข้ามแม่น้ำปิงที่ชาวเมืองตากใช้สัญจรไปมา รวมถึงเป็นสถานที่พักผ่อนหย่อนใจโดยเฉพาะในยามเย็น  สะพานแห่งนี้ชื่อว่าเป็นจุดชมวิวแม่น้ำปิงที่ได้ชื่อว่าสวยที่สุดของจังหวัดตาก พร้อมไปกับการชมบรรยากาศพระอาทิตย์ตกหลากสีสันได้อย่างงดงาม ในช่วงกลางคืนมีการประดับไฟสวยงาม ทำให้ตัวสะพานแลดูสว่างไสวโดดเด่นเหนือผืนน้ำสีเข้ม</p>
+        <h2 class="featurette-heading fw-normal lh-1">
+            <asp:FormView ID="Tav1_Name" runat="server" DataSourceID="Tav1Name_Home">
+                <EditItemTemplate>
+                    <asp:TextBox ID="Travel_NameTextBox" runat="server" Text='<%# Bind("Travel_Name") %>' />
+                    <br />
+                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </EditItemTemplate>
+                <InsertItemTemplate>
+                    <asp:TextBox ID="Travel_NameTextBox" runat="server" Text='<%# Bind("Travel_Name") %>' />
+                    <br />
+                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </InsertItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Travel_NameLabel" runat="server" Text='<%# Bind("Travel_Name") %>' />
+                    <br />
+
+                </ItemTemplate>
+            </asp:FormView>
+            <asp:SqlDataSource ID="Tav1Name_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Travel_Name] FROM [Home_Traveling] WHERE ([Travel_ID] = @Travel_ID)">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="1" Name="Travel_ID" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+        </h2>
+        <p class="lead w-100 h3">
+            <asp:FormView ID="Tav1_Details" runat="server" DataSourceID="Tav1Details_Home">
+                <EditItemTemplate>
+                    <asp:TextBox ID="Travel_DetailsTextBox" runat="server" Text='<%# Bind("Travel_Details") %>' />
+                    <br />
+                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </EditItemTemplate>
+                <InsertItemTemplate>
+                    <asp:TextBox ID="Travel_DetailsTextBox" runat="server" Text='<%# Bind("Travel_Details") %>' />
+                    <br />
+                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </InsertItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Travel_DetailsLabel" CssClass="h5" runat="server" Text='<%# Bind("Travel_Details") %>' />
+                    <br />
+
+                </ItemTemplate>
+            </asp:FormView>
+            <asp:SqlDataSource ID="Tav1Details_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Travel_Details] FROM [Home_Traveling] WHERE ([Travel_ID] = @Travel_ID)">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="1" Name="Travel_ID" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+        </p>
         <p><a class="btn btn-secondary m-auto" href="../Tourist_List/Tourist_All.aspx">ข้อมูลเพิ่มเติม »</a></p>
       </div>
       <div class="col-md-5">
@@ -162,8 +542,58 @@
 
     <div class="row featurette py-5">
       <div class="col-md-7 order-md-2 px-5">
-        <h2 class="featurette-heading fw-normal lh-1">ศาลสมเด็จพระเจ้าตากสินมหาราช</h2>
-        <p class="lead">ศาลสมเด็จพระเจ้าตากสินมหาราช  สถานที่ศักดิ์สิทธิ์เป็นที่เคารพของคนจังหวัดตาก และคนไทยทั่วไปที่ผ่านไปจะต้องแวะกราบไหว้สักการะขอพรพระองค์ท่าน ภายในสถานที่ร่มรื่น มีลานจอดรถจัดไว้รองรับ ตัวศาลเป็นศาลาจตุรมุข หน้าศาลแขวนโคมจีนสีแดง ภายในมีภาพพระประวัติพระเจ้าตาก ด้านหลังศาลมีรูปปั้น และตุ๊กตาม้าศึก ช้างศึกจำนวนมากที่ผู้คนนำมาถวาย ภายในศาลประดิษฐาน พะบรมรูปสมเด็จพระเจ้าตากสินมหาราชขนาดใหญ่กว่าพระองค์จริงเล็กน้อย ในพระอิริยาบถที่กำลังประทับอยู่บนราชอาสน์ มีพระแสงดาบพาดอยู่ที่พระเพลา เป็นอีกหนึ่งสถานที่ในเมืองตากที่ต้องแวะมาเพื่อความเป็นสิริมงคลในชีวิต</p>
+        <h2 class="featurette-heading fw-normal lh-1">
+            <asp:FormView ID="Tav2_Name" runat="server" DataSourceID="Tav2Name_Home">
+                <EditItemTemplate>
+                    <asp:TextBox ID="Travel_NameTextBox" runat="server" Text='<%# Bind("Travel_Name") %>' />
+                    <br />
+                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </EditItemTemplate>
+                <InsertItemTemplate>
+                    <asp:TextBox ID="Travel_NameTextBox" runat="server" Text='<%# Bind("Travel_Name") %>' />
+                    <br />
+                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </InsertItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Travel_NameLabel" runat="server" Text='<%# Bind("Travel_Name") %>' />
+                    <br />
+
+                </ItemTemplate>
+            </asp:FormView>
+            <asp:SqlDataSource ID="Tav2Name_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Travel_Name] FROM [Home_Traveling] WHERE ([Travel_ID] = @Travel_ID)">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="2" Name="Travel_ID" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+        </h2>
+        <p class="lead">
+            <asp:FormView ID="Tav2_Details" runat="server" DataSourceID="Tav2Details_Home">
+                <EditItemTemplate>
+                    <asp:TextBox ID="Travel_DetailsTextBox" runat="server" Text='<%# Bind("Travel_Details") %>' />
+                    <br />
+                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </EditItemTemplate>
+                <InsertItemTemplate>
+                    <asp:TextBox ID="Travel_DetailsTextBox" runat="server" Text='<%# Bind("Travel_Details") %>' />
+                    <br />
+                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </InsertItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Travel_DetailsLabel" CssClass="h5" runat="server" Text='<%# Bind("Travel_Details") %>' />
+                    <br />
+
+                </ItemTemplate>
+            </asp:FormView>
+            <asp:SqlDataSource ID="Tav2Details_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Travel_Details] FROM [Home_Traveling] WHERE ([Travel_ID] = @Travel_ID)">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="2" Name="Travel_ID" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+        </p>
       <p><a class="btn btn-secondary m-auto" href="../Tourist_List/Tourist_All_2.aspx">ข้อมูลเพิ่มเติม »</a></p>
       </div>
       <div class="col-md-5 order-md-1">
@@ -176,8 +606,56 @@
 
     <div class="row featurette py-5">
       <div class="col-md-7 px-5">
-        <h2 class="featurette-heading fw-normal lh-1">พิพิธภัณฑ์เมืองเฉลิมพระเกียรติ</h2>
-        <p class="lead">พิพิธภัณฑ์เมืองเฉลิมพระเกียรติ จังหวัดตากอาคารที่ตั้งโดดเด่นด้วยเอกลักษณ์และสถาปัตยกรรมแบบบ้านไม้โบราณที่แปลกตา สร้างขึ้นมาเพื่อเฉลิมพระเกียรติพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช เนื่องในโอกาสมหามงคลเฉลิมพระชนมพรรษา 80 พรรษา โดยปรับปรุงอาคารจวนผู้ว่าราชการจังหวัดตาก(หลังเก่า) มาเป็นพิพิธภัณฑ์ เนื่องจากอดีตสถานที่ดังกล่าวเคยเป็นเรือนประทับ ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดชและสมเด็จพระนางเจ้าสิริกิติ์  พระบรมราชชนนีพันปีหลวง เมื่อครั้งเสด็จเมืองตาก เมื่อปี พ.ศ.2501</p>
+        <h2 class="featurette-heading fw-normal lh-1">
+            <asp:FormView ID="Tav3_Name" runat="server" DataSourceID="Tav3Name_Home">
+                <EditItemTemplate>
+                    <asp:TextBox ID="Travel_NameTextBox" runat="server" Text='<%# Bind("Travel_Name") %>' />
+                    <br />
+                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </EditItemTemplate>
+                <InsertItemTemplate>
+                    <asp:TextBox ID="Travel_NameTextBox" runat="server" Text='<%# Bind("Travel_Name") %>' />
+                    <br />
+                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </InsertItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Travel_NameLabel" runat="server" Text='<%# Bind("Travel_Name") %>' />
+                    <br />
+                </ItemTemplate>
+            </asp:FormView>
+            <asp:SqlDataSource ID="Tav3Name_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Travel_Name] FROM [Home_Traveling] WHERE ([Travel_ID] = @Travel_ID)">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="3" Name="Travel_ID" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+        </h2>
+        <p class="lead">
+            <asp:FormView ID="Tav3_Details" runat="server" DataSourceID="Tav3Details_Home">
+                <EditItemTemplate>
+                    <asp:TextBox ID="Travel_DetailsTextBox" runat="server" Text='<%# Bind("Travel_Details") %>' />
+                    <br />
+                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </EditItemTemplate>
+                <InsertItemTemplate>
+                    <asp:TextBox ID="Travel_DetailsTextBox" runat="server" Text='<%# Bind("Travel_Details") %>' />
+                    <br />
+                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                </InsertItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Travel_DetailsLabel" CssClass="h5" runat="server" Text='<%# Bind("Travel_Details") %>' />
+                    <br />
+                </ItemTemplate>
+            </asp:FormView>
+            <asp:SqlDataSource ID="Tav3Details_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Travel_Details] FROM [Home_Traveling] WHERE ([Travel_ID] = @Travel_ID)">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="3" Name="Travel_ID" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+        </p>
           <p><a class="btn btn-secondary m-auto" href="../Tourist_List/Tourist_All_3.aspx">ข้อมูลเพิ่มเติม »</a></p>
       </div>
       <div class="col-md-5">
@@ -190,8 +668,35 @@
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
+    <asp:FormView ID="FormView1" runat="server" DataSourceID="Product1Image_Home">
+        <EditItemTemplate>
+            Product_Image:
+            <asp:TextBox ID="Product_ImageTextBox" runat="server" Text='<%# Bind("Product_Image") %>' />
+            <br />
+            <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+            &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+        </EditItemTemplate>
+        <InsertItemTemplate>
+            Product_Image:
+            <asp:TextBox ID="Product_ImageTextBox" runat="server" Text='<%# Bind("Product_Image") %>' />
+            <br />
+            <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+            &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+        </InsertItemTemplate>
+        <ItemTemplate>
+            <asp:Label ID="Product_ImageLabel" runat="server" Text='<%# Bind("Product_Image") %>' />
+           
+            <br />
 
+        </ItemTemplate>
+    </asp:FormView>
 
+    <asp:SqlDataSource ID="Product1Image_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Product_Image] FROM [Home_Product] WHERE ([Product_ID] = @Product_ID)">
+        <SelectParameters>
+            <asp:Parameter DefaultValue="1" Name="Product_ID" Type="Int32" />
+        </SelectParameters>
+    </asp:SqlDataSource>
+    <asp:FileUpload ID="FileUpload1" runat="server" />
 <figure class="text-center">
   <blockquote class="blockquote">
     <p><br />Create By Kritsanan Udong</p>
@@ -205,36 +710,7 @@
 
 
     <!-- model -->
-        <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header text-center">
-                <h4 class="modal-title w-100 font-weight-bold">เข้าสู่ระบบ</h4>
-              </div>
-              <div class="modal-body mx-3 text-center">
-                <div class="md-form mb-5 text-start form-floating">
-                  <i class="fas fa-envelope prefix grey-text"></i>
-                  <asp:TextBox ID="TextBox1" runat="server" placeholder="Leave a comment here" CssClass="form-control was-validated" TextMode="Email"></asp:TextBox>
-                  <label data-error="wrong" data-success="right" for="TextBox1">อีเมล</label>
-                </div>
-                <div class="md-form mb-4 text-start form-floating">
-                  <i class="fas fa-lock prefix grey-text"></i>
-                    <asp:TextBox ID="TextBox2" runat="server" placeholder="Leave a comment here" CssClass="form-control was-validated" TextMode="Password"></asp:TextBox>
-                  <label data-error="wrong" data-success="right" for="TextBox2">รหัสผ่าน</label>
-                </div>
-                  <label>ยังไม่มีรหัส ?<a href="Register.aspx" class="link-primary">
-                  <asp:Label ID="Label1" runat="server" Text="สมัครสมาชิก" CssClass="btnclick"></asp:Label></a></label>
-              </div>
-              <div class="modal-footer d-flex justify-content-center">
-                <button class="btn btn-default">Login</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
     <!-- Test -->
-
 </main>
     </form>
 
@@ -243,7 +719,7 @@
 
     <script type="text/javascript" asp-append-version="true">
         $(document).ready(function () {
-            
+
             $(window).scroll(function () {
                 let height = $(window).scrollTop();
                 //console.log('height', height)
@@ -260,7 +736,7 @@
 
             $('.ppp').val(localStorage.getItem('data'))
 
-            
+
         });
 
         $(document).on('keyup', '.ppp', function () {
@@ -290,11 +766,11 @@
                 })
 
 
-                
+
             }
 
         })
-        
+
 
         // composition api //
         /*const getItems2 = (e, f, g) => { //แสดงข้อมูล
@@ -318,7 +794,7 @@
 
             localStorage.removeItem('data')
             localStorage.setItem('data', 'เค้ก')
-  
+
         }
 
 
