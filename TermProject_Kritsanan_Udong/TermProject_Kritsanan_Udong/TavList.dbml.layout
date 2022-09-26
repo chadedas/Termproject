@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="TavList">
+  <DataContextMoniker Name="/TavListDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fd41e833-b6a2-46fe-846a-c64075edb6b8" absoluteBounds="4.125, 1.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TavListDataContext/Travel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de1c06dd-ebde-4dbd-b257-c4e532e15696" absoluteBounds="4.14, 1.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

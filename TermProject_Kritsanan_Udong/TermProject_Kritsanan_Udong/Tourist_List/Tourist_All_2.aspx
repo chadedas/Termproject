@@ -36,38 +36,46 @@
     </style>
     <form id="form1" runat="server"> 
 <body>
-
+    <div class="alert alert-primary bg_top text-center" role="alert">
+  สถานที่ท่องเที่ยว
+</div>
 <header class="p-3 mb-2 bg-light text-dark bg-opacity-90 sticky-top py-3 navbar_page">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
-      <div class="btn-group mx-auto" role="group" aria-label="Basic radio toggle button group">
-  <a href="../Home.aspx">
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio1">หน้าหลัก</label></a>
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio2">เกี่ยวกับจังหวัดตาก</label>
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">สถานที่ท่องเที่ยว</label>
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio4">ผลิตภัณฑ์ตำบล</label>
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio5">รีวิวที่พัก</label>
-
+  <div class="btn-group mx-auto" role="group" aria-label="Basic radio toggle button group">
+  <a href="../Home.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio1">หน้าหลัก</label></a>
+  <a href="../AboutTak.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio2">เกี่ยวกับจังหวัดตาก</label></a>
+  <a href="../Tourist_List/Tourist_All.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">สถานที่ท่องเที่ยว</label></a>    
+  <a href="../Product_List/Product_All.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio4">ผลิตภัณฑ์ตำบล</label></a>
+  <a href="../Tradition_List/Tradition.aspx"<label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">ประเพณีสำคัญ</label></a>
+  <a href="../Hotel/Hotel1.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio5">รีวิวที่พัก</label></a>
 </div>
-      <asp:Button ID="Button1" runat="server" Text="เข้าสู่ระบบ" CssClass="btn btn-outline-primary btnclick"/>
+      <div mx-2>
+          <asp:Button ID="Button1" runat="server" Text="ออกจากระบบ" CssClass="btn btn-outline-primary btnclick"/>
+          </div>
   </nav>
 </header>
 
     
 <main class="text-secondary h-100" style="background-color:ghostwhite">
+    <table class="w-100 h-100">
+        <tr class="w-100 h-100">
+            <td class="h-100 list-group py-3 position-static position-fixed w-auto rounded-0 shadow_nav">
+
+              <a href="Tourist_All.aspx" class="list-group-item list-group-item-action rounded-0" >สะพานสมโภชน์กรุงรัตนโกสินทร์</a>
+              <a href="Tourist_All_2.aspx" class="list-group-item list-group-item-action active rounded-0">ศาลสมเด็จพระเจ้าตากสินมหาราช</a>
+              <a href="Tourist_All_3.aspx" class="list-group-item list-group-item-action rounded-0">พิพิธภัณฑ์เมืองเฉลิมพระเกียรติ</a>
+            </td>
+            </tr>
+        </table>
 <div class=" container marketing rounded-1 px-2" style="background-color:white">
     <table class="w-100 h-100">
         <tr>
-            <td style="border:solid;border-color:red;width:20%" class="h-100 list-group py-3 navbar_page position-fixed w-auto">
-              <a href="Tourist_All.aspx" class="list-group-item list-group-item-action" >สะพานสมโภชน์กรุงรัตนโกสินทร์</a>
-              <a href="Tourist_All_2.aspx" class="list-group-item list-group-item-action active">ศาลสมเด็จพระเจ้าตากสินมหาราช</a>
-              <a href="#" class="list-group-item list-group-item-action">พิพิธภัณฑ์เมืองเฉลิมพระเกียรติ</a>
-            </td>
-            <td style="border:solid;border-color:red" class="w-75 h-100 text-center "> 
+            <td class="w-75 h-100 text-center "> 
                 <h3 class="py-3">ศาลสมเด็จพระเจ้าตากสินมหาราช</h3>
-                <h6 class="text-start mx-5">ศาลสมเด็จพระเจ้าตากสินมหาราช  สถานที่ศักดิ์สิทธิ์เป็นที่เคารพของคนจังหวัดตาก และคนไทยทั่วไปที่ผ่านไปจะต้องแวะกราบไหว้สักการะขอพรพระองค์ท่าน ภายในสถานที่ร่มรื่น มีลานจอดรถจัดไว้รองรับ ตัวศาลเป็นศาลาจตุรมุข หน้าศาลแขวนโคมจีนสีแดง ภายในมีภาพพระประวัติพระเจ้าตาก ด้านหลังศาลมีรูปปั้น และตุ๊กตาม้าศึก ช้างศึกจำนวนมากที่ผู้คนนำมาถวาย ภายในศาลประดิษฐาน พะบรมรูปสมเด็จพระเจ้าตากสินมหาราชขนาดใหญ่กว่าพระองค์จริงเล็กน้อย ในพระอิริยาบถที่กำลังประทับอยู่บนราชอาสน์ มีพระแสงดาบพาดอยู่ที่พระเพลา เป็นอีกหนึ่งสถานที่ในเมืองตากที่ต้องแวะมาเพื่อความเป็นสิริมงคลในชีวิต</h6>
+                <h6 class="text-start mx-5 px-5">ศาลสมเด็จพระเจ้าตากสินมหาราช  สถานที่ศักดิ์สิทธิ์เป็นที่เคารพของคนจังหวัดตาก และคนไทยทั่วไปที่ผ่านไปจะต้องแวะกราบไหว้สักการะขอพรพระองค์ท่าน ภายในสถานที่ร่มรื่น มีลานจอดรถจัดไว้รองรับ ตัวศาลเป็นศาลาจตุรมุข หน้าศาลแขวนโคมจีนสีแดง ภายในมีภาพพระประวัติพระเจ้าตาก ด้านหลังศาลมีรูปปั้น และตุ๊กตาม้าศึก ช้างศึกจำนวนมากที่ผู้คนนำมาถวาย ภายในศาลประดิษฐาน พะบรมรูปสมเด็จพระเจ้าตากสินมหาราชขนาดใหญ่กว่าพระองค์จริงเล็กน้อย ในพระอิริยาบถที่กำลังประทับอยู่บนราชอาสน์ มีพระแสงดาบพาดอยู่ที่พระเพลา เป็นอีกหนึ่งสถานที่ในเมืองตากที่ต้องแวะมาเพื่อความเป็นสิริมงคลในชีวิต</h6>
                     <img src="../allPicture/tak_tav2.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-4 w-75 h-75"/>
-              <h4 class="text-start mx-5">ที่เที่ยวรอบๆ ศาลสมเด็จพระเจ้าตากสินมหาราช</h4>
-            <h6 class="text-start mx-5">โดยบริเวณรอบๆ สะพานสมโภชกรุงรัตนโกสินทร์ 200 ปี ก็จะมี กาดนั่งยองคล้องย่ามที่จะจัดทุกๆวันศุกร์ เสาร์และอาทิตย์ ตั้งแต่ 18:00น. ถึง 21:00น.
+              <h4 class="text-center mx-5">สถานที่สำคัญใกล้เคียง</h4>
+            <h6 class="text-start mx-5 px-5">โดยบริเวณรอบๆ สะพานสมโภชกรุงรัตนโกสินทร์ 200 ปี ก็จะมี กาดนั่งยองคล้องย่ามที่จะจัดทุกๆวันศุกร์ เสาร์และอาทิตย์ ตั้งแต่ 18:00น. ถึง 21:00น.
                 อีกทั้งยังมีวัดโบสถ์มณีศรีบุญเรืองที่แปลกตาสวยงาม เจดีย์ติดกับวิหาร ร้านอาหารต่างๆไม่ว่าจะเป็นร้านชาบู</h6><br />
                 <hr class="featurette-divider">
                 <h4 class="py-0">กาดนั่งยองคล้องย่าม</h4>
@@ -76,45 +84,62 @@
                 <h4 class="py-0">วัดโบสถ์มณีศรีบุญเรือง</h4>
                 <img src="../allPicture/tak_tav2_3.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
                 <hr class="featurette-divider">
-                <h3 class="py-0">สิ่งอำนวยความสะดวก</h3><br />
-                <h5 class="py-0">ร้านอาหารบุฟเฟ่ชาบูอินดี้</h5>
-                <img src="../allPicture/tak_tav2_4.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
-                <hr class="featurette-divider">
-                <h5 class="py-0">ร้านอาหารไอยราวดี</h5>
-                <img src="../allPicture/tak_tav2_5.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
-                <img src="../allPicture/tak_tav2_6.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
-                <hr class="featurette-divider">
+              <h4 class="text-center mx-5 py-5">สิ่งอำนวยความสะดวก</h4>
+            <h6 class="text-start mx-5"></h6><br />
+               
+                    <div class="row featurette py-auto">
+      <div class="col-md-7 px-5 py-5">
+        <h4 class="featurette-heading fw-normal lh-1">ร้านอาหารบุฟเฟ่ชาบูอินดี้</h4>
+        <h6 class=" text-start mx-5 px-5">ชาบู อินดี้ สาขาตาก ไม่ละเลย ‍ ตระหนัก ให้ความสำคัญในเรื่องมาตรการความปลอดภัย และรักษาความสะอาด เพื่อคุณลูกค้าทุกท่านและ พนักงานที่น่ารักทุกคน</h6></p>
+      <p><a class="btn btn-secondary m-auto" onclick="tav1()">ข้อมูลติดต่อ »</a></p>
+      </div>
+      <div class="col-md-5">
+        <img src="../allPicture/tak_tav2_4.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
+        </div>
+                        </div>
 
+<hr class="featurette-divider">
+
+                    <div class="row featurette py-auto">
+      <div class="col-md-7 px-5 py-5">
+        <h4 class="featurette-heading fw-normal lh-1">ร้านอาหารไอยราวดี</h4>
+        <h6 class=" text-start mx-5 px-5">ร้านอาหารบรรยากาศดีติดริมน้ำปิง มีเมนูหลากหลาย มีที่นั่งหลายโซน ด้านบนเหมาะแก่การนั่งทานแบบส่วนตัว ด้านล่างเหมาะแก่การนั่งรับบรรยากาศริมน้ำ เหมาะกับการมาเป็นครอบครัว และเพื่อนฝูงที่มานั่งฟังเพลง</h6></p>
+      <p><a class="btn btn-secondary m-auto" onclick="tav2()">ข้อมูลติดต่อ »</a></p>
+      </div>
+      <div class="col-md-5">
+        <img src="../allPicture/tak_tav2_5.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-100"/>
+        </div>
+                        </div>
                 <hr class="featurette-divider">
                 <h4 class="py-3 text-center">ที่พักที่แนะนำ</h4>
                 <h5>โซโห บูทีค โฮเทล ตาก</h5>
-                <h6 class="text-start mx-5">โซโห บูทีค โฮเทล ตาก (Soho Boutique Hotel) ห้องพักสุดฮิปบรรยากาศสบาย ๆ ในโรงแรมราคาประหยัดอันแสนเรียบง่ายที่มี Wi-Fi และอาหารเช้าฟรี รวมถึงฟิตเนส ที่พักเมืองตากแบบโรงแรม 4 ดาว ตั้งอยู่ใจกลางอำเภอเมืองตาก โดยใช้เวลาเดินจากตรอกบ้านจีนอันเก่าแก่ 16 นาทีและเดินจากวัดสีตลาราม 19 นาที นอกจากนี้ ยังใช้เวลาเดินจากตลาดนัดกลางคืน 19 นาที ห้องพักสะดวกสบาย สะอาด กว้างขวาง อาหารเช้าหลากหลาย จัดมุมได้น่าทาน เหมาะแก่การแวะนอนพักระหว่างเดินทาง</h6>
+                <h6 class="text-start mx-5 px-5">โซโห บูทีค โฮเทล ตาก (Soho Boutique Hotel) ห้องพักสุดฮิปบรรยากาศสบาย ๆ ในโรงแรมราคาประหยัดอันแสนเรียบง่ายที่มี Wi-Fi และอาหารเช้าฟรี รวมถึงฟิตเนส ที่พักเมืองตากแบบโรงแรม 4 ดาว ตั้งอยู่ใจกลางอำเภอเมืองตาก โดยใช้เวลาเดินจากตรอกบ้านจีนอันเก่าแก่ 16 นาทีและเดินจากวัดสีตลาราม 19 นาที นอกจากนี้ ยังใช้เวลาเดินจากตลาดนัดกลางคืน 19 นาที ห้องพักสะดวกสบาย สะอาด กว้างขวาง อาหารเช้าหลากหลาย จัดมุมได้น่าทาน เหมาะแก่การแวะนอนพักระหว่างเดินทาง</h6>
                 <img src="../allPicture/hotal_tav2_1.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
                 <img src="../allPicture/hotal_tav2_2.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
                 <img src="../allPicture/hotal_tav2_3.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
                 <img src="../allPicture/hotal_tav2_4.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
-                <div class="container text-center">
-  <div class="row">
-    <div class="col">
+                                <div class="container text-center">
+                  <div class="row">
+                    <div class="col">
       
-    </div>
-    <div class="col"><br />
-        <h3>รายละเอียดการจองที่พัก</h3>
-<h6 class="text-start">ราคา : เริ่มต้น 740 บาท/คืน<br />
-ที่อยู่ : 31 ถนนมหาดไทยบำรุง ต.หนองหลวง อ.เมืองตาก จ.ตาก 63000<br />
-เบอร์โทร : 055 513 123<br /></h6><br />
-        <h6>จองที่พักโซโห บูทีค โฮเทล</h6>
-    </div>
-    <div class="col">
+                    </div>
+                    <div class="col"><br />
+                        <h3>รายละเอียดการจองที่พัก</h3>
+                <h6 class="text-start">ราคา : เริ่มต้น 740 บาท/คืน<br />
+                ที่อยู่ : 31 ถนนมหาดไทยบำรุง ต.หนองหลวง อ.เมืองตาก จ.ตาก 63000<br />
+                เบอร์โทร : 055 513 123<br /></h6><br />
+                        <h6>จองที่พักโซโห บูทีค โฮเทล</h6>
+                    </div>
+                    <div class="col">
       
-    </div>
+                    </div>
 
-  </div>
-                    <p class="mx-auto px-auto"><a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1812163&hl=th&hid=685121" target="_blank">
-                        <img src="../allPicture/agoda-booking-bt-min.png" class="w-25 h-25 mx-auto"/></a>
-                        <a href="https://www.booking.com/hotel/th/soho-boutique.th.html?aid=1630953" target="_blank"><img src="../allPicture/booking-bt-min.png" class="w-25 h-25 mx-auto"/></a>
-                    </p>
-</div>
+                  </div>
+                                    <p class="mx-auto px-auto"><a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1812163&hl=th&hid=685121" target="_blank">
+                                        <img src="../allPicture/agoda-booking-bt-min.png" class="w-25 h-25 mx-auto"/></a>
+                                        <a href="https://www.booking.com/hotel/th/soho-boutique.th.html?aid=1630953" target="_blank"><img src="../allPicture/booking-bt-min.png" class="w-25 h-25 mx-auto"/></a>
+                                    </p>
+                </div>
                 <br />
                 <br />
                 <h6>GPS สำหรับเส้นทางการท่องเที่ยว</h6>
@@ -161,5 +186,25 @@
 
 
             });
+            function tav1() {
+                Swal.fire({
+                    title: 'เพจ: ชาบู อินดี้ ตาก',
+                    html: 'ติดต่อ: 055-032-161<br />เวลาเปิด: ทุกวัน 11.00-22.00<br />ที่ตั้ง: 2/56 ถ.มหาดไทยบำรุง อ.เมือง จ.ตาก ตรงข้ามสนามกีฬาเก่า Muang Tak, Tak 63000<br />',
+                    imageUrl: '/allPicture/tak_tav2_4.jpg',
+                    imageWidth: 400,
+                    imageHeight: 200,
+                    imageAlt: 'Custom image',
+                })
+            }
+            function tav2() {
+                Swal.fire({
+                    title: 'เพจ: ร้านไอยราวดี',
+                    html: 'ติดต่อ: 064-353-1718<br />เวลาเปิด: ทุกวัน 07.00-20.00<br />ที่ตั้ง: ถนนพหลโยธิน ตำบล แม่ท้อ อำเภอเมืองตาก<br />',
+                    imageUrl: '/allPicture/tak_tav2_5.jpg',
+                    imageWidth: 400,
+                    imageHeight: 200,
+                    imageAlt: 'Custom image',
+                })
+            }
         </script>
 </html>

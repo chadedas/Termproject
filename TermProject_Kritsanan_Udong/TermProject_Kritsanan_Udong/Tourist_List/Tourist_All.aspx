@@ -36,77 +36,95 @@
     </style>
     <form id="form1" runat="server"> 
 <body>
-
+    <div class="alert alert-primary bg_top text-center" role="alert">
+  สถานที่ท่องเที่ยว
+</div>
 <header class="p-3 mb-2 bg-light text-dark bg-opacity-90 sticky-top py-3 navbar_page">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
-      <div class="btn-group mx-auto" role="group" aria-label="Basic radio toggle button group">
-  <a href="../Home.aspx">
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio1">หน้าหลัก</label></a>
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio2">เกี่ยวกับจังหวัดตาก</label>
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">สถานที่ท่องเที่ยว</label>
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio4">ผลิตภัณฑ์ตำบล</label>
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio5">รีวิวที่พัก</label>
-
+  <div class="btn-group mx-auto" role="group" aria-label="Basic radio toggle button group">
+  <a href="../Home.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio1">หน้าหลัก</label></a>
+  <a href="../AboutTak.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio2">เกี่ยวกับจังหวัดตาก</label></a>
+  <a href="../Tourist_List/Tourist_All.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">สถานที่ท่องเที่ยว</label></a>    
+  <a href="../Product_List/Product_All.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio4">ผลิตภัณฑ์ตำบล</label></a>
+  <a href="../Tradition_List/Tradition.aspx"<label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">ประเพณีสำคัญ</label></a>
+  <a href="../Hotel/Hotel1.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio5">รีวิวที่พัก</label></a>
 </div>
-      <asp:Button ID="Button1" runat="server" Text="เข้าสู่ระบบ" CssClass="btn btn-outline-primary btnclick"/>
+      <div mx-2>
+          <asp:Button ID="Button1" runat="server" Text="ออกจากระบบ" CssClass="btn btn-outline-primary btnclick"/>
+          </div>
   </nav>
 </header>
 
     
 <main class="text-secondary h-100" style="background-color:ghostwhite">
-<div class=" container marketing rounded-1 px-2" style="background-color:white">
-    <table class="w-100 h-100">
-        <tr>
-            <td style="border:solid;border-color:red;width:20%" class="h-100 list-group py-3 navbar_page position-fixed w-auto">
-              <a href="Tourist_All.aspx" class="list-group-item list-group-item-action active" >สะพานสมโภชน์กรุงรัตนโกสินทร์</a>
-              <a href="Tourist_All_2.aspx" class="list-group-item list-group-item-action">ศาลสมเด็จพระเจ้าตากสินมหาราช</a>
-              <a href="#" class="list-group-item list-group-item-action">พิพิธภัณฑ์เมืองเฉลิมพระเกียรติ</a>
+            <table class="w-100 h-100">
+        <tr class="w-100 h-100 position-relative">
+            <td class="h-100 list-group py-3 position-static position-fixed w-auto rounded-0 shadow_nav conta">
+
+              <a href="Tourist_All.aspx" class="list-group-item list-group-item-action active rounded-0">สะพานสมโภชน์กรุงรัตนโกสินทร์</a>
+              <a href="Tourist_All_2.aspx" class="list-group-item list-group-item-action rounded-0">ศาลสมเด็จพระเจ้าตากสินมหาราช</a>
+              <a href="Tourist_All_3.aspx" class="list-group-item list-group-item-action rounded-0">พิพิธภัณฑ์เมืองเฉลิมพระเกียรติ</a>
             </td>
-            <td style="border:solid;border-color:red" class="w-75 h-100 text-center "> 
+            </tr>
+        </table>
+<div class="container marketing rounded-1 px-2" style="background-color:white">
+    <table class="w-100 h-100">
+        <tr class="w-100 h-100">
+            <td class="w-75 h-100 text-center "> 
                 <h3 class="py-3">สะพานสมโภชน์กรุงรัตนโกสินทร์ 200 ปี</h3>
-                <h6 class="text-start mx-5">สะพานสมโภชน์กรุงรัตนโกสินทร์ 200 ปี ตั้งอยู่ในอำเภอเมืองตาก เป็นสะพานไม้แขวนด้วยลวดสลิง สำหรับเดินข้ามแม่น้ำปิงที่ชาวเมืองตากใช้สัญจรไปมา 
+                <h6 class="text-start mx-5 px-5">สะพานสมโภชน์กรุงรัตนโกสินทร์ 200 ปี ตั้งอยู่ในอำเภอเมืองตาก เป็นสะพานไม้แขวนด้วยลวดสลิง สำหรับเดินข้ามแม่น้ำปิงที่ชาวเมืองตากใช้สัญจรไปมา 
                     รวมถึงเป็นสถานที่พักผ่อนหย่อนใจโดยเฉพาะในยามเย็น สะพานแห่งนี้ชื่อว่าเป็นจุดชมวิวแม่น้ำปิงที่ได้ชื่อว่าสวยที่สุดของจังหวัดตาก 
                     พร้อมไปกับการชมบรรยากาศพระอาทิตย์ตกหลากสีสันได้อย่างงดงามในช่วงกลางคืนมีการประดับไฟสวยงาม ทำให้ตัวสะพานแลดูสว่างไสวโดดเด่นเหนือผืนน้ำสีเข้ม</h6>
                     <img src="../allPicture/tak_tav1_2.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-4 w-75 h-75"/>
-              <h4 class="text-start mx-5">ที่เที่ยวรอบๆ สะพานสมโภชกรุงรัตนโกสินทร์ 200 ปี</h4>
-            <h6 class="text-start mx-5">โดยบริเวณรอบๆ สะพานสมโภชกรุงรัตนโกสินทร์ 200 ปี ก็จะมี คาเฟ่สวนเฉลิมพระเกียรติฯ สวนสาธารณะ 
-                ที่มีทั้งสวนสุขภาพ สนามกีฬาหลากหลายชนิด ขนานไปกับลำน้ำปิงด้วยค่ะ รวมทั้ง อาคารกิตติคุณ 
-                สำหรับจัดกิจกรรมต่างๆ เป็นอาคารทรงหมวก 5 เหลี่ยมทรงสูง เสมือนหมวกของสมเด็จพระเจ้าตากสินมหาราชที่สวยงามและเป็นสถานที่สำคัญของจังหวัดตาก</h6><br />
-                <hr class="featurette-divider">
+<h4 class="text-center mx-5">สถานที่สำคัญใกล้เคียง</h4>
+                                    <div class="row featurette py-2">
 
-                    <div class="row featurette py-5">
-      <div class="col-md-7 px-5">
-        <h4 class="featurette-heading fw-normal lh-1">คาเฟ่สวนเฉลิมพระเกียรติฯ</h4>
-        <h6 class=" text-start mx-5">เป็นคาเฟ่ที่อยู่บริเวณสวนเฉลิมพระเกียรติฯ บรรยากาศค่อนค่างดีเนื่องจากอยู่ในแหล่งไม้อุดมสมบูรณ์และใกล้ๆกับแม่น้ำปิง</h6><a class="btn btn-secondary m-auto" href="#">ข้อมูลเพิ่มเติม »</a></p>
+        <h5 class="featurette-heading fw-normal lh-1">อาคารกิตติคุณ</h5>
+        <h6 class=" text-center mx-auto">เป็นสถานที่สำคัญของจังหวัดตาก มักจะมีงานยิ่งใหญ่จัดขึ้นที่นี่ทุกปี เช่น งานลอยกระทง</h6>
+      </div>
+      <div class="align-content-center">
+        <img src="../allPicture/tak_tav1_4.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-50 h-50"/>
+        </div>
+                <hr class="featurette-divider">
+              <h4 class="text-center mx-5 py-5">สิ่งอำนวยความสะดวก</h4>
+            <h6 class="text-start mx-5"></h6><br />
+               
+                    <div class="row featurette py-auto">
+      <div class="col-md-7 px-5 py-5">
+        <h4 class="featurette-heading fw-normal lh-1">บ้านผักรักตะวัน</h4>
+        <h6 class=" text-start mx-5 px-5">ร้านอาหารเอาใจคนรักสุขภาพทุกคน ถ้าผ่านมาจังหวัดตากและกำลังมองหาร้านอาหารแนวสุขภาพเพื่อที่จะลดน้ำหนัก หรืออยากทานผักสดๆออร์แกนิคจากไร่แล้ว ต้องที่นี่เลย</h6></p>
+      <p><a class="btn btn-secondary m-auto" onclick="tav2()">ข้อมูลติดต่อ »</a></p>
+      </div>
+      <div class="col-md-5">
+        <img src="../allPicture/tak_tav1_5.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
+        </div>
+                        </div>
+
+<hr class="featurette-divider">
+
+                    <div class="row featurette py-auto">
+      <div class="col-md-7 px-5 py-5">
+        <h4 class="featurette-heading fw-normal lh-1">Z surf Z Food</h4>
+        <h6 class=" text-start mx-5 px-5"> ร้านเปิดใหม่ ติดแม่น้ำ อากาศเย็นสบาย ตะลอนเมืองตากขอแนะนำให้รู้จักกับร้าน Z Surf  ร้านอาหารกึ่งคาเฟ่ ใครที่กำลังมองหาแลนด์มาร์คที่ใหม่ มีมุมสวยๆให้ถ่ายรูป ไปที่เดียวจบครบทั้งอาหารและเครื่องดื่มต้องแวะมาลองที่นี้กัน</h6></p>
+      <p><a class="btn btn-secondary m-auto" onclick="tav1()">ข้อมูลติดต่อ »</a></p>
       </div>
       <div class="col-md-5">
         <img src="../allPicture/tak_tav1_3.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
         </div>
-                        <img src="../allPicture/tak_tav1_3.jpg" />
-    </div>
+                        </div>
 
-                <h4 class="py-0">คาเฟ่สวนเฉลิมพระเกียรติฯ</h4>
-                <img src="../allPicture/tak_tav1_3.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
-
-                <hr class="featurette-divider">
-                <h4 class="py-0">อาคารกิตติคุณ</h4>
-                <img src="../allPicture/tak_tav1_4.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
-                <hr class="featurette-divider">
-                <h3 class="py-0">สิ่งอำนวยความสะดวก</h3><br />
-                <h5 class="py-0">ร้านอาหารเคียงน้ำ</h5>
-                <img src="../allPicture/tak_tav1_5.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
-                <img src="../allPicture/tak_tav1_6.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-50 h-50"/>
                 <hr class="featurette-divider">
                 <h4 class="py-3 text-center">ที่พักที่แนะนำ</h4>
                 <h5>โรงแรมเวียงตาก ริเวอร์ไซด์</h5>
-                <h6 class="text-start mx-5">โรงแรมเวียงตาก ริเวอร์ไซด์ (Viangtak Riverside Hotel) โรงแรมเรียบง่ายที่มีไนท์คลับ ร้านอาหาร คาราโอเกะ สระว่ายน้ำกลางแจ้ง และอาหารเช้าฟรี
+                <h6 class="text-start mx-5 px-5">โรงแรมเวียงตาก ริเวอร์ไซด์ (Viangtak Riverside Hotel) โรงแรมเรียบง่ายที่มีไนท์คลับ ร้านอาหาร คาราโอเกะ สระว่ายน้ำกลางแจ้ง และอาหารเช้าฟรี
                     ที่พักตากในเมืองแบบโรงแรม 3 ดาว โรงแรมเก่าแก่ของเมืองตากตั้งอยู่ใจกลางเมืองติดริมแม่น้ำปิง มองเห็นวิวแม่น้ำปิงได้ อยู่ห่างจากวัดมณีบรรพตวรวิหารและหาดทรายทองแม่ปิงเมืองตาก 2 กม.
                     ห้องพักสะอาด ตกแต่งหรูดูดี อุปกรณ์ครบครัน พนักงานอัธยาศัยดี วิวและบรรยากาศรอบข้างดี คุ้มค่ากับเงินที่จ่ายไป อาหารเช้าก็หลากหลาย</h6>
                 <img src="../allPicture/hotal_tav1_1.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
                 <img src="../allPicture/hotal_tav1_2.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
                 <img src="../allPicture/hotal_tav1_3.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
                 <img src="../allPicture/hotal_tav1_4.jpg" class=" bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto px-auto py-2 w-75 h-75"/>
-                <div class="container text-center">
+                
+                        <div class="container text-center">
   <div class="row">
     <div class="col">
       
@@ -174,5 +192,25 @@
 
 
             });
+            function tav1() {
+            Swal.fire({
+                title: 'เพจ: ZinzanO',
+                html: 'ติดต่อ: 087-996-6205<br />เวลาเปิด: ทุกวัน 09.00-23.00<br />ที่ตั้ง: ฝั่งป่ามะม่วงเลยร้านเคียงน้ำมาประมาณ 300 เมตร<br />',
+                imageUrl: '/allPicture/tak_tav1_3.jpg',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+            })
+            }
+            function tav2() {
+                Swal.fire({
+                    title: 'เพจ: บ้านผักรักตะวัน',
+                    html: 'ติดต่อ: 064-353-1718<br />เวลาเปิด: ทุกวัน 07.00-20.00<br />ที่ตั้ง: ถนนพหลโยธิน ตำบล แม่ท้อ อำเภอเมืองตาก<br />',
+                    imageUrl: '/allPicture/tak_tav1_6.jpg',
+                    imageWidth: 400,
+                    imageHeight: 200,
+                    imageAlt: 'Custom image',
+                })
+            }
         </script>
 </html>

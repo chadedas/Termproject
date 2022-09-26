@@ -43,22 +43,17 @@
 </div>
 <header class="p-3 mb-2 bg-light text-dark bg-opacity-90 sticky-top py-3 navbar_page">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
-      <div class="btn-group mx-auto" role="group" aria-label="Basic radio toggle button group">
-  <a href="Home.aspx">
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio1">หน้าหลัก</label></a>
-
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio2">เกี่ยวกับจังหวัดตาก</label>
-
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">สถานที่ท่องเที่ยว</label>
-
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio4">ผลิตภัณฑ์ตำบล</label>
-
-  <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio5">รีวิวที่พัก</label>
-
-
+  <div class="btn-group mx-auto" role="group" aria-label="Basic radio toggle button group">
+  <a href="../Home.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio1">หน้าหลัก</label></a>
+  <a href="../AboutTak.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio2">เกี่ยวกับจังหวัดตาก</label></a>
+  <a href="../Tourist_List/Tourist_All.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">สถานที่ท่องเที่ยว</label></a>    
+  <a href="../Product_List/Product_All.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio4">ผลิตภัณฑ์ตำบล</label></a>
+  <a href="../Tradition_List/Tradition.aspx"<label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">ประเพณีสำคัญ</label></a>
+  <a href="../Hotel/Hotel1.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio5">รีวิวที่พัก</label></a>
 </div>
-      <button type="button" Text="เข้าสู่ระบบ" class="btn btn-outline-primary btnclick" data-bs-toggle="modal" data-bs-target="#modalLoginForm">เข้าสู่ระบบ
-</button>
+      <div mx-2>
+          <asp:Button ID="Button2" runat="server" Text="เข้าสู่ระบบ" CssClass="btn btn-outline-primary btnclick"/>
+          </div>
   </nav>
 </header>
 
@@ -80,8 +75,11 @@
     <div class="row featurette py-2 justify-content-center">
       <div class="col-md-7 order-md-2 px-5">
 <div class="form-floating py-2">
-<asp:TextBox ID="TextBox1" placeholder="อีเมล" runat="server" CssClass="form-control was-validated" TextMode="Email"></asp:TextBox>
-<label for="TextBox1" class="form-label">อีเมล</label>
+<asp:TextBox ID="TextBox1" placeholder="ชื่อผู้ใช้" runat="server" CssClass="form-control was-validated" aria-describedby="usernameHelpBlock"></asp:TextBox>
+<label for="TextBox1" class="form-label">ชื่อผู้ใช้</label>
+<div id="usernameHelpBlock" class="form-text">
+  ชื่อผู้ใช้ประกอบด้วย 4-20 อักขระ ประกอบด้วยตัวอักษรและตัวเลขเท่านั้น
+</div>
 </div>
 <div class="form-floating py-0">
 <asp:TextBox ID="TextBox2" placeholder="รหัสผ่าน" runat="server" CssClass="form-control was-validated" TextMode="Password" aria-describedby="passwordHelpBlock"></asp:TextBox>
@@ -97,8 +95,8 @@
 </div>
 
           <div class="form-floating py-2">
-<asp:TextBox ID="TextBox4" placeholder="วันเดือนปีเกิด" runat="server" CssClass="form-control was-validated" TextMode="Date"></asp:TextBox>
-<label for="TextBox4" class="form-label">วันเดือนปีเกิด</label>
+<asp:TextBox ID="TextBox4" placeholder="ชื่อและนามสกุล" runat="server" CssClass="form-control was-validated"></asp:TextBox>
+<label for="TextBox4" class="form-label">ชื่อนามสกุล</label>
 </div>
 
 <div class="form-floating py-2">
@@ -115,34 +113,6 @@
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
-
-    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">เข้าสู่ระบบ</h4>
-      </div>
-      <div class="modal-body mx-3 text-center">
-        <div class="md-form mb-5 text-start form-floating">
-          <i class="fas fa-envelope prefix grey-text"></i>
-          <asp:TextBox ID="TextBox6" runat="server" placeholder="Leave a comment here" CssClass="form-control was-validated" TextMode="Email"></asp:TextBox>
-          <label data-error="wrong" data-success="right" for="TextBox1">อีเมล</label>
-        </div>
-        <div class="md-form mb-4 text-start form-floating">
-          <i class="fas fa-lock prefix grey-text"></i>
-            <asp:TextBox ID="TextBox7" runat="server" placeholder="Leave a comment here" CssClass="form-control was-validated" TextMode="Password"></asp:TextBox>
-          <label data-error="wrong" data-success="right" for="TextBox2">รหัสผ่าน</label>
-        </div>
-          <label>ยังไม่มีรหัส ?<a href="Register.aspx" class="link-primary">
-          <asp:Label ID="Label1" runat="server" Text="สมัครสมาชิก" CssClass="btnclick"></asp:Label></a></label>
-      </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <button class="btn btn-default">Login</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
   <!-- FOOTER -->
