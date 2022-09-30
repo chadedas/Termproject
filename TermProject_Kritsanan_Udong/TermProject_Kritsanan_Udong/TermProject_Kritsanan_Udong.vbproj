@@ -275,6 +275,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClassesTak.dbml</DependentUpon>
     </Compile>
+    <Compile Include="HomeClass.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomeClass.dbml</DependentUpon>
+    </Compile>
     <Compile Include="ProductList.designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -484,6 +489,14 @@
     </Content>
     <None Include="DataClassesTak.dbml.layout">
       <DependentUpon>DataClassesTak.dbml</DependentUpon>
+    </None>
+    <Content Include="HomeClass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>HomeClass.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="HomeClass.dbml.layout">
+      <DependentUpon>HomeClass.dbml</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

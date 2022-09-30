@@ -185,6 +185,15 @@ Partial Public Class Bootstrap
     Protected WithEvents History4Date_Home As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
+    '''HomeProduct1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents HomeProduct1 As Global.System.Web.UI.WebControls.Image
+
+    '''<summary>
     '''ProductName1 control.
     '''</summary>
     '''<remarks>
@@ -221,6 +230,15 @@ Partial Public Class Bootstrap
     Protected WithEvents Product1_Home As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
+    '''HomeProduct2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents HomeProduct2 As Global.System.Web.UI.WebControls.Image
+
+    '''<summary>
     '''ProductName2 control.
     '''</summary>
     '''<remarks>
@@ -255,6 +273,15 @@ Partial Public Class Bootstrap
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Product2_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''HomeProduct3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents HomeProduct3 As Global.System.Web.UI.WebControls.Image
 
     '''<summary>
     '''ProductName3 control.
@@ -329,6 +356,15 @@ Partial Public Class Bootstrap
     Protected WithEvents Tav1Details_Home As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
+    '''HomeTraveling1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents HomeTraveling1 As Global.System.Web.UI.WebControls.Image
+
+    '''<summary>
     '''Tav2_Name control.
     '''</summary>
     '''<remarks>
@@ -363,6 +399,24 @@ Partial Public Class Bootstrap
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Tav2Details_Home As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''HomeTraveling2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents HomeTraveling2 As Global.System.Web.UI.WebControls.Image
+
+    '''<summary>
+    '''SqlDataSource1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''Tav3_Name control.
@@ -401,29 +455,11 @@ Partial Public Class Bootstrap
     Protected WithEvents Tav3Details_Home As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''FormView1 control.
+    '''HomeTraveling3 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents FormView1 As Global.System.Web.UI.WebControls.FormView
-
-    '''<summary>
-    '''Product1Image_Home control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Product1Image_Home As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''FileUpload1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents FileUpload1 As Global.System.Web.UI.WebControls.FileUpload
+    Protected WithEvents HomeTraveling3 As Global.System.Web.UI.WebControls.Image
 End Class

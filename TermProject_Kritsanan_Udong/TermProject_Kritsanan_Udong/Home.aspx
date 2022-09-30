@@ -164,7 +164,6 @@
               <ItemTemplate>
                   <asp:Label ID="History_FormLabel" runat="server" Text='<%# Bind("History_Form") %>' />
                   <br />
-
               </ItemTemplate>
               </asp:FormView>
               <asp:SqlDataSource ID="History2_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Form] FROM [Home_History]"></asp:SqlDataSource>
@@ -187,7 +186,6 @@
                     <ItemTemplate>
                         <asp:Label ID="History_DateLabel" runat="server" Text='<%# Bind("History_Date") %>' />
                         <br />
-
                     </ItemTemplate>
                 </asp:FormView>
                 <asp:SqlDataSource ID="History2Date_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Date] FROM [Home_History]"></asp:SqlDataSource>
@@ -301,7 +299,7 @@
     <div class="row text-center mx-auto">
     <h2 class="py-3 fw-bold">ผลิตภัณฑ์ตำบล</h2>
         <div class="col-lg-4 ">
-        <img src="allPicture/product1.jpg" width="130" height="130" class="rounded-circle py-1"/>
+        <asp:Image ID="HomeProduct1" runat="server" Width="130" Height="130" CssClass="rounded-circle py-1"/>
         <h5 class="fw-bold">          <center>
             <asp:FormView ID="ProductName1" runat="server" DataSourceID="ProductName1_Home">
                 <EditItemTemplate>
@@ -359,11 +357,11 @@
       </div><!-- /.col-lg-4 -->
 
       <div class="col-lg-4">
-        <img src="allPicture/product2.jpg" width="130" height="130" class="rounded-circle py-1"/>
+          <asp:Image ID="HomeProduct2" runat="server" width="130" height="130" CssClass="rounded-circle py-1"/>
         <h5 class="fw-bold">
             <center>
             <asp:FormView ID="ProductName2" runat="server" DataSourceID="ProductName2_Home">
-                <EditItemTemplate>
+                <EditItemTemplate> 
                     <asp:TextBox ID="Product_NameTextBox" runat="server" Text='<%# Bind("Product_Name") %>' />
                     <br />
                     <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
@@ -378,7 +376,6 @@
                 <ItemTemplate>
                     <asp:Label ID="Product_NameLabel" runat="server" Text='<%# Bind("Product_Name") %>' />
                     <br />
-
                 </ItemTemplate>
             </asp:FormView>
             <asp:SqlDataSource ID="ProductName2_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Product_Name] FROM [Home_Product] WHERE ([Product_ID] = @Product_ID)">
@@ -413,10 +410,12 @@
             </asp:SqlDataSource>
            </center>
             </p>
+
         <p><a class="btn btn-secondary m-auto" href="Product_List/Product_All_2.aspx">ข้อมูลเพิ่มเติม »</a></p>
+
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <img src="allPicture/product3.jpg" width="130" height="130" class="rounded-circle py-1"/>
+          <asp:Image ID="HomeProduct3" runat="server" width="130" height="130" CssClass="rounded-circle py-1"/>
         <h5 class="fw-bold"><center>
             <asp:FormView ID="ProductName3" runat="server" DataSourceID="ProductName3_Home">
                 <EditItemTemplate>
@@ -534,7 +533,7 @@
         <p><a class="btn btn-secondary m-auto" href="../Tourist_List/Tourist_All.aspx">ข้อมูลเพิ่มเติม »</a></p>
       </div>
       <div class="col-md-5">
-        <img src="allPicture/tak_tav1.jpg" width="500" height="500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-5 px-auto"/>
+          <asp:Image ID="HomeTraveling1" runat="server" width="500" height="500" CssClass="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-5 px-auto"/>
       </div>
     </div>
 
@@ -559,7 +558,6 @@
                 <ItemTemplate>
                     <asp:Label ID="Travel_NameLabel" runat="server" Text='<%# Bind("Travel_Name") %>' />
                     <br />
-
                 </ItemTemplate>
             </asp:FormView>
             <asp:SqlDataSource ID="Tav2Name_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Travel_Name] FROM [Home_Traveling] WHERE ([Travel_ID] = @Travel_ID)">
@@ -585,7 +583,6 @@
                 <ItemTemplate>
                     <asp:Label ID="Travel_DetailsLabel" CssClass="h5" runat="server" Text='<%# Bind("Travel_Details") %>' />
                     <br />
-
                 </ItemTemplate>
             </asp:FormView>
             <asp:SqlDataSource ID="Tav2Details_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Travel_Details] FROM [Home_Traveling] WHERE ([Travel_ID] = @Travel_ID)">
@@ -597,8 +594,8 @@
       <p><a class="btn btn-secondary m-auto" href="../Tourist_List/Tourist_All_2.aspx">ข้อมูลเพิ่มเติม »</a></p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img src="allPicture/tak_tav2.jpg" width="500" height="500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-5 px-auto"/>
-
+          <asp:Image ID="HomeTraveling2" runat="server" width="500" height="500" CssClass="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-5 px-auto"/>
+          <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
       </div>
     </div>
 
@@ -659,7 +656,7 @@
           <p><a class="btn btn-secondary m-auto" href="../Tourist_List/Tourist_All_3.aspx">ข้อมูลเพิ่มเติม »</a></p>
       </div>
       <div class="col-md-5">
-        <img src="allPicture/tak_tav3.jpg" width="500" height="500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-5 px-auto"/>
+          <asp:Image ID="HomeTraveling3" runat="server" width="500" height="500" CssClass="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-5 px-auto"/>
       </div>
     </div>
 
@@ -668,35 +665,6 @@
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
-    <asp:FormView ID="FormView1" runat="server" DataSourceID="Product1Image_Home">
-        <EditItemTemplate>
-            Product_Image:
-            <asp:TextBox ID="Product_ImageTextBox" runat="server" Text='<%# Bind("Product_Image") %>' />
-            <br />
-            <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-            &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-        </EditItemTemplate>
-        <InsertItemTemplate>
-            Product_Image:
-            <asp:TextBox ID="Product_ImageTextBox" runat="server" Text='<%# Bind("Product_Image") %>' />
-            <br />
-            <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-            &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-        </InsertItemTemplate>
-        <ItemTemplate>
-            <asp:Label ID="Product_ImageLabel" runat="server" Text='<%# Bind("Product_Image") %>' />
-           
-            <br />
-
-        </ItemTemplate>
-    </asp:FormView>
-
-    <asp:SqlDataSource ID="Product1Image_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Product_Image] FROM [Home_Product] WHERE ([Product_ID] = @Product_ID)">
-        <SelectParameters>
-            <asp:Parameter DefaultValue="1" Name="Product_ID" Type="Int32" />
-        </SelectParameters>
-    </asp:SqlDataSource>
-    <asp:FileUpload ID="FileUpload1" runat="server" />
 <figure class="text-center">
   <blockquote class="blockquote">
     <p><br />Create By Kritsanan Udong</p>
@@ -705,12 +673,6 @@
      <cite title="Source Title">ทำขึ้นเพื่อส่งเทอมโปรเจครายวิชาเว็ปโปรแกรมมิ่งอาจารย์ Natthawoot Punroob</cite>
   </figcaption>
 </figure>
-
-<!-- Button trigger modal -->
-
-
-    <!-- model -->
-    <!-- Test -->
 </main>
     </form>
 

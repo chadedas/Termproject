@@ -16,18 +16,28 @@
                 Response.Redirect("~/Login.aspx")
             Else
                 Label1.Text = myuser.First.user_FnameLname
+
             End If
         End Using
+
+        Dim Primary_ID As Integer = 1
+        Using Data As New HomeClassDataContext
+            Dim Image_Reccord = From myTable_Image In Data.Home_Products
+                                Where myTable_Image.Product_ID = Primary_ID
+
+
+            Me.HomeProduct1.ImageUrl = "~\allPicture\Home\" + Image_Reccord.First.Product_Image
+                Me.HomeProduct2.ImageUrl = "a"
+            Primary_ID += 1
+
+        End Using
+
+
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Response.Redirect("~/Login.aspx")
     End Sub
 
-    Protected Sub Product1Image_Home_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs) Handles Product1Image_Home.Selecting
-        Dim ImageLink As String
-        Dim ImagePreview As String
 
-        ImagePreview = "https://img.freepik.com/premium-vector/web-pricing-table-design-business_6735-1284.jpg"
-    End Sub
 End Class
