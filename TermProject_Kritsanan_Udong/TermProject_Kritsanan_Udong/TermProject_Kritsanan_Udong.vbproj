@@ -131,7 +131,6 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
-    <Content Include="Home.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -148,6 +147,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Home_N.aspx" />
     <Content Include="Hotel\Hotel1.aspx" />
     <Content Include="Hotel\Hotel2.aspx" />
     <Content Include="Hotel\Hotel3.aspx" />
@@ -164,11 +164,10 @@
     <Content Include="Product_List\Product_All_3.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Tourist_List\Tourist_All.aspx" />
-    <Content Include="Tourist_List\Tourist_All_2.aspx" />
-    <Content Include="Tourist_List\Tourist_All_3.aspx" />
     <Content Include="Tradition_List\Tradition.aspx" />
     <Content Include="Tradition_List\Tradition2.aspx" />
     <Content Include="Tradition_List\Tradition3.aspx" />
+    <Content Include="Tradition_List\Tradition_All.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -275,15 +274,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClassesTak.dbml</DependentUpon>
     </Compile>
+    <Compile Include="DataOfTraveling.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataOfTraveling.dbml</DependentUpon>
+    </Compile>
     <Compile Include="HomeClass.designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>HomeClass.dbml</DependentUpon>
     </Compile>
-    <Compile Include="ProductList.designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProductList.dbml</DependentUpon>
+    <Compile Include="Home_N.aspx.designer.vb">
+      <DependentUpon>Home_N.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_N.aspx.vb">
+      <DependentUpon>Home_N.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Hotel\Hotel1.aspx.designer.vb">
       <DependentUpon>Hotel1.aspx</DependentUpon>
@@ -355,6 +361,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Page.Master.designer.vb">
+      <DependentUpon>Page.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Page.Master.vb">
+      <DependentUpon>Page.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Product_List\Product_All.aspx.designer.vb">
       <DependentUpon>Product_All.aspx</DependentUpon>
     </Compile>
@@ -383,30 +396,11 @@
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="TavList.designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TavList.dbml</DependentUpon>
-    </Compile>
     <Compile Include="Tourist_List\Tourist_All.aspx.designer.vb">
       <DependentUpon>Tourist_All.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tourist_List\Tourist_All.aspx.vb">
       <DependentUpon>Tourist_All.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Tourist_List\Tourist_All_2.aspx.designer.vb">
-      <DependentUpon>Tourist_All_2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Tourist_List\Tourist_All_2.aspx.vb">
-      <DependentUpon>Tourist_All_2.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Tourist_List\Tourist_All_3.aspx.designer.vb">
-      <DependentUpon>Tourist_All_3.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Tourist_List\Tourist_All_3.aspx.vb">
-      <DependentUpon>Tourist_All_3.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Tradition_List\Tradition.aspx.designer.vb">
@@ -430,13 +424,6 @@
       <DependentUpon>Tradition3.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Home.aspx.designer.vb">
-      <DependentUpon>Home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Home.aspx.vb">
-      <DependentUpon>Home.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -455,6 +442,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Tradition_List\Tradition_All.aspx.designer.vb">
+      <DependentUpon>Tradition_All.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tradition_List\Tradition_All.aspx.vb">
+      <DependentUpon>Tradition_All.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -495,6 +489,14 @@
       <LastGenOutput>HomeClass.designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="DataOfTraveling.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataOfTraveling.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataOfTraveling.dbml.layout">
+      <DependentUpon>DataOfTraveling.dbml</DependentUpon>
+    </None>
     <None Include="HomeClass.dbml.layout">
       <DependentUpon>HomeClass.dbml</DependentUpon>
     </None>
@@ -508,22 +510,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
-    <Content Include="ProductList.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>ProductList.designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </Content>
-    <None Include="ProductList.dbml.layout">
-      <DependentUpon>ProductList.dbml</DependentUpon>
-    </None>
-    <Content Include="TavList.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>TavList.designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </Content>
-    <None Include="TavList.dbml.layout">
-      <DependentUpon>TavList.dbml</DependentUpon>
-    </None>
+    <Content Include="Page.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -534,7 +521,10 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="allPicture\DataOfTraveling\" />
+    <Folder Include="allPicture\Home\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

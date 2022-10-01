@@ -5,16 +5,16 @@
     End Sub
 
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Using data As New ProductListDataContext
-            Dim myUser_Record As New Product
+        'Using data As New ProductListDataContext
+        'Dim myUser_Record As New Product
 
-            myUser_Record.Product_Name = TextBox3.Text
-            myUser_Record.Product_Details = TextBox4.Text
-            myUser_Record.Product_Type = TextBox5.Text
+        '  myUser_Record.Product_Name = TextBox3.Text
+        ' myUser_Record.Product_Details = TextBox4.Text
+        'myUser_Record.Product_Type = TextBox5.Text
 
-            data.Products.InsertOnSubmit(myUser_Record)
-            data.SubmitChanges()
-        End Using
+        ' data.Products.InsertOnSubmit(myUser_Record)
+        'data.SubmitChanges()
+        'End Using
 
         Response.Redirect("~/Administator/ProductList.aspx")
     End Sub

@@ -43,6 +43,12 @@ Partial Public Class HomeClassDataContext
     End Sub
   Partial Private Sub DeleteHome_Traveling(instance As Home_Traveling)
     End Sub
+  Partial Private Sub InsertHome_History(instance As Home_History)
+    End Sub
+  Partial Private Sub UpdateHome_History(instance As Home_History)
+    End Sub
+  Partial Private Sub DeleteHome_History(instance As Home_History)
+    End Sub
   #End Region
 	
 	Public Sub New()
@@ -79,6 +85,12 @@ Partial Public Class HomeClassDataContext
 	Public ReadOnly Property Home_Travelings() As System.Data.Linq.Table(Of Home_Traveling)
 		Get
 			Return Me.GetTable(Of Home_Traveling)
+		End Get
+	End Property
+	
+	Public ReadOnly Property Home_Histories() As System.Data.Linq.Table(Of Home_History)
+		Get
+			Return Me.GetTable(Of Home_History)
 		End Get
 	End Property
 End Class
@@ -382,6 +394,112 @@ Partial Public Class Home_Traveling
 				Me._Travel_Slide = value
 				Me.SendPropertyChanged("Travel_Slide")
 				Me.OnTravel_SlideChanged
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Home_History")>  _
+Partial Public Class Home_History
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _History_Id As Integer
+	
+	Private _History_Form As String
+	
+	Private _History_Date As String
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnHistory_IdChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnHistory_IdChanged()
+    End Sub
+    Partial Private Sub OnHistory_FormChanging(value As String)
+    End Sub
+    Partial Private Sub OnHistory_FormChanged()
+    End Sub
+    Partial Private Sub OnHistory_DateChanging(value As String)
+    End Sub
+    Partial Private Sub OnHistory_DateChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_History_Id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property History_Id() As Integer
+		Get
+			Return Me._History_Id
+		End Get
+		Set
+			If ((Me._History_Id = value)  _
+						= false) Then
+				Me.OnHistory_IdChanging(value)
+				Me.SendPropertyChanging
+				Me._History_Id = value
+				Me.SendPropertyChanged("History_Id")
+				Me.OnHistory_IdChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_History_Form", DbType:="NVarChar(50)")>  _
+	Public Property History_Form() As String
+		Get
+			Return Me._History_Form
+		End Get
+		Set
+			If (String.Equals(Me._History_Form, value) = false) Then
+				Me.OnHistory_FormChanging(value)
+				Me.SendPropertyChanging
+				Me._History_Form = value
+				Me.SendPropertyChanged("History_Form")
+				Me.OnHistory_FormChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_History_Date", DbType:="NVarChar(50)")>  _
+	Public Property History_Date() As String
+		Get
+			Return Me._History_Date
+		End Get
+		Set
+			If (String.Equals(Me._History_Date, value) = false) Then
+				Me.OnHistory_DateChanging(value)
+				Me.SendPropertyChanging
+				Me._History_Date = value
+				Me.SendPropertyChanged("History_Date")
+				Me.OnHistory_DateChanged
 			End If
 		End Set
 	End Property

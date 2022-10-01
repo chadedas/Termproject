@@ -28,7 +28,7 @@
         If OP_UserType = "admin" Then
             Response.Redirect("~/Administator/Adminhome.aspx")
         ElseIf OP_UserType = "member" Then
-            Response.Redirect("~/Home.aspx")
+            Response.Redirect("~/Home_N.aspx")
         ElseIf OP_UserType = "Nobody" Then
             MsgBox("คุณได้ป้อน Username หรือ Password ไม่ถูกต้อง")
         End If

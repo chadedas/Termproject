@@ -16,46 +16,52 @@
     <title>Tak</title>
 </head>
     <style>
-        html,body {
+        html, body {
             font-family: 'Kanit', sans-serif;
-          }
+        }
+
         .bg-opacity-90 {
             opacity: 0.9 !important;
         }
+
         .shadow_nav {
             box-shadow: 0px 10px 15px rgb(0 0 0 / 7%);
         }
+
         .bg_top {
             background-color: #3784f5;
         }
-        .btn:first-child:hover, :not(.btn-check)+.btn:hover {
-    background: #3784f5;
-    color: white !important;
-    border-radius: 5px !important;
-}
+
+        .btn:first-child:hover, :not(.btn-check) + .btn:hover {
+            background: #3784f5;
+            color: white !important;
+            border-radius: 5px !important;
+        }
     </style>
-    <form id="form1" runat="server"> 
+    <form id="form1" runat="server">
 <body>
     <div class="alert alert-primary bg_top text-center" role="alert">
   ผลิตภัณฑ์ตำบล
 </div>
+
 <header class="p-3 mb-2 bg-light text-dark bg-opacity-90 sticky-top py-3 navbar_page">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
   <div class="btn-group mx-auto" role="group" aria-label="Basic radio toggle button group">
   <a href="../Home.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio1">หน้าหลัก</label></a>
   <a href="../AboutTak.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio2">เกี่ยวกับจังหวัดตาก</label></a>
-  <a href="../Tourist_List/Tourist_All.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">สถานที่ท่องเที่ยว</label></a>    
+  <a href="../Tourist_List/Tourist_All.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">สถานที่ท่องเที่ยว</label></a>
   <a href="../Product_List/Product_All.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio4">ผลิตภัณฑ์ตำบล</label></a>
   <a href="../Tradition_List/Tradition.aspx"<label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">ประเพณีสำคัญ</label></a>
   <a href="../Hotel/Hotel1.aspx"><label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio5">รีวิวที่พัก</label></a>
 </div>
       <div mx-2>
-          <asp:Button ID="Button1" runat="server" Text="ออกจากระบบ" CssClass="btn btn-outline-primary btnclick"/>
+          <asp:Button ID="Button1" runat="server" Text="ออกจากระบบ" CssClass="btn btn-outline-primary btnclick" />
           </div>
   </nav>
 </header>
 
-    
+
+
 <main class="text-secondary h-100" style="background-color:ghostwhite">
     <table class="w-100 h-100">
         <tr class="w-100 h-100">
@@ -68,14 +74,14 @@
             </tr>
         </table>
 <div class=" container marketing rounded-1 px-2" style="background-color:white">
-               
+
                     <div class="row featurette py-auto">
       <div class="col-md-7 px-5">
         <h4 class="featurette-heading fw-normal lh-1 fw-bold text-start px-5">เมี่ยงจอมพล</h4>
         <p class="lead text-start mx-5">อีกหนึ่งของดีเมืองตาก ที่ไม่อยากให้พลาดด้วยประการทั้งปวง ต้องมาทาน เมี่ยงคำจอมพล ร้านเมี่ยงคำเก่าแก่ที่สืบทอดกันมาหลายรุ่น  ตัวร้านเป็นร้านเล็กๆ ที่อยู่ในบ้านไม้ซึ่งเป็นบ้านส่วนตัว เมี่ยงคำจอมพล มีความเป็นเอกลักษณ์ คือ เป็นเมี่ยงคำสูตรโบราณน้ำจิ้มเต้าเจี้ยวที่ทางร้านทำเอง  นอกจากเครื่องเมี่ยงที่บรรจงใส่มาในใบเมี่ยงแล้ว ยังมาพร้อมเครื่องเคียงแบบจัดเต็มทั้ง มะเขือพวง พริกสด พริกแห้ง ที่รับรองได้ว่าถูกปากคนชอบทานเมี่ยง หรือแม้แต่คนที่ไม่ค่อยชอบทาน ก็อาจเปลี่ยนใจมาชอบทานเมี่ยงจอมพลก็เป็นได้ </p></p>
       </div>
       <div class="col-md-5">
-        <img src="../allPicture/product1_2.jpg" width="450" height="450" class="py-auto my-auto bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-5 px-auto"/>
+        <img src="../allPicture/product1_2.jpg" width="450" height="450" class="py-auto my-auto bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-5 px-auto" />
         </div>
                         </div>
 
@@ -85,8 +91,7 @@
         <p class="lead text-start mx-5">คือ มะพร้าวขูด ข้าวตากแห้งทอด ถั่วลิสงคั่ว กุ้งแห้ง มะนาว หอมแดง ขิง กระเทียม พริกขี้หนู ตะไคร้ มะเขือพวงและเต้าเจี้ยวเมืองตาก(ซึ่งเต้าเจี้ยวเมืองตากของเรานั้นได้มีวิธีการหมักที่พิเศษเฉพาะเมืองตากเท่านั้น)</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img src="../allPicture/product1_3.png" width="500" height="500" class="mx-5 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid rounded-5 px-auto"/>
-
+        <img src="../allPicture/product1_3.png" width="500" height="500" class="mx-5 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid rounded-5 px-auto" />
       </div>
     </div>
 
@@ -96,13 +101,12 @@
         <p class="lead text-start mx-5">เรามีให้เลือก2แบบ คือทานกับใบชะพลูหรือข้าวเกรียบงาดำเมืองตากต้องพรมน้ำให้อ่อนตัวก่อนแล้วมาห่อกับเครื่องเคียงต่างๆจากนั้นราดด้วยเต้าเจี้ยวที่หมักกับน้ำอ้อยเพื่อชูรสชาติให้อร่อยมากยิ่งขึ้น หลังจากที่ได้ลองชิมแล้วต้องพูดว่าอร่อยมาก เป็นความรู้สึกแบบหวานนิดเค็มหน่อยอมเปรี้ยวบวกกับความหอมมันของถั่วลิสงคั่วกับมะพร้าว คือแบบ มันเป็นของทานเล่นที่ทานได้ตลอด ไม่น่าเบื่อ คือต้องมาลองเองแล้วจะรู้อ่ะ มันเป็นความรู้สึกแบบที่บรรยายไม่ถูกเลย</p></p>
       </div>
       <div class="col-md-5">
-        <img src="../allPicture/product1.jpg" width="450" height="450" class="py-auto my-auto bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-5 px-auto"/>
+        <img src="../allPicture/product1.jpg" width="450" height="450" class="py-auto my-auto bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-5 px-auto" />
         </div>
                         </div>
 
       <div class="row">
     <div class="col">
-      
     </div>
     <div class="col"><br />
         <h3 class="text-center fw-bold">ช่องทางติดต่อ</h3>
@@ -111,12 +115,9 @@
 เบอร์โทร : 055-515-555<br />ราคา: ฿39 - ฿180 บาท</h6><br />
     </div>
     <div class="col">
-      
     </div>
-
   </div>
   </div>
-
 
   <!-- FOOTER -->
 <figure class="text-center">
@@ -129,7 +130,6 @@
 </figure>
 </main>
     </form>
-
 </body>
         <script type="text/javascript" asp-append-version="true">
             $(document).ready(function () {
@@ -149,7 +149,6 @@
                 $('.detail_1').html(localStorage.getItem('data'))
 
                 $('.ppp').val(localStorage.getItem('data'))
-
 
             });
             function tav1() {

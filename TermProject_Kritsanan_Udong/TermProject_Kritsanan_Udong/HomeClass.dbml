@@ -19,4 +19,11 @@
       <Column Name="Travel_Slide" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.Home_History" Member="Home_Histories">
+    <Type Name="Home_History">
+      <Column Name="History_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="History_Form" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="History_Date" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>

@@ -838,6 +838,474 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:TermProject_Kritsanan_Udong.Tradition._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Tradition._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._IMGslide1">
+<summary>
+IMGslide1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._IMGslide2">
+<summary>
+IMGslide2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._IMGslide3">
+<summary>
+IMGslide3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._history1">
+<summary>
+history1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._History1_Home">
+<summary>
+History1_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._history1date">
+<summary>
+history1date control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._History1Date_Home">
+<summary>
+History1Date_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._history2">
+<summary>
+history2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._History2_Home">
+<summary>
+History2_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._history2date">
+<summary>
+history2date control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._History2Date_Home">
+<summary>
+History2Date_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._history3">
+<summary>
+history3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._History3_Home">
+<summary>
+History3_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._history3date">
+<summary>
+history3date control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._History3Date_Home">
+<summary>
+History3Date_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._history4">
+<summary>
+history4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._History4_Home">
+<summary>
+History4_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._history4date">
+<summary>
+history4date control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._History4Date_Home">
+<summary>
+History4Date_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._HomeProduct1">
+<summary>
+HomeProduct1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._ProductName1">
+<summary>
+ProductName1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._ProductName1_Home">
+<summary>
+ProductName1_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Product1">
+<summary>
+Product1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Product1_Home">
+<summary>
+Product1_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._HomeProduct2">
+<summary>
+HomeProduct2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._ProductName2">
+<summary>
+ProductName2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._ProductName2_Home">
+<summary>
+ProductName2_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Product2">
+<summary>
+Product2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Product2_Home">
+<summary>
+Product2_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._HomeProduct3">
+<summary>
+HomeProduct3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._ProductName3">
+<summary>
+ProductName3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._ProductName3_Home">
+<summary>
+ProductName3_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Product3">
+<summary>
+Product3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Product3_Home">
+<summary>
+Product3_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Tav1_Name">
+<summary>
+Tav1_Name control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Tav1Name_Home">
+<summary>
+Tav1Name_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Tav1_Details">
+<summary>
+Tav1_Details control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Tav1Details_Home">
+<summary>
+Tav1Details_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._HomeTraveling1">
+<summary>
+HomeTraveling1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Tav2_Name">
+<summary>
+Tav2_Name control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Tav2Name_Home">
+<summary>
+Tav2Name_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Tav2_Details">
+<summary>
+Tav2_Details control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Tav2Details_Home">
+<summary>
+Tav2Details_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._HomeTraveling2">
+<summary>
+HomeTraveling2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._SqlDataSource1">
+<summary>
+SqlDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Tav3_Name">
+<summary>
+Tav3_Name control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Tav3Name_Home">
+<summary>
+Tav3Name_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Tav3_Details">
+<summary>
+Tav3_Details control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._Tav3Details_Home">
+<summary>
+Tav3Details_Home control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Home_N._HomeTraveling3">
+<summary>
+HomeTraveling3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:TermProject_Kritsanan_Udong.Hotel._form1">
 <summary>
 form1 control.
@@ -1036,6 +1504,42 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:TermProject_Kritsanan_Udong.Page._head">
+<summary>
+head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Page._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Page._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Page._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:TermProject_Kritsanan_Udong.Product_All._form1">
 <summary>
 form1 control.
@@ -1180,60 +1684,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:TermProject_Kritsanan_Udong.Tourist_All_2._form1">
-<summary>
-form1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Tourist_All_2._Button1">
-<summary>
-Button1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Tourist_All_3._form1">
-<summary>
-form1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Tourist_All_3._Button1">
-<summary>
-Button1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Tradition._form1">
-<summary>
-form1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Tradition._Button1">
-<summary>
-Button1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:TermProject_Kritsanan_Udong.Tradition2._form1">
 <summary>
 form1 control.
@@ -1264,474 +1714,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:TermProject_Kritsanan_Udong.Tradition3._Button1">
 <summary>
 Button1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._form1">
-<summary>
-form1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Label1">
-<summary>
-Label1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Button1">
-<summary>
-Button1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._history1">
-<summary>
-history1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._History1_Home">
-<summary>
-History1_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._history1date">
-<summary>
-history1date control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._History1Date_Home">
-<summary>
-History1Date_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._history2">
-<summary>
-history2 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._History2_Home">
-<summary>
-History2_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._history2date">
-<summary>
-history2date control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._History2Date_Home">
-<summary>
-History2Date_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._history3">
-<summary>
-history3 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._History3_Home">
-<summary>
-History3_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._history3date">
-<summary>
-history3date control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._History3Date_Home">
-<summary>
-History3Date_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._history4">
-<summary>
-history4 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._History4_Home">
-<summary>
-History4_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._history4date">
-<summary>
-history4date control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._History4Date_Home">
-<summary>
-History4Date_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._HomeProduct1">
-<summary>
-HomeProduct1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._ProductName1">
-<summary>
-ProductName1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._ProductName1_Home">
-<summary>
-ProductName1_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Product1">
-<summary>
-Product1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Product1_Home">
-<summary>
-Product1_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._HomeProduct2">
-<summary>
-HomeProduct2 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._ProductName2">
-<summary>
-ProductName2 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._ProductName2_Home">
-<summary>
-ProductName2_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Product2">
-<summary>
-Product2 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Product2_Home">
-<summary>
-Product2_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._HomeProduct3">
-<summary>
-HomeProduct3 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._ProductName3">
-<summary>
-ProductName3 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._ProductName3_Home">
-<summary>
-ProductName3_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Product3">
-<summary>
-Product3 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Product3_Home">
-<summary>
-Product3_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Tav1_Name">
-<summary>
-Tav1_Name control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Tav1Name_Home">
-<summary>
-Tav1Name_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Tav1_Details">
-<summary>
-Tav1_Details control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Tav1Details_Home">
-<summary>
-Tav1Details_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._HomeTraveling1">
-<summary>
-HomeTraveling1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Tav2_Name">
-<summary>
-Tav2_Name control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Tav2Name_Home">
-<summary>
-Tav2Name_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Tav2_Details">
-<summary>
-Tav2_Details control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Tav2Details_Home">
-<summary>
-Tav2Details_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._HomeTraveling2">
-<summary>
-HomeTraveling2 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._SqlDataSource1">
-<summary>
-SqlDataSource1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Tav3_Name">
-<summary>
-Tav3_Name control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Tav3Name_Home">
-<summary>
-Tav3Name_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Tav3_Details">
-<summary>
-Tav3_Details control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Tav3Details_Home">
-<summary>
-Tav3Details_Home control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._HomeTraveling3">
-<summary>
-HomeTraveling3 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._FormView1">
-<summary>
-FormView1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Bootstrap._Product1Image_Home">
-<summary>
-Product1Image_Home control.
 </summary>
 <remarks>
 Auto-generated field.
