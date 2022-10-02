@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AboutTak">
+  <DataContextMoniker Name="/AboutTakDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3ab70421-f44e-4e0f-b5a1-5be1fc004edf" absoluteBounds="1, 1, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AboutTakDataContext/AboutTak" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f191e3b0-d800-4d7e-837d-16abb142ec52" absoluteBounds="1.0150000000000001, 1.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

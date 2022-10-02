@@ -1720,5 +1720,23 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:TermProject_Kritsanan_Udong.Tradition_All._Literal_Tradition1_NameTaB">
+<summary>
+Literal_Tradition1_NameTaB control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.Tradition_All._Literal_Tradition1_DataInside">
+<summary>
+Literal_Tradition1_DataInside control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 </members>
 </doc>
