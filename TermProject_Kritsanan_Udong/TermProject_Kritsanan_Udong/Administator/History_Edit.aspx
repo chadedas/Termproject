@@ -5,21 +5,24 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="g-0 container text-center align-content-center justify-content-center row">
         <tr>
-            <td><h3>รูปภาพสไลด์ที่ 1</h3>
+            <td>
+                <h3>รูปภาพสไลด์ที่ 1</h3>
             </td>
-            <td><h3>รูปภาพสไลด์ที่ 2</h3>
+            <td>
+                <h3>รูปภาพสไลด์ที่ 2</h3>
             </td>
-            <td><h3>รูปภาพสไลด์ที่ 3</h3>
+            <td>
+                <h3>รูปภาพสไลด์ที่ 3</h3>
             </td>
         </tr>
         <tr class="row-cols-3">
             <td class="justify-content-center mx-auto">
                 <asp:Image ID="Image1" runat="server" CssClass="h-50 w-50 my-3" />
             </td>
-            <td >
+            <td>
                 <asp:Image ID="Image2" runat="server" CssClass="h-75 w-75 my-3" />
             </td>
-            <td >
+            <td>
                 <asp:Image ID="Image3" runat="server" CssClass="h-75 w-75 my-3" />
             </td>
         </tr>

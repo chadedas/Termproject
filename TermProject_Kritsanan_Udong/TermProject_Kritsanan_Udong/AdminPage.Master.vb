@@ -25,9 +25,11 @@
             End If
         End Using
     End Sub
+
     Protected Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Session.Remove("myUserName")
         Session.Remove("myPassword")
         Response.Redirect("~/Home_N.aspx")
     End Sub
+
 End Class

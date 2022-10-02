@@ -45,19 +45,20 @@
         color: white !important;
         border-radius: 5px !important;
     }
+
     .btn2:first-child:hover, :not(.btn2-check) + .btn2:hover {
         background: #198754;
         color: white !important;
         border-radius: 5px !important;
     }
+
     .py-6 {
         padding-top: 6rem !important;
         padding-bottom: 3rem !important;
     }
 </style>
 <body>
-<form id="form1" runat="server">
-    
+    <form id="form1" runat="server">
 
         <header class="p-3 mb-2 bg-light text-dark bg-opacity-90 sticky-top py-3 navbar_page">
             <nav class="container d-flex flex-column flex-md-row justify-content-between">
@@ -82,18 +83,17 @@
 
                 <div class="mx-2 dropdown">
                     <asp:Button ID="Button1" runat="server" Text="" CssClass="btn1 btn btn-outline-danger btnclick text-center dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" />
-                 
+
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item text-end disabled" href="#">ข้อมูลผู้ใช้</a></li>
-                        
-                        <li><asp:Button ID="Button3" runat="server" Text="ออกจากระบบ" CssClass="dropdown-item text-end" /></li>
-                        
+
+                        <li>
+                            <asp:Button ID="Button3" runat="server" Text="ออกจากระบบ" CssClass="dropdown-item text-end" /></li>
                     </ul>
                 </div>
                 <div class="mx-2">
-                <asp:Button ID="Button2" runat="server" Text="เข้าสู่ระบบ" CssClass="btn btn-outline-primary btnclick text-center dropdown-toggle" data-bs-toggle="dropdown2" aria-expanded="false" data-bs-target="#modalLoginForm"/>
-                    <asp:Button ID="Button4" runat="server" Text="สมัครสมาชิก" CssClass="btn2 btn btn-outline-success btnclick text-center dropdown-toggle" data-bs-toggle="dropdown2" aria-expanded="false" data-bs-target="#modalLoginForm"/>
-
+                    <asp:Button ID="Button2" runat="server" Text="เข้าสู่ระบบ" CssClass="btn btn-outline-primary btnclick text-center dropdown-toggle" data-bs-toggle="dropdown2" aria-expanded="false" data-bs-target="#modalLoginForm" />
+                    <asp:Button ID="Button4" runat="server" Text="สมัครสมาชิก" CssClass="btn2 btn btn-outline-success btnclick text-center dropdown-toggle" data-bs-toggle="dropdown2" aria-expanded="false" data-bs-target="#modalLoginForm" />
                 </div>
             </nav>
         </header>
@@ -114,9 +114,8 @@
                 </figcaption>
             </figure>
         </main>
-    
-</form>
-    </body>
+    </form>
+</body>
 <script type="text/javascript">
     $(document).ready(function () {
 

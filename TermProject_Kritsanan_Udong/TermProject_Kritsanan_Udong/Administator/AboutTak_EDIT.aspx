@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/AdminPage.Master" CodeBehind="AboutTak_EDIT.aspx.vb" Inherits="TermProject_Kritsanan_Udong.AboutTak_EDIT" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -21,7 +22,7 @@
             <div class="form-floating py-0">
                 <div class="form-floating py-0">
                 </div>
-                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="my-3"/>
+                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="my-3" />
                 <div class="text-center">
                     <asp:Button ID="saveing1" runat="server" Text="แก้ไขข้อมูล" CssClass="mx-2 btn btn2 btn-success" />
                     <asp:Button ID="Resetting1" runat="server" Text="รีเซ็ต" CssClass="mx-2 btn btn1 btn-danger" />

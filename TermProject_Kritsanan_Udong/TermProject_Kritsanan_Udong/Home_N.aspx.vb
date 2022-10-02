@@ -60,7 +60,6 @@
             Me.History4N.Text = History4.First.History_Form
             Me.History4NDate.Text = History4.First.History_Date
 
-
         End Using
 
     End Sub

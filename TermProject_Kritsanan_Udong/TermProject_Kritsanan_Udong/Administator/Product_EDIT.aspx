@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/AdminPage.Master" CodeBehind="Product_EDIT.aspx.vb" Inherits="TermProject_Kritsanan_Udong.Product_EDIT" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -18,22 +19,22 @@
                 <asp:TextBox ID="TextBox2" placeholder="รายละเอียดผลิตภัณฑ์" runat="server" CssClass="form-control was-validated" aria-describedby="passwordHelpBlock" required></asp:TextBox>
                 <label for="TextBox2" class="form-label">รายละเอียดผลิตภัณฑ์</label>
             </div>
-          <div class="form-floating py-0">
+            <div class="form-floating py-0">
                 <asp:TextBox ID="TextBox3" placeholder="ที่อยู่ผู้ขาย / สถานที่" runat="server" CssClass="form-control was-validated" aria-describedby="passwordHelpBlock" required></asp:TextBox>
                 <label for="TextBox3" class="form-label">ที่อยู่ผู้ขาย / สถานที่</label>
             </div>
-                      <div class="form-floating py-0">
+            <div class="form-floating py-0">
                 <asp:TextBox ID="TextBox4" placeholder="เบอร์โทรติดต่อผู้ขาย" runat="server" CssClass="form-control was-validated" aria-describedby="passwordHelpBlock" required></asp:TextBox>
                 <label for="TextBox4" class="form-label">เบอร์โทรติดต่อผู้ขาย</label>
             </div>
-                      <div class="form-floating py-0">
+            <div class="form-floating py-0">
                 <asp:TextBox ID="TextBox5" placeholder="ราคาสินค้า" runat="server" CssClass="form-control was-validated" aria-describedby="passwordHelpBlock" required></asp:TextBox>
                 <label for="TextBox5" class="form-label">ราคาสินค้า</label>
             </div>
             <div class="form-floating py-0">
                 <div class="form-floating py-0">
                 </div>
-                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="my-3"/>
+                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="my-3" />
                 <div class="text-center">
                     <asp:Button ID="saveing1" runat="server" Text="แก้ไขข้อมูล" CssClass="mx-2 btn btn2 btn-success" />
                     <asp:Button ID="Resetting1" runat="server" Text="รีเซ็ต" CssClass="mx-2 btn btn1 btn-danger" />

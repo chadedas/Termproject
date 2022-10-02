@@ -43,11 +43,12 @@
                 <label for="TextBox5" class="form-label">เบอร์โทร</label>
 
                 <div class="py-3 text-center">
-                    <asp:Button ID="Button1" runat="server" Text="สมัครสมาชิก" CssClass="btn2 btn btn-success mx-3 border-0" /></div>
+                    <asp:Button ID="Button1" runat="server" Text="สมัครสมาชิก" CssClass="btn2 btn btn-success mx-3 border-0" />
+                </div>
             </div>
         </div>
     </div>
-        <script type="text/javascript">
+    <script type="text/javascript">
             function success() {
                 Swal.fire({
                     position: 'center',
@@ -111,5 +112,5 @@
                     timer: 1500
                 })
             }
-        </script>
+    </script>
 </asp:Content>

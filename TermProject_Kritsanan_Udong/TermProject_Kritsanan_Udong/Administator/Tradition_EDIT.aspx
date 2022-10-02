@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/AdminPage.Master" CodeBehind="Tradition_EDIT.aspx.vb" Inherits="TermProject_Kritsanan_Udong.Tradition_EDIT" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -18,18 +19,18 @@
                 <asp:TextBox ID="TextBox2" placeholder="รายละเอียด" runat="server" CssClass="form-control was-validated" aria-describedby="passwordHelpBlock" required></asp:TextBox>
                 <label for="TextBox2" class="form-label">รายละเอียด</label>
             </div>
-          <div class="form-floating py-0">
+            <div class="form-floating py-0">
                 <asp:TextBox ID="TextBox3" placeholder="จัดตั้งที่ไหนสถานที่" runat="server" CssClass="form-control was-validated" aria-describedby="passwordHelpBlock" required></asp:TextBox>
                 <label for="TextBox3" class="form-label">จัดตั้งที่ไหนสถานที่</label>
             </div>
-                      <div class="form-floating py-0">
+            <div class="form-floating py-0">
                 <asp:TextBox ID="TextBox4" placeholder="ช่วงเวลาจัดตั้ง" runat="server" CssClass="form-control was-validated" aria-describedby="passwordHelpBlock" required></asp:TextBox>
                 <label for="TextBox4" class="form-label">ช่วงเวลาจัดตั้ง</label>
             </div>
             <div class="form-floating py-0">
                 <div class="form-floating py-0">
                 </div>
-                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="my-3"/>
+                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="my-3" />
                 <div class="text-center">
                     <asp:Button ID="saveing1" runat="server" Text="แก้ไขข้อมูล" CssClass="mx-2 btn btn2 btn-success" />
                     <asp:Button ID="Resetting1" runat="server" Text="รีเซ็ต" CssClass="mx-2 btn btn1 btn-danger" />

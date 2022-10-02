@@ -40,4 +40,5 @@
             Response.Redirect("~/Administator/AboutTak.aspx")
         End Using
     End Sub
+
 End Class

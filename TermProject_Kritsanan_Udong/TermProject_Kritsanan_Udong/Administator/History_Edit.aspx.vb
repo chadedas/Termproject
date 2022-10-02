@@ -84,7 +84,6 @@
                 Data.SubmitChanges()
             End If
 
-
             If Me.FileUpload2.HasFile Then
                 Dim ImportImage2 = From TableHistory In Data.Home_Travelings
                                    Where TableHistory.Travel_ID = 2
@@ -93,7 +92,6 @@
                 Me.FileUpload2.SaveAs(Server.MapPath("../allPicture/Home/slide/" & FileUpload2.FileName))
                 Data.SubmitChanges()
             End If
-
 
             If Me.FileUpload3.HasFile Then
                 Dim ImportImage3 = From TableHistory In Data.Home_Travelings

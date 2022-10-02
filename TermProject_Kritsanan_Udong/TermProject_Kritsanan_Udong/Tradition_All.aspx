@@ -4,9 +4,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <div class="mb-0 py-5 p-3 bg-light d-flex flex-column rounded-5" id="header" style="background-image:url(https://f.ptcdn.info/928/037/000/nyou4co8zyhzHjRDe1c-o.jpg);background-size: cover;">
-            <h1 style="color:white">วัฒนธรรม</h1>
-            <p style="color:white">ภายในจังหวัดตาก</p>
+        <div class="mb-0 py-5 p-3 bg-light d-flex flex-column rounded-5" id="header" style="background-image: url(https://f.ptcdn.info/928/037/000/nyou4co8zyhzHjRDe1c-o.jpg); background-size: cover;">
+            <h1 style="color: white">วัฒนธรรม</h1>
+            <p style="color: white">ภายในจังหวัดตาก</p>
         </div>
         <div class="container position-relative" id="content">
             <div class="row h-100 mt-5">

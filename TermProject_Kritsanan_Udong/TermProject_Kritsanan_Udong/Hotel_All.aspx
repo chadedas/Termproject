@@ -1,11 +1,12 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Page.Master" CodeBehind="Hotel_All.aspx.vb" Inherits="TermProject_Kritsanan_Udong.Hotel_All" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <div class="mb-0 py-5 p-3 bg-light d-flex flex-column rounded-5" id="header" style="background-image:url(https://images.trvl-media.com/hotels/45000000/44370000/44364100/44364076/dc4d45d2.jpg?impolicy=resizecrop&rw=670&ra=fit);background-size: cover">
-            <h1 style="color:white">ที่พัก</h1>
-            <p style="color:white">ภายในจังหวัดตาก</p>
+        <div class="mb-0 py-5 p-3 bg-light d-flex flex-column rounded-5" id="header" style="background-image: url(https://images.trvl-media.com/hotels/45000000/44370000/44364100/44364076/dc4d45d2.jpg?impolicy=resizecrop&rw=670&ra=fit); background-size: cover">
+            <h1 style="color: white">ที่พัก</h1>
+            <p style="color: white">ภายในจังหวัดตาก</p>
         </div>
         <div class="container position-relative" id="content">
             <div class="row h-100 mt-5">

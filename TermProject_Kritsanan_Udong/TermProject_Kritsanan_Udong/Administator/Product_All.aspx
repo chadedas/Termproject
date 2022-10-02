@@ -1,11 +1,12 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/AdminPage.Master" CodeBehind="Product_All.aspx.vb" Inherits="TermProject_Kritsanan_Udong.Product_All" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <div class="mb-0 py-5 p-3 bg-light d-flex flex-column rounded-5" id="header" style="background-image:url(https://s359.kapook.com/pagebuilder/123061bc-73e0-40d5-b45d-d0d63f8a36d0.jpg);background-size: cover">
-            <h1 style="color:white">สินค้าประจำตำบล</h1>
-            <p style="color:white">ภายในจังหวัดตาก</p>
+        <div class="mb-0 py-5 p-3 bg-light d-flex flex-column rounded-5" id="header" style="background-image: url(https://s359.kapook.com/pagebuilder/123061bc-73e0-40d5-b45d-d0d63f8a36d0.jpg); background-size: cover">
+            <h1 style="color: white">สินค้าประจำตำบล</h1>
+            <p style="color: white">ภายในจังหวัดตาก</p>
         </div>
         <div class="container position-relative" id="content">
             <div class="row h-100 mt-5">

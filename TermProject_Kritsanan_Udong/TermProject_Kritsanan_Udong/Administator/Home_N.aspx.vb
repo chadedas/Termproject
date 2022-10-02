@@ -38,7 +38,6 @@
                           Where myTable_TravelingH.Travel_ID = 3
             Me.IMGslide3.ImageUrl = "~/allPicture/Home/slide/" + SlideH3.First.Travel_Slide
 
-
         End Using
     End Sub
 
@@ -61,10 +60,13 @@
     Protected Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Response.Redirect("~/Administator/Traveling_Home.aspx?ItemID=1")
     End Sub
+
     Protected Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Response.Redirect("~/Administator/Traveling_Home.aspx?ItemID=2")
     End Sub
+
     Protected Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Response.Redirect("~/Administator/Traveling_Home.aspx?ItemID=3")
     End Sub
+
 End Class
