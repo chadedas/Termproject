@@ -10,14 +10,39 @@
       <Column Name="Tradition_Where" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.Tourist" Member="Tourists">
+    <Type Name="Tourist">
+      <Column Name="Tourist_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tourist_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tourist_Details" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Tourist_Location" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Tourist_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Tourist_GPS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.Product" Member="Products">
     <Type Name="Product">
       <Column Name="Product_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Product_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Product_Details_C1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Product_Details_C2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Product_Details_C3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Product_Contact" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Product_Details" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Product_Contact_Location" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Product_Contact_PhoneNB" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Product_Price" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Product_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Hotel" Member="Hotels">
+    <Type Name="Hotel">
+      <Column Name="Hotel_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Hotel_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hotel_Details" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Hotel_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Hotel_Location" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Hotel_PhoneNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hotel_PriceOfDay" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hotel_GPS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Hotel_LinkAgoda" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Hotel_LinkBooking" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

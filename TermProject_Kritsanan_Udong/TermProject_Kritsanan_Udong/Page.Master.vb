@@ -13,11 +13,28 @@
                          Where myTable.user_username = IP_UserName And myTable.user_password = IP_Password
 
             If myuser.Count = 0 Then
-                Response.Redirect("~/Login.aspx")
+                Me.Button2.Visible = True
+                Me.Button1.Visible = False
+                Me.Button4.Visible = True
             Else
+                Me.Button1.Visible = True
+                Me.Button2.Visible = False
+                Me.Button4.Visible = False
                 Button1.Text = myuser.First.user_FnameLname.Trim + " ▼"
             End If
         End Using
     End Sub
 
+    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Response.Redirect("Login.aspx")
+    End Sub
+    Protected Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Session.Remove("myUserName")
+        Session.Remove("myPassword")
+        Response.Redirect(Request.RawUrl)
+    End Sub
+
+    Protected Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Response.Redirect("Register.aspx")
+    End Sub
 End Class

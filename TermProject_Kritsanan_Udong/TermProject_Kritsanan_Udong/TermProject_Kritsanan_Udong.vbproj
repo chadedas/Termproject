@@ -95,19 +95,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutTak.aspx" />
-    <Content Include="Administator\ProductAdd.aspx" />
-    <Content Include="Administator\ProductEdit.aspx" />
-    <Content Include="Administator\ProductList.aspx" />
-    <Content Include="Administator\ProductReport.aspx" />
-    <Content Include="Administator\TravelingPlace_Add.aspx" />
-    <Content Include="Administator\TravelingPlace_Edit.aspx" />
-    <Content Include="Administator\TravelingPlace_List.aspx" />
-    <Content Include="Administator\TravelingPlace_Report.aspx" />
-    <Content Include="Administator\UserAdd.aspx" />
-    <Content Include="Administator\UserEdit.aspx" />
-    <Content Include="Administator\Adminhome.aspx" />
-    <Content Include="Administator\UserList.aspx" />
-    <Content Include="Administator\UserReport.aspx" />
+    <Content Include="Administator\AboutTak.aspx" />
+    <Content Include="Administator\AboutTak_Add.aspx" />
+    <Content Include="Administator\AboutTak_EDIT.aspx" />
+    <Content Include="Administator\DataReport.aspx" />
+    <Content Include="Administator\History_Edit.aspx" />
+    <Content Include="Administator\Home_N.aspx" />
+    <Content Include="Administator\Hotel_Add.aspx" />
+    <Content Include="Administator\Hotel_All.aspx" />
+    <Content Include="Administator\Hotel_EDIT.aspx" />
+    <Content Include="Administator\Product_Add.aspx" />
+    <Content Include="Administator\Product_All.aspx" />
+    <Content Include="Administator\Product_EDIT.aspx" />
+    <Content Include="Administator\Product_Home.aspx" />
+    <Content Include="Administator\Tradition_Add.aspx" />
+    <Content Include="Administator\Tradition_All.aspx" />
+    <Content Include="Administator\Tradition_EDIT.aspx" />
+    <Content Include="Administator\Traveling_Add.aspx" />
+    <Content Include="Administator\Traveling_All.aspx" />
+    <Content Include="Administator\Traveling_EDIT.aspx" />
+    <Content Include="Administator\Traveling_Home.aspx" />
+    <Content Include="Administator\User_Add.aspx" />
+    <Content Include="Administator\User_All.aspx" />
+    <Content Include="Administator\User_EDIT.aspx" />
     <Content Include="allPicture\agoda-booking-bt-min.png" />
     <Content Include="allPicture\booking-bt-min.png" />
     <Content Include="allPicture\hotal_tav1_1.jpg" />
@@ -148,24 +158,14 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Home_N.aspx" />
-    <Content Include="Hotel\Hotel1.aspx" />
-    <Content Include="Hotel\Hotel2.aspx" />
-    <Content Include="Hotel\Hotel3.aspx" />
-    <Content Include="Hotel\Hotel4.aspx" />
-    <Content Include="Hotel\Hotel5.aspx" />
-    <Content Include="Hotel\Hotel6.aspx" />
-    <Content Include="Hotel\Hotel7.aspx" />
-    <Content Include="Hotel\Hotel8.aspx" />
-    <Content Include="Hotel\Hotel9.aspx" />
+    <Content Include="Hotel_All.aspx" />
     <Content Include="javascript\bootstrap.js" />
-    <Content Include="Login.aspx" />
-    <Content Include="Product_List\Product_All.aspx" />
-    <Content Include="Product_List\Product_All_2.aspx" />
-    <Content Include="Product_List\Product_All_3.aspx" />
+    <Content Include="Product_All.aspx" />
     <Content Include="Register.aspx" />
-    <Content Include="Tourist_List\Tourist_All.aspx" />
-    <Content Include="Tradition_List\Tradition_All.aspx" />
+    <Content Include="Tourist_All.aspx" />
+    <Content Include="Tradition_All.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Login.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutTak.aspx.designer.vb">
@@ -180,96 +180,173 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AboutTak.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Administator\ProductAdd.aspx.designer.vb">
-      <DependentUpon>ProductAdd.aspx</DependentUpon>
+    <Compile Include="Administator\AboutTak.aspx.designer.vb">
+      <DependentUpon>AboutTak.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administator\ProductAdd.aspx.vb">
-      <DependentUpon>ProductAdd.aspx</DependentUpon>
+    <Compile Include="Administator\AboutTak.aspx.vb">
+      <DependentUpon>AboutTak.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Administator\ProductEdit.aspx.designer.vb">
-      <DependentUpon>ProductEdit.aspx</DependentUpon>
+    <Compile Include="Administator\AboutTak_Add.aspx.designer.vb">
+      <DependentUpon>AboutTak_Add.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administator\ProductEdit.aspx.vb">
-      <DependentUpon>ProductEdit.aspx</DependentUpon>
+    <Compile Include="Administator\AboutTak_Add.aspx.vb">
+      <DependentUpon>AboutTak_Add.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Administator\ProductList.aspx.designer.vb">
-      <DependentUpon>ProductList.aspx</DependentUpon>
+    <Compile Include="Administator\AboutTak_EDIT.aspx.designer.vb">
+      <DependentUpon>AboutTak_EDIT.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administator\ProductList.aspx.vb">
-      <DependentUpon>ProductList.aspx</DependentUpon>
+    <Compile Include="Administator\AboutTak_EDIT.aspx.vb">
+      <DependentUpon>AboutTak_EDIT.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Administator\ProductReport.aspx.designer.vb">
-      <DependentUpon>ProductReport.aspx</DependentUpon>
+    <Compile Include="Administator\DataReport.aspx.designer.vb">
+      <DependentUpon>DataReport.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administator\ProductReport.aspx.vb">
-      <DependentUpon>ProductReport.aspx</DependentUpon>
+    <Compile Include="Administator\DataReport.aspx.vb">
+      <DependentUpon>DataReport.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Administator\TravelingPlace_Add.aspx.designer.vb">
-      <DependentUpon>TravelingPlace_Add.aspx</DependentUpon>
+    <Compile Include="Administator\History_Edit.aspx.designer.vb">
+      <DependentUpon>History_Edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administator\TravelingPlace_Add.aspx.vb">
-      <DependentUpon>TravelingPlace_Add.aspx</DependentUpon>
+    <Compile Include="Administator\History_Edit.aspx.vb">
+      <DependentUpon>History_Edit.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Administator\TravelingPlace_Edit.aspx.designer.vb">
-      <DependentUpon>TravelingPlace_Edit.aspx</DependentUpon>
+    <Compile Include="Administator\Home_N.aspx.designer.vb">
+      <DependentUpon>Home_N.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administator\TravelingPlace_Edit.aspx.vb">
-      <DependentUpon>TravelingPlace_Edit.aspx</DependentUpon>
+    <Compile Include="Administator\Home_N.aspx.vb">
+      <DependentUpon>Home_N.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Administator\TravelingPlace_List.aspx.designer.vb">
-      <DependentUpon>TravelingPlace_List.aspx</DependentUpon>
+    <Compile Include="Administator\Hotel_Add.aspx.designer.vb">
+      <DependentUpon>Hotel_Add.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administator\TravelingPlace_List.aspx.vb">
-      <DependentUpon>TravelingPlace_List.aspx</DependentUpon>
+    <Compile Include="Administator\Hotel_Add.aspx.vb">
+      <DependentUpon>Hotel_Add.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Administator\TravelingPlace_Report.aspx.designer.vb">
-      <DependentUpon>TravelingPlace_Report.aspx</DependentUpon>
+    <Compile Include="Administator\Hotel_All.aspx.designer.vb">
+      <DependentUpon>Hotel_All.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administator\TravelingPlace_Report.aspx.vb">
-      <DependentUpon>TravelingPlace_Report.aspx</DependentUpon>
+    <Compile Include="Administator\Hotel_All.aspx.vb">
+      <DependentUpon>Hotel_All.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Administator\UserAdd.aspx.designer.vb">
-      <DependentUpon>UserAdd.aspx</DependentUpon>
+    <Compile Include="Administator\Hotel_EDIT.aspx.designer.vb">
+      <DependentUpon>Hotel_EDIT.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administator\UserAdd.aspx.vb">
-      <DependentUpon>UserAdd.aspx</DependentUpon>
+    <Compile Include="Administator\Hotel_EDIT.aspx.vb">
+      <DependentUpon>Hotel_EDIT.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Administator\UserEdit.aspx.designer.vb">
-      <DependentUpon>UserEdit.aspx</DependentUpon>
+    <Compile Include="Administator\Product_Add.aspx.designer.vb">
+      <DependentUpon>Product_Add.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administator\UserEdit.aspx.vb">
-      <DependentUpon>UserEdit.aspx</DependentUpon>
+    <Compile Include="Administator\Product_Add.aspx.vb">
+      <DependentUpon>Product_Add.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Administator\Adminhome.aspx.designer.vb">
-      <DependentUpon>Adminhome.aspx</DependentUpon>
+    <Compile Include="Administator\Product_All.aspx.designer.vb">
+      <DependentUpon>Product_All.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administator\Adminhome.aspx.vb">
-      <DependentUpon>Adminhome.aspx</DependentUpon>
+    <Compile Include="Administator\Product_All.aspx.vb">
+      <DependentUpon>Product_All.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Administator\UserList.aspx.designer.vb">
-      <DependentUpon>UserList.aspx</DependentUpon>
+    <Compile Include="Administator\Product_EDIT.aspx.designer.vb">
+      <DependentUpon>Product_EDIT.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administator\UserList.aspx.vb">
-      <DependentUpon>UserList.aspx</DependentUpon>
+    <Compile Include="Administator\Product_EDIT.aspx.vb">
+      <DependentUpon>Product_EDIT.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Administator\UserReport.aspx.designer.vb">
-      <DependentUpon>UserReport.aspx</DependentUpon>
+    <Compile Include="Administator\Product_Home.aspx.designer.vb">
+      <DependentUpon>Product_Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administator\UserReport.aspx.vb">
-      <DependentUpon>UserReport.aspx</DependentUpon>
+    <Compile Include="Administator\Product_Home.aspx.vb">
+      <DependentUpon>Product_Home.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administator\Tradition_Add.aspx.designer.vb">
+      <DependentUpon>Tradition_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administator\Tradition_Add.aspx.vb">
+      <DependentUpon>Tradition_Add.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administator\Tradition_All.aspx.designer.vb">
+      <DependentUpon>Tradition_All.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administator\Tradition_All.aspx.vb">
+      <DependentUpon>Tradition_All.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administator\Tradition_EDIT.aspx.designer.vb">
+      <DependentUpon>Tradition_EDIT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administator\Tradition_EDIT.aspx.vb">
+      <DependentUpon>Tradition_EDIT.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administator\Traveling_Add.aspx.designer.vb">
+      <DependentUpon>Traveling_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administator\Traveling_Add.aspx.vb">
+      <DependentUpon>Traveling_Add.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administator\Traveling_All.aspx.designer.vb">
+      <DependentUpon>Traveling_All.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administator\Traveling_All.aspx.vb">
+      <DependentUpon>Traveling_All.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administator\Traveling_EDIT.aspx.designer.vb">
+      <DependentUpon>Traveling_EDIT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administator\Traveling_EDIT.aspx.vb">
+      <DependentUpon>Traveling_EDIT.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administator\Traveling_Home.aspx.designer.vb">
+      <DependentUpon>Traveling_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administator\Traveling_Home.aspx.vb">
+      <DependentUpon>Traveling_Home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administator\User_Add.aspx.designer.vb">
+      <DependentUpon>User_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administator\User_Add.aspx.vb">
+      <DependentUpon>User_Add.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administator\User_All.aspx.designer.vb">
+      <DependentUpon>User_All.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administator\User_All.aspx.vb">
+      <DependentUpon>User_All.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administator\User_EDIT.aspx.designer.vb">
+      <DependentUpon>User_EDIT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administator\User_EDIT.aspx.vb">
+      <DependentUpon>User_EDIT.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage.Master.designer.vb">
+      <DependentUpon>AdminPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage.Master.vb">
+      <DependentUpon>AdminPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DataClassesTak.designer.vb">
       <AutoGen>True</AutoGen>
@@ -293,74 +370,11 @@
       <DependentUpon>Home_N.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Hotel\Hotel1.aspx.designer.vb">
-      <DependentUpon>Hotel1.aspx</DependentUpon>
+    <Compile Include="Hotel_All.aspx.designer.vb">
+      <DependentUpon>Hotel_All.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Hotel\Hotel1.aspx.vb">
-      <DependentUpon>Hotel1.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Hotel\Hotel2.aspx.designer.vb">
-      <DependentUpon>Hotel2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Hotel\Hotel2.aspx.vb">
-      <DependentUpon>Hotel2.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Hotel\Hotel3.aspx.designer.vb">
-      <DependentUpon>Hotel3.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Hotel\Hotel3.aspx.vb">
-      <DependentUpon>Hotel3.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Hotel\Hotel4.aspx.designer.vb">
-      <DependentUpon>Hotel4.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Hotel\Hotel4.aspx.vb">
-      <DependentUpon>Hotel4.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Hotel\Hotel5.aspx.designer.vb">
-      <DependentUpon>Hotel5.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Hotel\Hotel5.aspx.vb">
-      <DependentUpon>Hotel5.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Hotel\Hotel6.aspx.designer.vb">
-      <DependentUpon>Hotel6.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Hotel\Hotel6.aspx.vb">
-      <DependentUpon>Hotel6.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Hotel\Hotel7.aspx.designer.vb">
-      <DependentUpon>Hotel7.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Hotel\Hotel7.aspx.vb">
-      <DependentUpon>Hotel7.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Hotel\Hotel8.aspx.designer.vb">
-      <DependentUpon>Hotel8.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Hotel\Hotel8.aspx.vb">
-      <DependentUpon>Hotel8.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Hotel\Hotel9.aspx.designer.vb">
-      <DependentUpon>Hotel9.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Hotel\Hotel9.aspx.vb">
-      <DependentUpon>Hotel9.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.vb">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.vb">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Hotel_All.aspx.vb">
+      <DependentUpon>Hotel_All.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Page.Master.designer.vb">
@@ -370,25 +384,11 @@
       <DependentUpon>Page.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Product_List\Product_All.aspx.designer.vb">
+    <Compile Include="Product_All.aspx.designer.vb">
       <DependentUpon>Product_All.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Product_List\Product_All.aspx.vb">
+    <Compile Include="Product_All.aspx.vb">
       <DependentUpon>Product_All.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Product_List\Product_All_2.aspx.designer.vb">
-      <DependentUpon>Product_All_2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Product_List\Product_All_2.aspx.vb">
-      <DependentUpon>Product_All_2.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Product_List\Product_All_3.aspx.designer.vb">
-      <DependentUpon>Product_All_3.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Product_List\Product_All_3.aspx.vb">
-      <DependentUpon>Product_All_3.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Register.aspx.designer.vb">
@@ -398,10 +398,10 @@
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Tourist_List\Tourist_All.aspx.designer.vb">
+    <Compile Include="Tourist_All.aspx.designer.vb">
       <DependentUpon>Tourist_All.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tourist_List\Tourist_All.aspx.vb">
+    <Compile Include="Tourist_All.aspx.vb">
       <DependentUpon>Tourist_All.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
@@ -424,11 +424,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Tradition_List\Tradition_All.aspx.designer.vb">
+    <Compile Include="Tradition_All.aspx.designer.vb">
       <DependentUpon>Tradition_All.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tradition_List\Tradition_All.aspx.vb">
+    <Compile Include="Tradition_All.aspx.vb">
       <DependentUpon>Tradition_All.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
@@ -470,6 +477,7 @@
     <None Include="AboutTak.dbml.layout">
       <DependentUpon>AboutTak.dbml</DependentUpon>
     </None>
+    <Content Include="AdminPage.Master" />
     <None Include="DataClassesTak.dbml.layout">
       <DependentUpon>DataClassesTak.dbml</DependentUpon>
     </None>

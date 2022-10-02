@@ -1,0 +1,43 @@
+﻿Public Class Tourist_All1
+    Inherits System.Web.UI.Page
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Dim newHTML = New StringBuilder()
+        Using Data As New DataOfTravelingDataContext
+            Dim DataOfAll1 = From myTable_DataOfTraveling In Data.Tourists
+                             Where myTable_DataOfTraveling.Tourist_ID
+            For i = 1 To Convert.ToInt16(DataOfAll1.Count)
+                Dim DataOfAllTab = From myTable_Test In Data.Tourists
+                                   Where myTable_Test.Tourist_ID = i
+                'TAB'
+                newHTML.Append("<a class='nav-link' href='#item-" & i & "'>» " & DataOfAllTab.First.Tourist_Name & "</a>")
+                Me.Literal_Tourist_NameTaB.Text = newHTML.ToString()
+
+            Next
+            newHTML.Clear() 'Clear DATA in Arry
+
+            For i = 1 To Convert.ToInt16(DataOfAll1.Count)
+                Dim DataOfAllInside = From myTable_Test In Data.Tourists
+                                      Where myTable_Test.Tourist_ID = i
+                'INSIDE DATA'
+                newHTML.Append("<div id='item-" & i & "'>")
+                newHTML.Append("<H3 class='text-center'>" & DataOfAllInside.First.Tourist_Name & "</H3>")
+                newHTML.Append("<img src = '../allPicture/DataOfTraveling/Tourist_All/" & DataOfAllInside.First.Tourist_Image & "' class='d-block h-75 rounded-4 w-75 mx-auto py-3' style='width:400px;height:300px'/>")
+                newHTML.Append("<H5 class='mx-4'>" & DataOfAllInside.First.Tourist_Details & "</H5>")
+                newHTML.Append("<H4 class='mx-4'>ที่ตั้ง: " & DataOfAllInside.First.Tourist_Location & "</H4>")
+                newHTML.Append("<br />")
+                newHTML.Append("</div>")
+                newHTML.Append("<H4 class='mx-4 text-center'>ที่อยู่ GPS</H4>")
+                newHTML.Append("<div class='text-center'>")
+                newHTML.Append(DataOfAllInside.First.Tourist_GPS)
+                newHTML.Append("<hr class='featurette-divider my-5'/>")
+                newHTML.Append("</div>")
+
+                Me.Literal_Tourist_DataInside.Text = newHTML.ToString()
+
+            Next
+            newHTML.Clear()
+        End Using
+    End Sub
+
+End Class

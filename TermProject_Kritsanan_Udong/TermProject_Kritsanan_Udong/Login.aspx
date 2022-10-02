@@ -1,41 +1,7 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Login.aspx.vb" Inherits="TermProject_Kritsanan_Udong.Login" %>
-
-<!DOCTYPE html>
-
-<!-- LINK IMPORT BOOTSTRAP -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Tak</title>
-</head>
-<style>
-    html, body {
-        font-family: 'Kanit', sans-serif;
-    }
-
-    }
-
-    .bg-opacity-90 {
-        opacity: 0.9 !important;
-    }
-
-    .shadow_nav {
-        box-shadow: 0px 10px 15px rgb(0 0 0 / 7%);
-    }
-
-    .bg_top {
-        background-color: #3784f5;
-    }
-</style>
-<form id="form1" runat="server">
-    <body>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Page.Master" CodeBehind="Login.aspx.vb" Inherits="TermProject_Kritsanan_Udong.WebForm1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
         <main class="text-secondary" style="background-color: ghostwhite">
             <section class="vh-100 gradient-custom">
@@ -60,6 +26,7 @@
                                         </div>
 
                                         <asp:Button ID="Button1" runat="server" Text="เข้าสู่ระบบ" CssClass="btn btn-outline-light btn-lg px-5" />
+                                        <asp:Button ID="Button2" runat="server" Text="กลับไปยังหน้าหลัก" CssClass="btn1 btn btn-outline-danger btn-lg px-5 my-3"/>
 
                                         <div class="d-flex justify-content-center text-center mt-4 pt-1">
                                             <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
@@ -92,29 +59,38 @@
                     <cite title="Source Title">ทำขึ้นเพื่อส่งเทอมโปรเจครายวิชาเว็ปโปรแกรมมิ่งอาจารย์ Natthawoot Punroob</cite>
                 </figcaption>
             </figure>
-            </footer>
         </main>
-</form>
-</body>
-        <script type="text/javascript" asp-append-version="true">
-            $(document).ready(function () {
-
-                $(window).scroll(function () {
-                    let height = $(window).scrollTop();
-                    //console.log('height', height)
-                    if (height >= 65) {
-                        $('.navbar_page').addClass('shadow_nav')
-                        //console.log(1)
-                    } else {
-                        //console.log(0)
-                        $('.navbar_page').removeClass('shadow_nav')
-                    }
-                });
-
-                $('.detail_1').html(localStorage.getItem('data'))
-
-                $('.ppp').val(localStorage.getItem('data'))
-
-            });
+        <script type="text/javascript">
+            function success1() {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'เข้าสู่ระบบสำเร็จ',
+                    showConfirmButton: false,
+                    timer: 2000
+                }).then((result) => {
+                    document.location.replace('../Administator/Home_N.aspx');
+                })
+            }
+            function success2() {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'เข้าสู่ระบบสำเร็จ',
+                    showConfirmButton: false,
+                    timer: 2000
+                }).then((result) => {
+                    document.location.replace('../Home_N.aspx');
+                })
+            }
+            function error() {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'รหัสผ่านไม่ถูกต้อง',
+                    showConfirmButton: false,
+                    timer: 2000
+                })
+            }
         </script>
-</html>
+</asp:Content>

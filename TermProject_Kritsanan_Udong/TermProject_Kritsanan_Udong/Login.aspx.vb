@@ -1,4 +1,4 @@
-﻿Public Class Login
+﻿Public Class WebForm1
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -26,11 +26,17 @@
         End Using
 
         If OP_UserType = "admin" Then
-            Response.Redirect("~/Administator/Adminhome.aspx")
+            ScriptManager.RegisterStartupScript(Me, Me.GetType(), "Script", "success1();", True)
+            Session("myType") = OP_UserType
         ElseIf OP_UserType = "member" Then
-            Response.Redirect("~/Home_N.aspx")
+            ScriptManager.RegisterStartupScript(Me, Me.GetType(), "Script", "success2();", True)
+            Session("myType") = OP_UserType
         ElseIf OP_UserType = "Nobody" Then
-            MsgBox("คุณได้ป้อน Username หรือ Password ไม่ถูกต้อง")
+            ScriptManager.RegisterStartupScript(Me, Me.GetType(), "Script", "error();", True)
         End If
+    End Sub
+
+    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Response.Redirect("Home_N.aspx")
     End Sub
 End Class

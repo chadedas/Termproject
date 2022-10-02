@@ -37,11 +37,23 @@ Partial Public Class DataOfTravelingDataContext
     End Sub
   Partial Private Sub DeleteTradition(instance As Tradition)
     End Sub
+  Partial Private Sub InsertTourist(instance As Tourist)
+    End Sub
+  Partial Private Sub UpdateTourist(instance As Tourist)
+    End Sub
+  Partial Private Sub DeleteTourist(instance As Tourist)
+    End Sub
   Partial Private Sub InsertProduct(instance As Product)
     End Sub
   Partial Private Sub UpdateProduct(instance As Product)
     End Sub
   Partial Private Sub DeleteProduct(instance As Product)
+    End Sub
+  Partial Private Sub InsertHotel(instance As Hotel)
+    End Sub
+  Partial Private Sub UpdateHotel(instance As Hotel)
+    End Sub
+  Partial Private Sub DeleteHotel(instance As Hotel)
     End Sub
   #End Region
 	
@@ -76,9 +88,21 @@ Partial Public Class DataOfTravelingDataContext
 		End Get
 	End Property
 	
+	Public ReadOnly Property Tourists() As System.Data.Linq.Table(Of Tourist)
+		Get
+			Return Me.GetTable(Of Tourist)
+		End Get
+	End Property
+	
 	Public ReadOnly Property Products() As System.Data.Linq.Table(Of Product)
 		Get
 			Return Me.GetTable(Of Product)
+		End Get
+	End Property
+	
+	Public ReadOnly Property Hotels() As System.Data.Linq.Table(Of Hotel)
+		Get
+			Return Me.GetTable(Of Hotel)
 		End Get
 	End Property
 End Class
@@ -255,6 +279,178 @@ Partial Public Class Tradition
 	End Sub
 End Class
 
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Tourist")>  _
+Partial Public Class Tourist
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _Tourist_ID As Integer
+	
+	Private _Tourist_Name As String
+	
+	Private _Tourist_Details As String
+	
+	Private _Tourist_Location As String
+	
+	Private _Tourist_Image As String
+	
+	Private _Tourist_GPS As String
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnTourist_IDChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnTourist_IDChanged()
+    End Sub
+    Partial Private Sub OnTourist_NameChanging(value As String)
+    End Sub
+    Partial Private Sub OnTourist_NameChanged()
+    End Sub
+    Partial Private Sub OnTourist_DetailsChanging(value As String)
+    End Sub
+    Partial Private Sub OnTourist_DetailsChanged()
+    End Sub
+    Partial Private Sub OnTourist_LocationChanging(value As String)
+    End Sub
+    Partial Private Sub OnTourist_LocationChanged()
+    End Sub
+    Partial Private Sub OnTourist_ImageChanging(value As String)
+    End Sub
+    Partial Private Sub OnTourist_ImageChanged()
+    End Sub
+    Partial Private Sub OnTourist_GPSChanging(value As String)
+    End Sub
+    Partial Private Sub OnTourist_GPSChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Tourist_ID", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property Tourist_ID() As Integer
+		Get
+			Return Me._Tourist_ID
+		End Get
+		Set
+			If ((Me._Tourist_ID = value)  _
+						= false) Then
+				Me.OnTourist_IDChanging(value)
+				Me.SendPropertyChanging
+				Me._Tourist_ID = value
+				Me.SendPropertyChanged("Tourist_ID")
+				Me.OnTourist_IDChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Tourist_Name", DbType:="NVarChar(50)")>  _
+	Public Property Tourist_Name() As String
+		Get
+			Return Me._Tourist_Name
+		End Get
+		Set
+			If (String.Equals(Me._Tourist_Name, value) = false) Then
+				Me.OnTourist_NameChanging(value)
+				Me.SendPropertyChanging
+				Me._Tourist_Name = value
+				Me.SendPropertyChanged("Tourist_Name")
+				Me.OnTourist_NameChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Tourist_Details", DbType:="NVarChar(MAX)")>  _
+	Public Property Tourist_Details() As String
+		Get
+			Return Me._Tourist_Details
+		End Get
+		Set
+			If (String.Equals(Me._Tourist_Details, value) = false) Then
+				Me.OnTourist_DetailsChanging(value)
+				Me.SendPropertyChanging
+				Me._Tourist_Details = value
+				Me.SendPropertyChanged("Tourist_Details")
+				Me.OnTourist_DetailsChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Tourist_Location", DbType:="NVarChar(MAX)")>  _
+	Public Property Tourist_Location() As String
+		Get
+			Return Me._Tourist_Location
+		End Get
+		Set
+			If (String.Equals(Me._Tourist_Location, value) = false) Then
+				Me.OnTourist_LocationChanging(value)
+				Me.SendPropertyChanging
+				Me._Tourist_Location = value
+				Me.SendPropertyChanged("Tourist_Location")
+				Me.OnTourist_LocationChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Tourist_Image", DbType:="NVarChar(MAX)")>  _
+	Public Property Tourist_Image() As String
+		Get
+			Return Me._Tourist_Image
+		End Get
+		Set
+			If (String.Equals(Me._Tourist_Image, value) = false) Then
+				Me.OnTourist_ImageChanging(value)
+				Me.SendPropertyChanging
+				Me._Tourist_Image = value
+				Me.SendPropertyChanged("Tourist_Image")
+				Me.OnTourist_ImageChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Tourist_GPS", DbType:="NVarChar(MAX)")>  _
+	Public Property Tourist_GPS() As String
+		Get
+			Return Me._Tourist_GPS
+		End Get
+		Set
+			If (String.Equals(Me._Tourist_GPS, value) = false) Then
+				Me.OnTourist_GPSChanging(value)
+				Me.SendPropertyChanging
+				Me._Tourist_GPS = value
+				Me.SendPropertyChanged("Tourist_GPS")
+				Me.OnTourist_GPSChanged
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+End Class
+
 <Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Product")>  _
 Partial Public Class Product
 	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
@@ -265,13 +461,15 @@ Partial Public Class Product
 	
 	Private _Product_Name As String
 	
-	Private _Product_Details_C1 As String
+	Private _Product_Details As String
 	
-	Private _Product_Details_C2 As String
+	Private _Product_Contact_Location As String
 	
-	Private _Product_Details_C3 As String
+	Private _Product_Contact_PhoneNB As String
 	
-	Private _Product_Contact As String
+	Private _Product_Price As String
+	
+	Private _Product_Image As String
 	
     #Region "Extensibility Method Definitions"
     Partial Private Sub OnLoaded()
@@ -288,21 +486,25 @@ Partial Public Class Product
     End Sub
     Partial Private Sub OnProduct_NameChanged()
     End Sub
-    Partial Private Sub OnProduct_Details_C1Changing(value As String)
+    Partial Private Sub OnProduct_DetailsChanging(value As String)
     End Sub
-    Partial Private Sub OnProduct_Details_C1Changed()
+    Partial Private Sub OnProduct_DetailsChanged()
     End Sub
-    Partial Private Sub OnProduct_Details_C2Changing(value As String)
+    Partial Private Sub OnProduct_Contact_LocationChanging(value As String)
     End Sub
-    Partial Private Sub OnProduct_Details_C2Changed()
+    Partial Private Sub OnProduct_Contact_LocationChanged()
     End Sub
-    Partial Private Sub OnProduct_Details_C3Changing(value As String)
+    Partial Private Sub OnProduct_Contact_PhoneNBChanging(value As String)
     End Sub
-    Partial Private Sub OnProduct_Details_C3Changed()
+    Partial Private Sub OnProduct_Contact_PhoneNBChanged()
     End Sub
-    Partial Private Sub OnProduct_ContactChanging(value As String)
+    Partial Private Sub OnProduct_PriceChanging(value As String)
     End Sub
-    Partial Private Sub OnProduct_ContactChanged()
+    Partial Private Sub OnProduct_PriceChanged()
+    End Sub
+    Partial Private Sub OnProduct_ImageChanging(value As String)
+    End Sub
+    Partial Private Sub OnProduct_ImageChanged()
     End Sub
     #End Region
 	
@@ -344,66 +546,342 @@ Partial Public Class Product
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Details_C1", DbType:="NVarChar(MAX)")>  _
-	Public Property Product_Details_C1() As String
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Details", DbType:="NVarChar(MAX)")>  _
+	Public Property Product_Details() As String
 		Get
-			Return Me._Product_Details_C1
+			Return Me._Product_Details
 		End Get
 		Set
-			If (String.Equals(Me._Product_Details_C1, value) = false) Then
-				Me.OnProduct_Details_C1Changing(value)
+			If (String.Equals(Me._Product_Details, value) = false) Then
+				Me.OnProduct_DetailsChanging(value)
 				Me.SendPropertyChanging
-				Me._Product_Details_C1 = value
-				Me.SendPropertyChanged("Product_Details_C1")
-				Me.OnProduct_Details_C1Changed
+				Me._Product_Details = value
+				Me.SendPropertyChanged("Product_Details")
+				Me.OnProduct_DetailsChanged
 			End If
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Details_C2", DbType:="NVarChar(MAX)")>  _
-	Public Property Product_Details_C2() As String
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Contact_Location", DbType:="NVarChar(MAX)")>  _
+	Public Property Product_Contact_Location() As String
 		Get
-			Return Me._Product_Details_C2
+			Return Me._Product_Contact_Location
 		End Get
 		Set
-			If (String.Equals(Me._Product_Details_C2, value) = false) Then
-				Me.OnProduct_Details_C2Changing(value)
+			If (String.Equals(Me._Product_Contact_Location, value) = false) Then
+				Me.OnProduct_Contact_LocationChanging(value)
 				Me.SendPropertyChanging
-				Me._Product_Details_C2 = value
-				Me.SendPropertyChanged("Product_Details_C2")
-				Me.OnProduct_Details_C2Changed
+				Me._Product_Contact_Location = value
+				Me.SendPropertyChanged("Product_Contact_Location")
+				Me.OnProduct_Contact_LocationChanged
 			End If
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Details_C3", DbType:="NVarChar(MAX)")>  _
-	Public Property Product_Details_C3() As String
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Contact_PhoneNB", DbType:="NVarChar(50)")>  _
+	Public Property Product_Contact_PhoneNB() As String
 		Get
-			Return Me._Product_Details_C3
+			Return Me._Product_Contact_PhoneNB
 		End Get
 		Set
-			If (String.Equals(Me._Product_Details_C3, value) = false) Then
-				Me.OnProduct_Details_C3Changing(value)
+			If (String.Equals(Me._Product_Contact_PhoneNB, value) = false) Then
+				Me.OnProduct_Contact_PhoneNBChanging(value)
 				Me.SendPropertyChanging
-				Me._Product_Details_C3 = value
-				Me.SendPropertyChanged("Product_Details_C3")
-				Me.OnProduct_Details_C3Changed
+				Me._Product_Contact_PhoneNB = value
+				Me.SendPropertyChanged("Product_Contact_PhoneNB")
+				Me.OnProduct_Contact_PhoneNBChanged
 			End If
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Contact", DbType:="NVarChar(MAX)")>  _
-	Public Property Product_Contact() As String
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Price", DbType:="NVarChar(50)")>  _
+	Public Property Product_Price() As String
 		Get
-			Return Me._Product_Contact
+			Return Me._Product_Price
 		End Get
 		Set
-			If (String.Equals(Me._Product_Contact, value) = false) Then
-				Me.OnProduct_ContactChanging(value)
+			If (String.Equals(Me._Product_Price, value) = false) Then
+				Me.OnProduct_PriceChanging(value)
 				Me.SendPropertyChanging
-				Me._Product_Contact = value
-				Me.SendPropertyChanged("Product_Contact")
-				Me.OnProduct_ContactChanged
+				Me._Product_Price = value
+				Me.SendPropertyChanged("Product_Price")
+				Me.OnProduct_PriceChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Image", DbType:="NVarChar(MAX)")>  _
+	Public Property Product_Image() As String
+		Get
+			Return Me._Product_Image
+		End Get
+		Set
+			If (String.Equals(Me._Product_Image, value) = false) Then
+				Me.OnProduct_ImageChanging(value)
+				Me.SendPropertyChanging
+				Me._Product_Image = value
+				Me.SendPropertyChanged("Product_Image")
+				Me.OnProduct_ImageChanged
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Hotel")>  _
+Partial Public Class Hotel
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _Hotel_ID As Integer
+	
+	Private _Hotel_Name As String
+	
+	Private _Hotel_Details As String
+	
+	Private _Hotel_Image As String
+	
+	Private _Hotel_Location As String
+	
+	Private _Hotel_PhoneNumber As String
+	
+	Private _Hotel_PriceOfDay As String
+	
+	Private _Hotel_GPS As String
+	
+	Private _Hotel_LinkAgoda As String
+	
+	Private _Hotel_LinkBooking As String
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnHotel_IDChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnHotel_IDChanged()
+    End Sub
+    Partial Private Sub OnHotel_NameChanging(value As String)
+    End Sub
+    Partial Private Sub OnHotel_NameChanged()
+    End Sub
+    Partial Private Sub OnHotel_DetailsChanging(value As String)
+    End Sub
+    Partial Private Sub OnHotel_DetailsChanged()
+    End Sub
+    Partial Private Sub OnHotel_ImageChanging(value As String)
+    End Sub
+    Partial Private Sub OnHotel_ImageChanged()
+    End Sub
+    Partial Private Sub OnHotel_LocationChanging(value As String)
+    End Sub
+    Partial Private Sub OnHotel_LocationChanged()
+    End Sub
+    Partial Private Sub OnHotel_PhoneNumberChanging(value As String)
+    End Sub
+    Partial Private Sub OnHotel_PhoneNumberChanged()
+    End Sub
+    Partial Private Sub OnHotel_PriceOfDayChanging(value As String)
+    End Sub
+    Partial Private Sub OnHotel_PriceOfDayChanged()
+    End Sub
+    Partial Private Sub OnHotel_GPSChanging(value As String)
+    End Sub
+    Partial Private Sub OnHotel_GPSChanged()
+    End Sub
+    Partial Private Sub OnHotel_LinkAgodaChanging(value As String)
+    End Sub
+    Partial Private Sub OnHotel_LinkAgodaChanged()
+    End Sub
+    Partial Private Sub OnHotel_LinkBookingChanging(value As String)
+    End Sub
+    Partial Private Sub OnHotel_LinkBookingChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Hotel_ID", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property Hotel_ID() As Integer
+		Get
+			Return Me._Hotel_ID
+		End Get
+		Set
+			If ((Me._Hotel_ID = value)  _
+						= false) Then
+				Me.OnHotel_IDChanging(value)
+				Me.SendPropertyChanging
+				Me._Hotel_ID = value
+				Me.SendPropertyChanged("Hotel_ID")
+				Me.OnHotel_IDChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Hotel_Name", DbType:="NVarChar(50)")>  _
+	Public Property Hotel_Name() As String
+		Get
+			Return Me._Hotel_Name
+		End Get
+		Set
+			If (String.Equals(Me._Hotel_Name, value) = false) Then
+				Me.OnHotel_NameChanging(value)
+				Me.SendPropertyChanging
+				Me._Hotel_Name = value
+				Me.SendPropertyChanged("Hotel_Name")
+				Me.OnHotel_NameChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Hotel_Details", DbType:="NVarChar(MAX)")>  _
+	Public Property Hotel_Details() As String
+		Get
+			Return Me._Hotel_Details
+		End Get
+		Set
+			If (String.Equals(Me._Hotel_Details, value) = false) Then
+				Me.OnHotel_DetailsChanging(value)
+				Me.SendPropertyChanging
+				Me._Hotel_Details = value
+				Me.SendPropertyChanged("Hotel_Details")
+				Me.OnHotel_DetailsChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Hotel_Image", DbType:="NVarChar(MAX)")>  _
+	Public Property Hotel_Image() As String
+		Get
+			Return Me._Hotel_Image
+		End Get
+		Set
+			If (String.Equals(Me._Hotel_Image, value) = false) Then
+				Me.OnHotel_ImageChanging(value)
+				Me.SendPropertyChanging
+				Me._Hotel_Image = value
+				Me.SendPropertyChanged("Hotel_Image")
+				Me.OnHotel_ImageChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Hotel_Location", DbType:="NVarChar(MAX)")>  _
+	Public Property Hotel_Location() As String
+		Get
+			Return Me._Hotel_Location
+		End Get
+		Set
+			If (String.Equals(Me._Hotel_Location, value) = false) Then
+				Me.OnHotel_LocationChanging(value)
+				Me.SendPropertyChanging
+				Me._Hotel_Location = value
+				Me.SendPropertyChanged("Hotel_Location")
+				Me.OnHotel_LocationChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Hotel_PhoneNumber", DbType:="NVarChar(50)")>  _
+	Public Property Hotel_PhoneNumber() As String
+		Get
+			Return Me._Hotel_PhoneNumber
+		End Get
+		Set
+			If (String.Equals(Me._Hotel_PhoneNumber, value) = false) Then
+				Me.OnHotel_PhoneNumberChanging(value)
+				Me.SendPropertyChanging
+				Me._Hotel_PhoneNumber = value
+				Me.SendPropertyChanged("Hotel_PhoneNumber")
+				Me.OnHotel_PhoneNumberChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Hotel_PriceOfDay", DbType:="NVarChar(50)")>  _
+	Public Property Hotel_PriceOfDay() As String
+		Get
+			Return Me._Hotel_PriceOfDay
+		End Get
+		Set
+			If (String.Equals(Me._Hotel_PriceOfDay, value) = false) Then
+				Me.OnHotel_PriceOfDayChanging(value)
+				Me.SendPropertyChanging
+				Me._Hotel_PriceOfDay = value
+				Me.SendPropertyChanged("Hotel_PriceOfDay")
+				Me.OnHotel_PriceOfDayChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Hotel_GPS", DbType:="NVarChar(MAX)")>  _
+	Public Property Hotel_GPS() As String
+		Get
+			Return Me._Hotel_GPS
+		End Get
+		Set
+			If (String.Equals(Me._Hotel_GPS, value) = false) Then
+				Me.OnHotel_GPSChanging(value)
+				Me.SendPropertyChanging
+				Me._Hotel_GPS = value
+				Me.SendPropertyChanged("Hotel_GPS")
+				Me.OnHotel_GPSChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Hotel_LinkAgoda", DbType:="NVarChar(MAX)")>  _
+	Public Property Hotel_LinkAgoda() As String
+		Get
+			Return Me._Hotel_LinkAgoda
+		End Get
+		Set
+			If (String.Equals(Me._Hotel_LinkAgoda, value) = false) Then
+				Me.OnHotel_LinkAgodaChanging(value)
+				Me.SendPropertyChanging
+				Me._Hotel_LinkAgoda = value
+				Me.SendPropertyChanged("Hotel_LinkAgoda")
+				Me.OnHotel_LinkAgodaChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Hotel_LinkBooking", DbType:="NVarChar(MAX)")>  _
+	Public Property Hotel_LinkBooking() As String
+		Get
+			Return Me._Hotel_LinkBooking
+		End Get
+		Set
+			If (String.Equals(Me._Hotel_LinkBooking, value) = false) Then
+				Me.OnHotel_LinkBookingChanging(value)
+				Me.SendPropertyChanging
+				Me._Hotel_LinkBooking = value
+				Me.SendPropertyChanged("Hotel_LinkBooking")
+				Me.OnHotel_LinkBookingChanged
 			End If
 		End Set
 	End Property

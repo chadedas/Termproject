@@ -1,24 +1,14 @@
-﻿Public Class Register
+﻿Public Class Register1
     Inherits System.Web.UI.Page
 
-    Private Const [False] As Boolean = False
-
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Using Data As New DataClassesTakDataContext
             Dim myUser_Record As New Table
-            '=== Debug ==='
-
-
-            'MsgBox("Email= " + TextBox1.Text + "Password= " + TextBox2.Text + "ConfirmPass= " + TextBox3.Text + "BirthDate= " + TextBox4.Text + "Phone= " + TextBox5.Text)
-
-            '==== Check password Pass ===='
-
             If TextBox2.Text <> TextBox3.Text Then
-                MsgBox("รหัสผ่านไม่ตรงกัน")
+                ScriptManager.RegisterStartupScript(Me, Me.GetType(), "Script", "passError3();", True)
             ElseIf (TextBox2.Text = TextBox3.Text) Then
                 If Regex.IsMatch(Convert.ToString(TextBox2.Text), "^[A-Za-z0-9]+$") Then
                     If TextBox2.Text.Length >= 8 And TextBox2.Text.Length <= 20 Then
@@ -33,40 +23,24 @@
 
                                     Data.Tables.InsertOnSubmit(myUser_Record)
                                     Data.SubmitChanges()
-                                    MsgBox("สำเร็จ")
+
+                                    ScriptManager.RegisterStartupScript(Me, Me.GetType(), "Script", "success();", True)
                                 Else
-                                    MsgBox("ชื่อผู้ใช้ต้องมีความยาว 8-20 อักขระ")
+                                    ScriptManager.RegisterStartupScript(Me, Me.GetType(), "Script", "nameError1();", True)
                                 End If
                             Else
-                                MsgBox("ชื่อผู้ใช้ต้องมีแค่ตัวอักษรและตัวเลข")
+                                ScriptManager.RegisterStartupScript(Me, Me.GetType(), "Script", "nameError2();", True)
                             End If
                         Else
-                            MsgBox("เบอร์โทรต้องมีแค่ตัวเลขเท่านั้น")
+                            ScriptManager.RegisterStartupScript(Me, Me.GetType(), "Script", "phoneError();", True)
                         End If
                     Else
-                        MsgBox("รหัสผ่านของคุณต้องมีความยาว 8-20 อักขระ")
+                        ScriptManager.RegisterStartupScript(Me, Me.GetType(), "Script", "passError1();", True)
                     End If
                 Else
-                    MsgBox("รหัสผ่านประกอบด้วยตัวอักษรและตัวเลขเท่านั้น")
+                    ScriptManager.RegisterStartupScript(Me, Me.GetType(), "Script", "passError2();", True)
                 End If
             End If
-
-            '==== Check PhoneNumber Pass ===='
-
-            'myUser_Record.user_email = TextBox1.Text
-            'myUser_Record.user_password = TextBox2.Text
-            'myUser_Record.user_password = TextBox3.Text
-            'myUser_Record.user_birthdate = TextBox4.Text
-            'myUser_Record.user_phonenumber = TextBox5.Text
-
-            'Data.Tables.InsertOnSubmit(myUser_Record)
-            'Data.SubmitChanges()
         End Using
-
-        Response.Redirect("~/Register.aspx")
-    End Sub
-
-    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Response.Redirect("~/Login.aspx")
     End Sub
 End Class

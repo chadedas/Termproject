@@ -41,148 +41,76 @@ Partial Public Class Home_N
     Protected WithEvents IMGslide3 As Global.System.Web.UI.WebControls.Image
 
     '''<summary>
-    '''history1 control.
+    '''History1N control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents history1 As Global.System.Web.UI.WebControls.FormView
+    Protected WithEvents History1N As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''History1_Home control.
+    '''History1NDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents History1_Home As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents History1NDate As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''history1date control.
+    '''History2N control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents history1date As Global.System.Web.UI.WebControls.FormView
+    Protected WithEvents History2N As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''History1Date_Home control.
+    '''History2NDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents History1Date_Home As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents History2NDate As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''history2 control.
+    '''History3N control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents history2 As Global.System.Web.UI.WebControls.FormView
+    Protected WithEvents History3N As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''History2_Home control.
+    '''History3NDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents History2_Home As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents History3NDate As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''history2date control.
+    '''History4N control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents history2date As Global.System.Web.UI.WebControls.FormView
+    Protected WithEvents History4N As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''History2Date_Home control.
+    '''History4NDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents History2Date_Home As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''history3 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents history3 As Global.System.Web.UI.WebControls.FormView
-
-    '''<summary>
-    '''History3_Home control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents History3_Home As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''history3date control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents history3date As Global.System.Web.UI.WebControls.FormView
-
-    '''<summary>
-    '''History3Date_Home control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents History3Date_Home As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''history4 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents history4 As Global.System.Web.UI.WebControls.FormView
-
-    '''<summary>
-    '''History4_Home control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents History4_Home As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''history4date control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents history4date As Global.System.Web.UI.WebControls.FormView
-
-    '''<summary>
-    '''History4Date_Home control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents History4Date_Home As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents History4NDate As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''HomeProduct1 control.

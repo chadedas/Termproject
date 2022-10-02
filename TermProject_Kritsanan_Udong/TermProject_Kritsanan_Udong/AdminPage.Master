@@ -1,0 +1,134 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="AdminPage.master.vb" Inherits="TermProject_Kritsanan_Udong.AdminPage" %>
+
+<!DOCTYPE html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<style>
+    html, body {
+        font-family: 'Kanit', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    .bg-opacity-90 {
+        opacity: 0.9 !important;
+    }
+
+    .shadow_nav {
+        box-shadow: 0px 10px 15px rgb(0 0 0 / 7%);
+        z-index: 10000;
+    }
+
+    .bg_top {
+        background-color: #3784f5;
+    }
+
+    .btn:first-child:hover, :not(.btn-check) + .btn:hover {
+        background: #3784f5;
+        color: white !important;
+        border-radius: 5px !important;
+    }
+
+    .btn1:first-child:hover, :not(.btn1-check) + .btn1:hover {
+        background: #ff0000;
+        color: white !important;
+        border-radius: 5px !important;
+    }
+    .btn2:first-child:hover, :not(.btn2-check) + .btn2:hover {
+        background: #198754;
+        color: white !important;
+        border-radius: 5px !important;
+    }
+    .py-6 {
+        padding-top: 6rem !important;
+        padding-bottom: 3rem !important;
+    }
+</style>
+<body>
+<form id="form1" runat="server">
+    
+
+        <header class="p-3 mb-2 bg-light text-dark bg-opacity-90 sticky-top py-3 navbar_page">
+            <nav class="container d-flex flex-column flex-md-row justify-content-between">
+                <div class="btn-group mx-auto" role="group" aria-label="Basic radio toggle button group">
+                    <a href="../Administator/Home_N.aspx">
+                        <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio1">แก้หน้าโฮม</label></a>
+                    <a href="../Administator/AboutTak.aspx">
+                        <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio2">แก้ไขประวัติ</label></a>
+                    <a href="../Administator/Traveling_All.aspx">
+                        <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">แก้ไขสถานที่</label></a>
+                    <a href="../Administator/Product_All.aspx">
+                        <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio4">แก้ไขผลิตภัณฑ์</label></a>
+                    <a href="../Administator/Tradition_All.aspx">
+                        <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio3">แก้ไขวัฒนธรรม</label></a>
+                    <a href="../Administator/Hotel_All.aspx">
+                        <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio5">แก้ไขที่พัก</label></a>
+                    <a href="../Administator/User_All.aspx">
+                        <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio5">แก้ไขผู้ใช้</label></a>
+                    <a href="../Administator/DataReport.aspx">
+                        <label class="btn btn-outline-info border-0 rounded text-dark mx-2" for="btnradio5">หน้า Report</label></a>
+                </div>
+
+                <div class="mx-2 dropdown">
+                    <asp:Button ID="Button1" runat="server" Text="" CssClass="btn1 btn btn-outline-danger btnclick text-center dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" />
+                 
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-end disabled" href="#">ข้อมูลผู้ใช้</a></li>
+                        
+                        <li><asp:Button ID="Button3" runat="server" Text="ออกจากระบบ" CssClass="dropdown-item text-end" /></li>
+                        
+                    </ul>
+                </div>
+                <div class="mx-2">
+                <asp:Button ID="Button2" runat="server" Text="เข้าสู่ระบบ" CssClass="btn btn-outline-primary btnclick text-center dropdown-toggle" data-bs-toggle="dropdown2" aria-expanded="false" data-bs-target="#modalLoginForm"/>
+                    <asp:Button ID="Button4" runat="server" Text="สมัครสมาชิก" CssClass="btn2 btn btn-outline-success btnclick text-center dropdown-toggle" data-bs-toggle="dropdown2" aria-expanded="false" data-bs-target="#modalLoginForm"/>
+                </div>
+            </nav>
+        </header>
+
+        <main class="text-secondary" style="background-color: ghostwhite">
+            <div class=" container marketing rounded-1 px-2" style="background-color: white">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>
+                        <br />
+                        Create By Kritsanan Udong
+                    </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    <cite title="Source Title">ทำขึ้นเพื่อส่งเทอมโปรเจครายวิชาเว็ปโปรแกรมมิ่งอาจารย์ Natthawoot Punroob</cite>
+                </figcaption>
+            </figure>
+        </main>
+    
+</form>
+    </body>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(window).scroll(function () {
+            let height = $(window).scrollTop();
+            //console.log('height', height)
+            if (height >= 65) {
+                $('.navbar_page').addClass('shadow_nav')
+                //console.log(1)
+            } else {
+                //console.log(0)
+                $('.navbar_page').removeClass('shadow_nav')
+            }
+        });
+    });
+</script>

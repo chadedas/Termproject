@@ -31,12 +31,6 @@ Partial Public Class HomeClassDataContext
   #Region "Extensibility Method Definitions"
   Partial Private Sub OnCreated()
   End Sub
-  Partial Private Sub InsertHome_Product(instance As Home_Product)
-    End Sub
-  Partial Private Sub UpdateHome_Product(instance As Home_Product)
-    End Sub
-  Partial Private Sub DeleteHome_Product(instance As Home_Product)
-    End Sub
   Partial Private Sub InsertHome_Traveling(instance As Home_Traveling)
     End Sub
   Partial Private Sub UpdateHome_Traveling(instance As Home_Traveling)
@@ -48,6 +42,12 @@ Partial Public Class HomeClassDataContext
   Partial Private Sub UpdateHome_History(instance As Home_History)
     End Sub
   Partial Private Sub DeleteHome_History(instance As Home_History)
+    End Sub
+  Partial Private Sub InsertHome_Product(instance As Home_Product)
+    End Sub
+  Partial Private Sub UpdateHome_Product(instance As Home_Product)
+    End Sub
+  Partial Private Sub DeleteHome_Product(instance As Home_Product)
     End Sub
   #End Region
 	
@@ -76,12 +76,6 @@ Partial Public Class HomeClassDataContext
 		OnCreated
 	End Sub
 	
-	Public ReadOnly Property Home_Products() As System.Data.Linq.Table(Of Home_Product)
-		Get
-			Return Me.GetTable(Of Home_Product)
-		End Get
-	End Property
-	
 	Public ReadOnly Property Home_Travelings() As System.Data.Linq.Table(Of Home_Traveling)
 		Get
 			Return Me.GetTable(Of Home_Traveling)
@@ -93,156 +87,12 @@ Partial Public Class HomeClassDataContext
 			Return Me.GetTable(Of Home_History)
 		End Get
 	End Property
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Home_Product")>  _
-Partial Public Class Home_Product
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
 	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _Product_ID As Integer
-	
-	Private _Product_Name As String
-	
-	Private _Product_Details As String
-	
-	Private _Product_Link As String
-	
-	Private _Product_Image As String
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnProduct_IDChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnProduct_IDChanged()
-    End Sub
-    Partial Private Sub OnProduct_NameChanging(value As String)
-    End Sub
-    Partial Private Sub OnProduct_NameChanged()
-    End Sub
-    Partial Private Sub OnProduct_DetailsChanging(value As String)
-    End Sub
-    Partial Private Sub OnProduct_DetailsChanged()
-    End Sub
-    Partial Private Sub OnProduct_LinkChanging(value As String)
-    End Sub
-    Partial Private Sub OnProduct_LinkChanged()
-    End Sub
-    Partial Private Sub OnProduct_ImageChanging(value As String)
-    End Sub
-    Partial Private Sub OnProduct_ImageChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_ID", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property Product_ID() As Integer
+	Public ReadOnly Property Home_Products() As System.Data.Linq.Table(Of Home_Product)
 		Get
-			Return Me._Product_ID
+			Return Me.GetTable(Of Home_Product)
 		End Get
-		Set
-			If ((Me._Product_ID = value)  _
-						= false) Then
-				Me.OnProduct_IDChanging(value)
-				Me.SendPropertyChanging
-				Me._Product_ID = value
-				Me.SendPropertyChanged("Product_ID")
-				Me.OnProduct_IDChanged
-			End If
-		End Set
 	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Name", DbType:="NVarChar(50)")>  _
-	Public Property Product_Name() As String
-		Get
-			Return Me._Product_Name
-		End Get
-		Set
-			If (String.Equals(Me._Product_Name, value) = false) Then
-				Me.OnProduct_NameChanging(value)
-				Me.SendPropertyChanging
-				Me._Product_Name = value
-				Me.SendPropertyChanged("Product_Name")
-				Me.OnProduct_NameChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Details", DbType:="NVarChar(MAX)")>  _
-	Public Property Product_Details() As String
-		Get
-			Return Me._Product_Details
-		End Get
-		Set
-			If (String.Equals(Me._Product_Details, value) = false) Then
-				Me.OnProduct_DetailsChanging(value)
-				Me.SendPropertyChanging
-				Me._Product_Details = value
-				Me.SendPropertyChanged("Product_Details")
-				Me.OnProduct_DetailsChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Link", DbType:="NVarChar(MAX)")>  _
-	Public Property Product_Link() As String
-		Get
-			Return Me._Product_Link
-		End Get
-		Set
-			If (String.Equals(Me._Product_Link, value) = false) Then
-				Me.OnProduct_LinkChanging(value)
-				Me.SendPropertyChanging
-				Me._Product_Link = value
-				Me.SendPropertyChanged("Product_Link")
-				Me.OnProduct_LinkChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Image", DbType:="NVarChar(MAX)")>  _
-	Public Property Product_Image() As String
-		Get
-			Return Me._Product_Image
-		End Get
-		Set
-			If (String.Equals(Me._Product_Image, value) = false) Then
-				Me.OnProduct_ImageChanging(value)
-				Me.SendPropertyChanging
-				Me._Product_Image = value
-				Me.SendPropertyChanged("Product_Image")
-				Me.OnProduct_ImageChanged
-			End If
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
 End Class
 
 <Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Home_Traveling")>  _
@@ -500,6 +350,134 @@ Partial Public Class Home_History
 				Me._History_Date = value
 				Me.SendPropertyChanged("History_Date")
 				Me.OnHistory_DateChanged
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Home_Product")>  _
+Partial Public Class Home_Product
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _Product_ID As Integer
+	
+	Private _Product_Name As String
+	
+	Private _Product_Details As String
+	
+	Private _Product_Image As String
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnProduct_IDChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnProduct_IDChanged()
+    End Sub
+    Partial Private Sub OnProduct_NameChanging(value As String)
+    End Sub
+    Partial Private Sub OnProduct_NameChanged()
+    End Sub
+    Partial Private Sub OnProduct_DetailsChanging(value As String)
+    End Sub
+    Partial Private Sub OnProduct_DetailsChanged()
+    End Sub
+    Partial Private Sub OnProduct_ImageChanging(value As String)
+    End Sub
+    Partial Private Sub OnProduct_ImageChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_ID", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property Product_ID() As Integer
+		Get
+			Return Me._Product_ID
+		End Get
+		Set
+			If ((Me._Product_ID = value)  _
+						= false) Then
+				Me.OnProduct_IDChanging(value)
+				Me.SendPropertyChanging
+				Me._Product_ID = value
+				Me.SendPropertyChanged("Product_ID")
+				Me.OnProduct_IDChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Name", DbType:="NVarChar(50)")>  _
+	Public Property Product_Name() As String
+		Get
+			Return Me._Product_Name
+		End Get
+		Set
+			If (String.Equals(Me._Product_Name, value) = false) Then
+				Me.OnProduct_NameChanging(value)
+				Me.SendPropertyChanging
+				Me._Product_Name = value
+				Me.SendPropertyChanged("Product_Name")
+				Me.OnProduct_NameChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Details", DbType:="NVarChar(MAX)")>  _
+	Public Property Product_Details() As String
+		Get
+			Return Me._Product_Details
+		End Get
+		Set
+			If (String.Equals(Me._Product_Details, value) = false) Then
+				Me.OnProduct_DetailsChanging(value)
+				Me.SendPropertyChanging
+				Me._Product_Details = value
+				Me.SendPropertyChanged("Product_Details")
+				Me.OnProduct_DetailsChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Image", DbType:="NVarChar(MAX)")>  _
+	Public Property Product_Image() As String
+		Get
+			Return Me._Product_Image
+		End Get
+		Set
+			If (String.Equals(Me._Product_Image, value) = false) Then
+				Me.OnProduct_ImageChanging(value)
+				Me.SendPropertyChanging
+				Me._Product_Image = value
+				Me.SendPropertyChanged("Product_Image")
+				Me.OnProduct_ImageChanged
 			End If
 		End Set
 	End Property
