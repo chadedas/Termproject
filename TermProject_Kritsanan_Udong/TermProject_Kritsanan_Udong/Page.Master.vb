@@ -17,10 +17,10 @@
                 Me.Button1.Visible = False
                 Me.Button4.Visible = True
             Else
-                Me.Button1.Visible = True
                 Me.Button2.Visible = False
+                Me.Button1.Visible = True
                 Me.Button4.Visible = False
-                Button1.Text = myuser.First.user_FnameLname.Trim + " ▼"
+                Me.Button1.Text = myuser.First.user_FnameLname + " ▼"
             End If
         End Using
     End Sub

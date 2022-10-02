@@ -82,7 +82,6 @@
                 ImportImage1.First.Travel_Slide = Me.FileUpload1.FileName
                 Me.FileUpload1.SaveAs(Server.MapPath("../allPicture/Home/slide/" & FileUpload1.FileName))
                 Data.SubmitChanges()
-                Response.Redirect("~/Administator/Home_N.aspx")
             End If
 
 
@@ -93,7 +92,6 @@
                 ImportImage2.First.Travel_Slide = Me.FileUpload2.FileName
                 Me.FileUpload2.SaveAs(Server.MapPath("../allPicture/Home/slide/" & FileUpload2.FileName))
                 Data.SubmitChanges()
-                Response.Redirect("~/Administator/Home_N.aspx")
             End If
 
 
@@ -104,9 +102,9 @@
                 ImportImage3.First.Travel_Slide = Me.FileUpload3.FileName
                 Me.FileUpload3.SaveAs(Server.MapPath("../allPicture/Home/slide/" & FileUpload3.FileName))
                 Data.SubmitChanges()
-                Response.Redirect("~/Administator/Home_N.aspx")
-            End If
 
+            End If
+            Response.Redirect("~/Administator/Home_N.aspx")
         End Using
     End Sub
 

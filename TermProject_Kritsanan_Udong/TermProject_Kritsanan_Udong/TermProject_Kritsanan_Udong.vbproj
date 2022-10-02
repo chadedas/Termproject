@@ -118,25 +118,6 @@
     <Content Include="Administator\User_Add.aspx" />
     <Content Include="Administator\User_All.aspx" />
     <Content Include="Administator\User_EDIT.aspx" />
-    <Content Include="allPicture\agoda-booking-bt-min.png" />
-    <Content Include="allPicture\booking-bt-min.png" />
-    <Content Include="allPicture\hotal_tav1_1.jpg" />
-    <Content Include="allPicture\hotal_tav1_2.jpg" />
-    <Content Include="allPicture\hotal_tav1_3.jpg" />
-    <Content Include="allPicture\hotal_tav1_4.jpg" />
-    <Content Include="allPicture\product1.jpg" />
-    <Content Include="allPicture\product2.jpg" />
-    <Content Include="allPicture\product3.jpg" />
-    <Content Include="allPicture\tak1.jpg" />
-    <Content Include="allPicture\TakAbout1.png" />
-    <Content Include="allPicture\TakAbout2.jpg" />
-    <Content Include="allPicture\TakAbout3.jpg" />
-    <Content Include="allPicture\tak_tav1.jpg" />
-    <Content Include="allPicture\tak_tav1_2.jpg" />
-    <Content Include="allPicture\tak_tav1_3.jpg" />
-    <Content Include="allPicture\tak_tav1_4.jpg" />
-    <Content Include="allPicture\tak_tav2.jpg" />
-    <Content Include="allPicture\tak_tav3.jpg" />
     <Content Include="App_Data\Database1.mdf" />
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
@@ -518,10 +499,7 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="allPicture\DataOfTraveling\" />
-    <Folder Include="allPicture\Home\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

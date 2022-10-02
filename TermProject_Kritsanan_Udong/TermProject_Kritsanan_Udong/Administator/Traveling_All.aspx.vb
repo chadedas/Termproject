@@ -34,7 +34,7 @@
                 newHTML.Append(DataOfAllInside.First.Tourist_GPS)
                 newHTML.Append("</div>")
                 ' Part of ADMIN '
-                newHTML.Append("<div class='text-center my-5'><a href='Traveling_EDIT.aspx?ItemID=" & i & "'><Button class='mx-2 btn btn2 btn-success'>แก้ไขข้อมูล</button></a></div>")
+                newHTML.Append("<div class='text-center my-5'><a href='Traveling_EDIT.aspx?ItemID=" & i & "'><Button type='button' class='mx-2 btn btn2 btn-success'>แก้ไขข้อมูล</button></a></div>")
                 newHTML.Append("<hr class='featurette-divider my-5'/>")
 
                 Me.Literal_Tourist_DataInside.Text = newHTML.ToString()

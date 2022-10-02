@@ -1846,9 +1846,27 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:TermProject_Kritsanan_Udong.User_All._AdminOnly">
+<summary>
+AdminOnly control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:TermProject_Kritsanan_Udong.User_All._TableGenerate">
 <summary>
 TableGenerate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:TermProject_Kritsanan_Udong.User_All._OtherUser">
+<summary>
+OtherUser control.
 </summary>
 <remarks>
 Auto-generated field.

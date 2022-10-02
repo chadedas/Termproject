@@ -7,19 +7,27 @@
         Dim IP_Password As String
         IP_UserName = Session("myUserName")
         IP_Password = Session("myPassword")
+
         '==== Procress Part
         Using Data As New DataClassesTakDataContext
             Dim myuser = From myTable In Data.Tables
                          Where myTable.user_username = IP_UserName And myTable.user_password = IP_Password
             If myuser.Count = 0 Then
-                Response.Redirect("")
+                Me.Button2.Visible = True
+                Me.Button1.Visible = False
+                Me.Button4.Visible = True
+                Response.Redirect("~/Home_N.aspx")
             Else
-                Me.Button1.Visible = True
                 Me.Button2.Visible = False
+                Me.Button1.Visible = True
                 Me.Button4.Visible = False
-                Button1.Text = myuser.First.user_FnameLname.Trim + " ▼"
+                Me.Button1.Text = myuser.First.user_FnameLname + " ▼"
             End If
         End Using
     End Sub
-
+    Protected Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Session.Remove("myUserName")
+        Session.Remove("myPassword")
+        Response.Redirect("~/Home_N.aspx")
+    End Sub
 End Class

@@ -24,10 +24,11 @@
 
     Protected Sub saveing1_Click(sender As Object, e As EventArgs) Handles saveing1.Click
         Dim UserID As Integer
-        UserID = Convert.ToInt16(Request.QueryString("ItemID"))
+        UserID = Convert.ToInt16(Request.QueryString("UserID"))
         Using Data As New DataClassesTakDataContext
             Dim myItem_Reccord = From myTable_User In Data.Tables
                                  Where myTable_User.user_id = UserID
+
             myItem_Reccord.First.user_username = TextBox1.Text
             myItem_Reccord.First.user_password = TextBox2.Text
             myItem_Reccord.First.user_type = TextBox3.Text

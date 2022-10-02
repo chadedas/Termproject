@@ -1,9 +1,6 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Page.Master" CodeBehind="Home_N.aspx.vb" Inherits="TermProject_Kritsanan_Udong.Home_N" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <div class="alert alert-primary bg_top text-center" role="alert">
-        หน้าเว็ปไซต์หลัก
-    </div>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -40,7 +37,7 @@
             <div class="col-md-8">
                 <div class="card-body mx-auto my-auto">
                     <ul class="list-group list-group-flush">
-                        <marquee direction="left" class="list-group-item list-group-item-info rounded">ยินดีต้อนรับเข้าสู่เว็ปไซต์</marquee>
+                        <marquee direction="left" class="list-group-item list-group-item-info rounded">การท่องเที่ยวแห่งประเทศไทย (ททท.) สำนักงานตาก เบอร์โทรศัพท์ 055-514341-3 E-mail: tattak@tat.or.th</marquee>
                     </ul>
                     <ul class="list-group list-group-horizontal">
                         <li class="list-group-item w-75"><small>

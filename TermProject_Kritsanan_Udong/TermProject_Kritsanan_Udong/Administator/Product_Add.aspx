@@ -6,7 +6,7 @@
         <div class="col-md-7 order-md-2 px-5">
             <center>
                 <div class="text-center rounded-5 my-3 align-content-center" style="width: 400px; height: auto">
-                    <asp:Image ID="Image1" runat="server" CssClass="rounded-5 w-100 h-100 " />
+                    <asp:Image ID="Image1" runat="server" CssClass="rounded-5 w-100 h-100 " ImageUrl="https://pbs.twimg.com/media/EaIqGTMU4AEMida.jpg"/>
                 </div>
             </center>
             <div class="form-floating py-2 text-center align-content-center">

@@ -1,9 +1,6 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Page.Master" CodeBehind="Tradition_All.aspx.vb" Inherits="TermProject_Kritsanan_Udong.Tradition_All" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <div class="alert alert-success bg_top text-center" role="alert">
-        วัฒนธรรม
-    </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">

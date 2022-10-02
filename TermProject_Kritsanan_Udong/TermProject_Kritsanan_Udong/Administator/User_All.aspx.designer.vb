@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class User_All
 
     '''<summary>
+    '''AdminOnly control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents AdminOnly As Global.System.Web.UI.WebControls.Literal
+
+    '''<summary>
     '''TableGenerate control.
     '''</summary>
     '''<remarks>
@@ -21,4 +30,13 @@ Partial Public Class User_All
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TableGenerate As Global.System.Web.UI.WebControls.Literal
+
+    '''<summary>
+    '''OtherUser control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OtherUser As Global.System.Web.UI.WebControls.Literal
 End Class

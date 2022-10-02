@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/AdminPage.Master" CodeBehind="Traveling_Add.aspx.vb" Inherits="TermProject_Kritsanan_Udong.Traveling_Add" %>
+﻿<%@ Page Title="" ValidateRequest="false" Language="vb" AutoEventWireup="false" MasterPageFile="~/AdminPage.Master" CodeBehind="Traveling_Add.aspx.vb" Inherits="TermProject_Kritsanan_Udong.Traveling_Add" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

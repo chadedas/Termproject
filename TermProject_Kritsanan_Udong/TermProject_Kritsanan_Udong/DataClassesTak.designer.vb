@@ -144,7 +144,7 @@ Partial Public Class Table
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_username", DbType:="NChar(20)")>  _
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_username", DbType:="NVarChar(MAX)")>  _
 	Public Property user_username() As String
 		Get
 			Return Me._user_username
@@ -160,7 +160,7 @@ Partial Public Class Table
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_password", DbType:="NChar(20)")>  _
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_password", DbType:="NVarChar(MAX)")>  _
 	Public Property user_password() As String
 		Get
 			Return Me._user_password
@@ -176,7 +176,7 @@ Partial Public Class Table
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_type", DbType:="NChar(10)")>  _
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_type", DbType:="NVarChar(MAX)")>  _
 	Public Property user_type() As String
 		Get
 			Return Me._user_type
@@ -192,7 +192,7 @@ Partial Public Class Table
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_FnameLname", DbType:="NChar(30)")>  _
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_FnameLname", DbType:="NVarChar(MAX)")>  _
 	Public Property user_FnameLname() As String
 		Get
 			Return Me._user_FnameLname
@@ -208,7 +208,7 @@ Partial Public Class Table
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_phonenumber", DbType:="NChar(15)")>  _
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_user_phonenumber", DbType:="NVarChar(MAX)")>  _
 	Public Property user_phonenumber() As String
 		Get
 			Return Me._user_phonenumber

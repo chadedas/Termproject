@@ -1,8 +1,5 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Page.Master" CodeBehind="Tourist_All.aspx.vb" Inherits="TermProject_Kritsanan_Udong.Tourist_All1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-        <div class="alert alert-success bg_top text-center" role="alert">
-        สถานที่ท่องเที่ยว
-    </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
