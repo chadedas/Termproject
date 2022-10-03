@@ -49,7 +49,7 @@
     <div class="container w-75">
         <div class="card-body mx-auto my-auto text-center">
             <ul class="list-group list-group-flush">
-                <marquee direction="left" class="list-group-item list-group-item-info rounded">ยินดีต้อนรับเข้าสู่เว็ปไซต์</marquee>
+                <marquee direction="left" class="list-group-item list-group-item-info rounded">การท่องเที่ยวแห่งประเทศไทย (ททท.) สำนักงานตาก เบอร์โทรศัพท์ 055-514341-3 E-mail: tattak@tat.or.th</marquee>
             </ul>
             <ul class="list-group list-group-horizontal">
                 <li class="list-group-item w-75 text-start"><small>

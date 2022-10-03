@@ -21,10 +21,10 @@
                                       Where myTable_Test.Tourist_ID = i
                 'INSIDE DATA'
                 newHTML.Append("<div id='item-" & i & "'>")
-                newHTML.Append("<H3 class='text-center'>" & DataOfAllInside.First.Tourist_Name & "</H3>")
-                newHTML.Append("<img src = '../allPicture/DataOfTraveling/Tourist_All/" & DataOfAllInside.First.Tourist_Image & "' class='d-block h-75 rounded-4 w-75 mx-auto py-3' style='width:400px;height:300px'/>")
-                newHTML.Append("<H5 class='mx-4'>" & DataOfAllInside.First.Tourist_Details & "</H5>")
-                newHTML.Append("<H4 class='mx-4'>ที่ตั้ง: " & DataOfAllInside.First.Tourist_Location & "</H4>")
+                newHTML.Append("<H3 class='text-center text-success fw-bold'>" & DataOfAllInside.First.Tourist_Name & "</H3>")
+                newHTML.Append("<img src = '../allPicture/DataOfTraveling/Tourist_All/" & DataOfAllInside.First.Tourist_Image & "' class='my-3 d-block h-75 rounded-4 w-75 mx-auto py-3' style='width:400px;height:300px'/>")
+                newHTML.Append("<H5 class='mx-5 py-5'>" & DataOfAllInside.First.Tourist_Details & "</H5>")
+                newHTML.Append("<H5 class='mx-4 text-center'>ที่ตั้ง: " & DataOfAllInside.First.Tourist_Location & "</H5>")
                 newHTML.Append("<br />")
                 newHTML.Append("</div>")
                 newHTML.Append("<H4 class='mx-4 text-center'>ที่อยู่ GPS</H4>")

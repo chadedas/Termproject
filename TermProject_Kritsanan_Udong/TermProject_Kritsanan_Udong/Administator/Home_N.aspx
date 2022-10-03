@@ -36,191 +36,38 @@
             <div class="col-md-8">
                 <div class="card-body mx-auto my-auto">
                     <ul class="list-group list-group-flush">
-                        <marquee direction="left" class="list-group-item list-group-item-info rounded">ยินดีต้อนรับเข้าสู่เว็ปไซต์</marquee>
+                        <marquee direction="left" class="list-group-item list-group-item-info rounded">การท่องเที่ยวแห่งประเทศไทย (ททท.) สำนักงานตาก เบอร์โทรศัพท์ 055-514341-3 E-mail: tattak@tat.or.th</marquee>
                     </ul>
-                    <ul class="list-group list-group-horizontal">
+                                        <ul class="list-group list-group-horizontal">
                         <li class="list-group-item w-75"><small>
-                            <asp:FormView ID="history1" runat="server" DataSourceID="History1_Home">
-                                <EditItemTemplate>
-                                    <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </EditItemTemplate>
-                                <InsertItemTemplate>
-                                    <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </InsertItemTemplate>
-                                <ItemTemplate>
-                                    <asp:Label ID="History_FormLabel" runat="server" Text='<%# Bind("History_Form") %>' />
-                                    <br />
-                                </ItemTemplate>
-                            </asp:FormView>
-                            <asp:SqlDataSource ID="History1_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Form] FROM [Home_History]"></asp:SqlDataSource>
-                        </small></li>
-
-                        <li class="list-group-item w-25 text-center"><small>
-                            <center>
-                                <asp:FormView ID="history1date" runat="server" DataSourceID="History1Date_Home">
-                                    <EditItemTemplate>
-                                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
-                                        <br />
-                                        <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                                        &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                    </EditItemTemplate>
-                                    <InsertItemTemplate>
-                                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
-                                        <br />
-                                        <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                                        &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                    </InsertItemTemplate>
-                                    <ItemTemplate>
-                                        <asp:Label ID="History_DateLabel" runat="server" Text='<%# Bind("History_Date") %>' />
-                                        <br />
-                                    </ItemTemplate>
-                                </asp:FormView>
-                                <asp:SqlDataSource ID="History1Date_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Date] FROM [Home_History]"></asp:SqlDataSource>
-                            </center>
-                        </small></li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal">
-                        <li class="list-group-item w-75"><small>
-                            <asp:FormView ID="history2" runat="server" DataSourceID="History2_Home">
-                                <EditItemTemplate>
-                                    <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </EditItemTemplate>
-                                <InsertItemTemplate>
-                                    <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </InsertItemTemplate>
-                                <ItemTemplate>
-                                    <asp:Label ID="History_FormLabel" runat="server" Text='<%# Bind("History_Form") %>' />
-                                    <br />
-                                </ItemTemplate>
-                            </asp:FormView>
-                            <asp:SqlDataSource ID="History2_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Form] FROM [Home_History]"></asp:SqlDataSource>
+                            <asp:Label ID="History1N" runat="server" Text="Label"></asp:Label>
                         </small></li>
                         <li class="list-group-item w-25 text-center"><small>
-                            <center>
-                                <asp:FormView ID="history2date" runat="server" DataSourceID="History2Date_Home">
-                                    <EditItemTemplate>
-                                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
-                                        <br />
-                                        <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                                        &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                    </EditItemTemplate>
-                                    <InsertItemTemplate>
-                                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
-                                        <br />
-                                        <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                                        &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                    </InsertItemTemplate>
-                                    <ItemTemplate>
-                                        <asp:Label ID="History_DateLabel" runat="server" Text='<%# Bind("History_Date") %>' />
-                                        <br />
-                                    </ItemTemplate>
-                                </asp:FormView>
-                                <asp:SqlDataSource ID="History2Date_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Date] FROM [Home_History]"></asp:SqlDataSource>
-                            </center>
+                            <asp:Label ID="History1NDate" runat="server" Text="Label"></asp:Label>
                         </small></li>
                     </ul>
                     <ul class="list-group list-group-horizontal">
                         <li class="list-group-item w-75"><small>
-                            <asp:FormView ID="history3" runat="server" DataSourceID="History3_Home">
-                                <EditItemTemplate>
-                                    <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </EditItemTemplate>
-                                <InsertItemTemplate>
-                                    <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </InsertItemTemplate>
-                                <ItemTemplate>
-                                    <asp:Label ID="History_FormLabel" runat="server" Text='<%# Bind("History_Form") %>' />
-                                    <br />
-                                </ItemTemplate>
-                            </asp:FormView>
-                            <asp:SqlDataSource ID="History3_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Form] FROM [Home_History]"></asp:SqlDataSource>
+                            <asp:Label ID="History2N" runat="server" Text="Label"></asp:Label>
                         </small></li>
                         <li class="list-group-item w-25 text-center"><small>
-                            <center>
-                                <asp:FormView ID="history3date" runat="server" DataSourceID="History3Date_Home">
-                                    <EditItemTemplate>
-                                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
-                                        <br />
-                                        <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                                        &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                    </EditItemTemplate>
-                                    <InsertItemTemplate>
-                                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
-                                        <br />
-                                        <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                                        &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                    </InsertItemTemplate>
-                                    <ItemTemplate>
-                                        <asp:Label ID="History_DateLabel" runat="server" Text='<%# Bind("History_Date") %>' />
-                                        <br />
-                                    </ItemTemplate>
-                                </asp:FormView>
-                                <asp:SqlDataSource ID="History3Date_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Date] FROM [Home_History]"></asp:SqlDataSource>
-                            </center>
+                            <asp:Label ID="History2NDate" runat="server" Text="Label"></asp:Label>
                         </small></li>
                     </ul>
                     <ul class="list-group list-group-horizontal">
                         <li class="list-group-item w-75"><small>
-                            <asp:FormView ID="history4" runat="server" DataSourceID="History4_Home">
-                                <EditItemTemplate>
-                                    <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </EditItemTemplate>
-                                <InsertItemTemplate>
-                                    <asp:TextBox ID="History_FormTextBox" runat="server" Text='<%# Bind("History_Form") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </InsertItemTemplate>
-                                <ItemTemplate>
-                                    <asp:Label ID="History_FormLabel" runat="server" Text='<%# Bind("History_Form") %>' />
-                                    <br />
-                                </ItemTemplate>
-                            </asp:FormView>
-                            <asp:SqlDataSource ID="History4_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Form] FROM [Home_History]"></asp:SqlDataSource>
+                            <asp:Label ID="History3N" runat="server" Text="Label"></asp:Label>
+                        </small></li>
+                        <li class="list-group-item w-25 text-center"><small>
+                            <asp:Label ID="History3NDate" runat="server" Text="Label"></asp:Label>
+                        </small></li>
+                    </ul>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item w-75"><small>
+                            <asp:Label ID="History4N" runat="server" Text="Label"></asp:Label>
                         </small></li>
                         <li class="list-group-item w-25 text-center blue100"><small>
-                            <center>
-                                <asp:FormView ID="history4date" runat="server" DataSourceID="History4Date_Home">
-                                    <EditItemTemplate>
-                                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
-                                        <br />
-                                        <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                                        &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                    </EditItemTemplate>
-                                    <InsertItemTemplate>
-                                        <asp:TextBox ID="History_DateTextBox" runat="server" Text='<%# Bind("History_Date") %>' />
-                                        <br />
-                                        <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                                        &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                    </InsertItemTemplate>
-                                    <ItemTemplate>
-                                        <asp:Label ID="History_DateLabel" runat="server" Text='<%# Bind("History_Date") %>' />
-                                        <br />
-                                    </ItemTemplate>
-                                </asp:FormView>
-                                <asp:SqlDataSource ID="History4Date_Home" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [History_Date] FROM [Home_History]"></asp:SqlDataSource>
-                            </center>
+                            <asp:Label ID="History4NDate" runat="server" Text="Label"></asp:Label>
                         </small>
                         </li>
                     </ul>

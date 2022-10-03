@@ -20,14 +20,14 @@
                 Dim DataOfAllInside = From myTable_Test In Data.Products
                                       Where myTable_Test.Product_ID = i
                 'INSIDE DATA'
-                newHTML.Append("<div id='item-" & i & "'>")
-                newHTML.Append("<H3 class='text-center'>" & DataOfAllInside.First.Product_Name & "</H3>")
-                newHTML.Append("<img src = '../allPicture/DataOfTraveling/Product_All/" & DataOfAllInside.First.Product_Image & "' class='d-block h-75 rounded-4 w-75 mx-auto py-3' style='width:400px;height:300px'/>")
-                newHTML.Append("<H5 class='mx-4'>" & DataOfAllInside.First.Product_Details & "</H5>")
-                newHTML.Append("<H4 class='mx-4 text-center'>ที่อยู่ผู้ขาย: " & DataOfAllInside.First.Product_Contact_Location & "</H4>")
-                newHTML.Append("<H4 class='mx-4 text-center'>เบอร์โทร: " & DataOfAllInside.First.Product_Contact_PhoneNB & "</H4>")
+                newHTML.Append("<div id='item-" & i & "' class='mx-auto'>")
+                newHTML.Append("<H3 class='text-center text-success fw-bold'>" & DataOfAllInside.First.Product_Name & "</H3>")
+                newHTML.Append("<img src = '../allPicture/DataOfTraveling/Product_All/" & DataOfAllInside.First.Product_Image & "' class='d-block h-25 rounded-4 w-25 mx-auto py-3 my-3' style='width:400px;height:300px'/>")
+                newHTML.Append("<H5 class='mx-5 px-5'>" & DataOfAllInside.First.Product_Details & "</H5>")
+                newHTML.Append("<H5 class='mx-4 text-center'>ที่อยู่ผู้ขาย: " & DataOfAllInside.First.Product_Contact_Location & "</H5>")
+                newHTML.Append("<H5 class='mx-4 text-center'>เบอร์โทร: " & DataOfAllInside.First.Product_Contact_PhoneNB & "</H5>")
                 newHTML.Append("<br />")
-                newHTML.Append("<H5 class='mx-4 text-center'>ราคาสินค้า: " & DataOfAllInside.First.Product_Price & " บาท</H5>")
+                newHTML.Append("<H4 class='mx-4 text-center text-success'>ราคาสินค้า: " & DataOfAllInside.First.Product_Price & " บาท</H4>")
                 newHTML.Append("<br />")
                 newHTML.Append("</div>")
                 newHTML.Append("<hr class='featurette-divider my-5'/>")

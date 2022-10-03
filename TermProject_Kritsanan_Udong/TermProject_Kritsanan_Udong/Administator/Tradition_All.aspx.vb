@@ -22,15 +22,14 @@
                                       Where myTable_Test.Tradition_ID = i
                 'INSIDE DATA'
                 newHTML.Append("<div id='item-" & i & "'>")
-                newHTML.Append("<H3 class='text-center'>" & DataOfAllInside.First.Tradition_Name & "</H1>")
-                newHTML.Append("<img src = '../allPicture/DataOfTraveling/Tradition_All/" & DataOfAllInside.First.Tradition_Image & "' class='d-block h-75 rounded-4 w-75 mx-auto py-3' style='width:400px;height:300px'>")
-                newHTML.Append("<H5 class='mx-4'>" & DataOfAllInside.First.Tradition_Details & "</H6>")
+                newHTML.Append("<H3 class='text-center text-success fw-bold'>" & DataOfAllInside.First.Tradition_Name & "</H1>")
+                newHTML.Append("<img src = '../allPicture/DataOfTraveling/Tradition_All/" & DataOfAllInside.First.Tradition_Image & "' class='my-3 d-block h-75 rounded-4 w-75 mx-auto py-3' style='width:400px;height:300px'>")
+                newHTML.Append("<H5 class='mx-5 px-5'>" & DataOfAllInside.First.Tradition_Details & "</H6>")
                 newHTML.Append("<H5 class='text-center'>จัดขึ้นบ่อยในบริเวณ" & DataOfAllInside.First.Tradition_Where & "</H4>")
                 newHTML.Append("<H5 class='text-center'>ในช่วงเวลา" & DataOfAllInside.First.Tradition_Date & "</H4>")
-                newHTML.Append("<hr class='featurette-divider my-5'>")
                 newHTML.Append("</div>")
                 ' Part of ADMIN '
-                newHTML.Append("<div class='text-center my-5'><a href='Tradition_EDIT.aspx?ItemID=" & i & "'<Button class='mx-2 btn btn2 btn-success'>แก้ไขข้อมูล</button></a></div>")
+                newHTML.Append("<div class='text-center my-5'><a href='Tradition_EDIT.aspx?ItemID=" & i & "'<Button type='button' class='mx-2 btn btn1 btn-danger'>แก้ไขข้อมูล</button></a></div>")
                 newHTML.Append("<hr class='featurette-divider my-5'/>")
 
                 Me.Literal_Tradition1_DataInside.Text = newHTML.ToString()

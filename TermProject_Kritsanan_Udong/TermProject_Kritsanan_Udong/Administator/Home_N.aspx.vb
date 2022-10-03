@@ -38,6 +38,27 @@
                           Where myTable_TravelingH.Travel_ID = 3
             Me.IMGslide3.ImageUrl = "~/allPicture/Home/slide/" + SlideH3.First.Travel_Slide
 
+            Dim History1 = From myTable_History In Data.Home_Histories
+                           Where myTable_History.History_Id = 1
+            Me.History1N.Text = History1.First.History_Form
+            Me.History1NDate.Text = History1.First.History_Date
+
+            Dim History2 = From myTable_History In Data.Home_Histories
+                           Where myTable_History.History_Id = 2
+            Me.History2N.Text = History2.First.History_Form
+            Me.History2NDate.Text = History2.First.History_Date
+
+            Dim History3 = From myTable_History In Data.Home_Histories
+                           Where myTable_History.History_Id = 3
+            Me.History3N.Text = History3.First.History_Form
+            Me.History3NDate.Text = History3.First.History_Date
+
+            Dim History4 = From myTable_History In Data.Home_Histories
+                           Where myTable_History.History_Id = 4
+            Me.History4N.Text = History4.First.History_Form
+            Me.History4NDate.Text = History4.First.History_Date
+
+
         End Using
     End Sub
 
