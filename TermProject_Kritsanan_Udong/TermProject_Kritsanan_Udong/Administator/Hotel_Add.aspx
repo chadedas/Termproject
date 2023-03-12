@@ -28,10 +28,6 @@
                 <label for="TextBox4" class="form-label">เบอร์โทรที่พัก</label>
             </div>
             <div class="form-floating py-0">
-                <asp:TextBox ID="TextBox5" placeholder="ราคาต่อคืน" runat="server" CssClass="form-control was-validated" aria-describedby="passwordHelpBlock" required></asp:TextBox>
-                <label for="TextBox5" class="form-label">ราคาต่อคืน</label>
-            </div>
-            <div class="form-floating py-0">
                 <asp:TextBox ID="TextBox6" placeholder="ที่อยู่ GPS" runat="server" CssClass="form-control was-validated" aria-describedby="passwordHelpBlock" required></asp:TextBox>
                 <label for="TextBox6" class="form-label">ที่อยู่ GPS</label>
             </div>

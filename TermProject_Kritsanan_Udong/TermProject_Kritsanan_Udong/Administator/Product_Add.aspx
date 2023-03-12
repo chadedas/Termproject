@@ -28,10 +28,6 @@
                 <label for="TextBox4" class="form-label">เบอร์โทรติดต่อผู้ขาย</label>
             </div>
             <div class="form-floating py-0">
-                <asp:TextBox ID="TextBox5" placeholder="ราคาสินค้า" runat="server" CssClass="form-control was-validated" aria-describedby="passwordHelpBlock" required></asp:TextBox>
-                <label for="TextBox5" class="form-label">ราคาสินค้า</label>
-            </div>
-            <div class="form-floating py-0">
                 <div class="form-floating py-0">
                 </div>
                 <asp:FileUpload ID="FileUpload1" runat="server" CssClass="my-3" required />

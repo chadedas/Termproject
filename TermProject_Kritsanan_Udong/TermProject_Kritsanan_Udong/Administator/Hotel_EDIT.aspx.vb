@@ -13,7 +13,6 @@
                 TextBox2.Text = myItem_Reccord.First.Hotel_Details
                 TextBox3.Text = myItem_Reccord.First.Hotel_Location
                 TextBox4.Text = myItem_Reccord.First.Hotel_PhoneNumber
-                TextBox5.Text = myItem_Reccord.First.Hotel_PriceOfDay
                 TextBox6.Text = myItem_Reccord.First.Hotel_GPS
                 TextBox7.Text = myItem_Reccord.First.Hotel_LinkAgoda
                 TextBox8.Text = myItem_Reccord.First.Hotel_LinkBooking
@@ -33,7 +32,6 @@
             myItem_Reccord.First.Hotel_Details = TextBox2.Text
             myItem_Reccord.First.Hotel_Location = TextBox3.Text
             myItem_Reccord.First.Hotel_PhoneNumber = TextBox4.Text
-            myItem_Reccord.First.Hotel_PriceOfDay = TextBox5.Text
             myItem_Reccord.First.Hotel_GPS = TextBox6.Text
             myItem_Reccord.First.Hotel_LinkAgoda = TextBox7.Text
             myItem_Reccord.First.Hotel_LinkBooking = TextBox8.Text

@@ -163,45 +163,9 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:TermProject_Kritsanan_Udong.DataReport._Chart5">
+<member name="F:TermProject_Kritsanan_Udong.DataReport._Chart7">
 <summary>
-Chart5 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.DataReport._Chart2">
-<summary>
-Chart2 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.DataReport._Chart3">
-<summary>
-Chart3 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.DataReport._Chart1">
-<summary>
-Chart1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.DataReport._SqlDataSource4">
-<summary>
-SqlDataSource4 control.
+Chart7 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -211,15 +175,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:TermProject_Kritsanan_Udong.DataReport._SqlDataSource2">
 <summary>
 SqlDataSource2 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.DataReport._SqlDataSource3">
-<summary>
-SqlDataSource3 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -883,15 +838,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:TermProject_Kritsanan_Udong.Hotel_Add._TextBox5">
-<summary>
-TextBox5 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:TermProject_Kritsanan_Udong.Hotel_Add._TextBox6">
 <summary>
 TextBox6 control.
@@ -1120,15 +1066,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:TermProject_Kritsanan_Udong.Product_Add._TextBox4">
 <summary>
 TextBox4 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Product_Add._TextBox5">
-<summary>
-TextBox5 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -1918,15 +1855,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:TermProject_Kritsanan_Udong.AdminPage._Button4">
-<summary>
-Button4 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:TermProject_Kritsanan_Udong.AdminPage._ContentPlaceHolder1">
 <summary>
 ContentPlaceHolder1 control.
@@ -2380,15 +2308,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:TermProject_Kritsanan_Udong.Page._Button2">
 <summary>
 Button2 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:TermProject_Kritsanan_Udong.Page._Button4">
-<summary>
-Button4 control.
 </summary>
 <remarks>
 Auto-generated field.

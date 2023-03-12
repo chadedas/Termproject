@@ -11,7 +11,6 @@
             myProduct_Record.Product_Details = TextBox2.Text
             myProduct_Record.Product_Contact_Location = TextBox3.Text
             myProduct_Record.Product_Contact_PhoneNB = TextBox4.Text
-            myProduct_Record.Product_Price = TextBox5.Text
 
             If Me.FileUpload1.HasFile Then
                 myProduct_Record.Product_Image = Me.FileUpload1.FileName
@@ -29,7 +28,6 @@
         Me.TextBox2.Text = ""
         Me.TextBox3.Text = ""
         Me.TextBox4.Text = ""
-        Me.TextBox5.Text = ""
         Response.Redirect(Request.RawUrl)
     End Sub
 

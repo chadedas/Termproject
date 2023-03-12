@@ -59,15 +59,6 @@ Partial Public Class AdminPage
     Protected WithEvents Button2 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Button4 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Button4 As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
     '''ContentPlaceHolder1 control.
     '''</summary>
     '''<remarks>

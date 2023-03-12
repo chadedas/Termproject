@@ -12,7 +12,6 @@
             myProduct_Record.Hotel_Details = TextBox2.Text
             myProduct_Record.Hotel_Location = TextBox3.Text
             myProduct_Record.Hotel_PhoneNumber = TextBox4.Text
-            myProduct_Record.Hotel_PriceOfDay = TextBox5.Text
             myProduct_Record.Hotel_GPS = TextBox6.Text
             myProduct_Record.Hotel_LinkAgoda = TextBox7.Text
             myProduct_Record.Hotel_LinkBooking = TextBox8.Text

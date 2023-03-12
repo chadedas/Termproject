@@ -14,49 +14,13 @@ Option Explicit On
 Partial Public Class DataReport
 
     '''<summary>
-    '''Chart5 control.
+    '''Chart7 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Chart5 As Global.System.Web.UI.DataVisualization.Charting.Chart
-
-    '''<summary>
-    '''Chart2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Chart2 As Global.System.Web.UI.DataVisualization.Charting.Chart
-
-    '''<summary>
-    '''Chart3 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Chart3 As Global.System.Web.UI.DataVisualization.Charting.Chart
-
-    '''<summary>
-    '''Chart1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Chart1 As Global.System.Web.UI.DataVisualization.Charting.Chart
-
-    '''<summary>
-    '''SqlDataSource4 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SqlDataSource4 As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents Chart7 As Global.System.Web.UI.DataVisualization.Charting.Chart
 
     '''<summary>
     '''SqlDataSource2 control.
@@ -66,15 +30,6 @@ Partial Public Class DataReport
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SqlDataSource2 As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''SqlDataSource3 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SqlDataSource3 As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''SqlDataSource1 control.

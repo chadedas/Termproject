@@ -14,16 +14,16 @@
         <elementListCompartment Id="0c8912bb-96dc-46d2-8fdd-ecd8ed20cf53" absoluteBounds="3.6399999999999997, 4.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="4c87a596-b44c-4488-8597-fcb0f09c1a19" absoluteBounds="2.25, 1.25, 2, 2.1554996744791666">
+    <classShape Id="6f4b22c7-e4aa-45b9-98b9-7a0ab8b87397" absoluteBounds="2.875, 0.625, 2, 1.9631982421875">
       <DataClassMoniker Name="/DataOfTravelingDataContext/Product" />
       <nestedChildShapes>
-        <elementListCompartment Id="ae906156-e559-43cb-97ea-9c7f601c5db7" absoluteBounds="2.265, 1.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="569332ec-4be1-4269-9632-8f7dd47b8a6f" absoluteBounds="2.89, 1.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="befdfe1b-b5f2-49f7-9101-66e8766d74bd" absoluteBounds="0.75, 3.625, 2, 2.7324039713541666">
+    <classShape Id="17040215-e390-46be-b198-46e2741fc754" absoluteBounds="0.75, 2.875, 2, 2.5401025390625">
       <DataClassMoniker Name="/DataOfTravelingDataContext/Hotel" />
       <nestedChildShapes>
-        <elementListCompartment Id="11baa965-a530-4e80-8789-06f55afe978b" absoluteBounds="0.76500000000000012, 4.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="b73d97a6-b127-47f9-9ebc-6b0c00bee780" absoluteBounds="0.76500000000000012, 3.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

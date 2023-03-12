@@ -5,4 +5,8 @@
 
     End Sub
 
+
+    Protected Sub Chart7_Load(sender As Object, e As EventArgs) Handles Chart7.Load
+
+    End Sub
 End Class

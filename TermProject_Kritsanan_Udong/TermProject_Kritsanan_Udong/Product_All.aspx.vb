@@ -27,8 +27,6 @@
                 newHTML.Append("<H5 class='mx-4 text-center'>ที่อยู่ผู้ขาย: " & DataOfAllInside.First.Product_Contact_Location & "</H5>")
                 newHTML.Append("<H5 class='mx-4 text-center'>เบอร์โทร: " & DataOfAllInside.First.Product_Contact_PhoneNB & "</H5>")
                 newHTML.Append("<br />")
-                newHTML.Append("<H4 class='mx-4 text-center text-success'>ราคาสินค้า: " & DataOfAllInside.First.Product_Price & " บาท</H4>")
-                newHTML.Append("<br />")
                 newHTML.Append("</div>")
                 newHTML.Append("<hr class='featurette-divider my-5'/>")
 

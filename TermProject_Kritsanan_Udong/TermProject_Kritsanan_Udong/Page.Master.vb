@@ -15,11 +15,9 @@
             If myuser.Count = 0 Then
                 Me.Button2.Visible = True
                 Me.Button1.Visible = False
-                Me.Button4.Visible = True
             Else
                 Me.Button2.Visible = False
                 Me.Button1.Visible = True
-                Me.Button4.Visible = False
                 Me.Button1.Text = myuser.First.user_FnameLname + " ▼"
             End If
         End Using
@@ -33,10 +31,6 @@
         Session.Remove("myUserName")
         Session.Remove("myPassword")
         Response.Redirect(Request.RawUrl)
-    End Sub
-
-    Protected Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Response.Redirect("Register.aspx")
     End Sub
 
 End Class

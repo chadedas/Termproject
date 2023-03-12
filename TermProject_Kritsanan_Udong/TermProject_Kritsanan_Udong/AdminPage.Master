@@ -93,7 +93,6 @@
                 </div>
                 <div class="mx-2">
                     <asp:Button ID="Button2" runat="server" Text="เข้าสู่ระบบ" CssClass="btn btn-outline-primary btnclick text-center dropdown-toggle" data-bs-toggle="dropdown2" aria-expanded="false" data-bs-target="#modalLoginForm" />
-                    <asp:Button ID="Button4" runat="server" Text="สมัครสมาชิก" CssClass="btn2 btn btn-outline-success btnclick text-center dropdown-toggle" data-bs-toggle="dropdown2" aria-expanded="false" data-bs-target="#modalLoginForm" />
                 </div>
             </nav>
         </header>
@@ -110,7 +109,7 @@
                     </p>
                 </blockquote>
                 <figcaption class="blockquote-footer">
-                    <cite title="Source Title">ทำขึ้นเพื่อส่งเทอมโปรเจครายวิชาเว็ปโปรแกรมมิ่งอาจารย์ Natthawoot Punroob</cite>
+                    <cite title="Source Title">ทำขึ้นเพื่อส่งโปรเจค</cite>
                 </figcaption>
             </figure>
         </main>

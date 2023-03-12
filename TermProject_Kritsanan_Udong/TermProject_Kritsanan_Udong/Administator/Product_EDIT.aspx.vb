@@ -13,7 +13,6 @@
                 TextBox2.Text = myItem_Reccord.First.Product_Details.Trim
                 TextBox3.Text = myItem_Reccord.First.Product_Contact_Location.Trim
                 TextBox4.Text = myItem_Reccord.First.Product_Contact_PhoneNB.Trim
-                TextBox5.Text = myItem_Reccord.First.Product_Price.Trim
                 Me.Image1.ImageUrl = "~/allPicture/DataOfTraveling/Product_All/" + myItem_Reccord.First.Product_Image
 
             End If
@@ -34,7 +33,6 @@
             myItem_Reccord.First.Product_Details = TextBox2.Text
             myItem_Reccord.First.Product_Contact_Location = TextBox3.Text
             myItem_Reccord.First.Product_Contact_PhoneNB = TextBox4.Text
-            myItem_Reccord.First.Product_Price = TextBox5.Text
 
             If Me.FileUpload1.HasFile Then
                 IO.File.Delete(Server.MapPath("../allPicture/DataOfTraveling/Product_All/" & myItem_Reccord.First.Product_Image))

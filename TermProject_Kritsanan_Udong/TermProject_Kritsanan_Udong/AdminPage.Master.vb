@@ -15,12 +15,10 @@
             If myuser.Count = 0 Then
                 Me.Button2.Visible = True
                 Me.Button1.Visible = False
-                Me.Button4.Visible = True
                 Response.Redirect("~/Home_N.aspx")
             Else
                 Me.Button2.Visible = False
                 Me.Button1.Visible = True
-                Me.Button4.Visible = False
                 Me.Button1.Text = myuser.First.user_FnameLname + " ▼"
             End If
         End Using

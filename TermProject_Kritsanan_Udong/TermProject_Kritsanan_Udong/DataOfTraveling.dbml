@@ -27,7 +27,6 @@
       <Column Name="Product_Details" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="Product_Contact_Location" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="Product_Contact_PhoneNB" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Product_Price" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Product_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
@@ -39,7 +38,6 @@
       <Column Name="Hotel_Image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="Hotel_Location" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="Hotel_PhoneNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Hotel_PriceOfDay" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Hotel_GPS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="Hotel_LinkAgoda" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="Hotel_LinkBooking" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />

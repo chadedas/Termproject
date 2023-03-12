@@ -37,9 +37,6 @@
                                 </div>
 
                                 <div>
-                                    <p class="mb-0">
-                                        หรือคุณยังไม่มีรหัส <a href="../Register.aspx" class="text-white-50 fw-bold">สมัครสมาชิก</a>
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -49,17 +46,6 @@
         </section>
 
         <!-- FOOTER -->
-        <figure class="text-center" style="background-color: ghostwhite">
-            <blockquote class="blockquote">
-                <p>
-                    <br />
-                    Create By Kritsanan Udong
-                </p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-                <cite title="Source Title">ทำขึ้นเพื่อส่งเทอมโปรเจครายวิชาเว็ปโปรแกรมมิ่งอาจารย์ Natthawoot Punroob</cite>
-            </figcaption>
-        </figure>
     </main>
     <script type="text/javascript">
             function success1() {

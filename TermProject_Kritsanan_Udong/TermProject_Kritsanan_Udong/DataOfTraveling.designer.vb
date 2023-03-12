@@ -467,8 +467,6 @@ Partial Public Class Product
 	
 	Private _Product_Contact_PhoneNB As String
 	
-	Private _Product_Price As String
-	
 	Private _Product_Image As String
 	
     #Region "Extensibility Method Definitions"
@@ -497,10 +495,6 @@ Partial Public Class Product
     Partial Private Sub OnProduct_Contact_PhoneNBChanging(value As String)
     End Sub
     Partial Private Sub OnProduct_Contact_PhoneNBChanged()
-    End Sub
-    Partial Private Sub OnProduct_PriceChanging(value As String)
-    End Sub
-    Partial Private Sub OnProduct_PriceChanged()
     End Sub
     Partial Private Sub OnProduct_ImageChanging(value As String)
     End Sub
@@ -594,22 +588,6 @@ Partial Public Class Product
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Price", DbType:="NVarChar(50)")>  _
-	Public Property Product_Price() As String
-		Get
-			Return Me._Product_Price
-		End Get
-		Set
-			If (String.Equals(Me._Product_Price, value) = false) Then
-				Me.OnProduct_PriceChanging(value)
-				Me.SendPropertyChanging
-				Me._Product_Price = value
-				Me.SendPropertyChanged("Product_Price")
-				Me.OnProduct_PriceChanged
-			End If
-		End Set
-	End Property
-	
 	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Product_Image", DbType:="NVarChar(MAX)")>  _
 	Public Property Product_Image() As String
 		Get
@@ -663,8 +641,6 @@ Partial Public Class Hotel
 	
 	Private _Hotel_PhoneNumber As String
 	
-	Private _Hotel_PriceOfDay As String
-	
 	Private _Hotel_GPS As String
 	
 	Private _Hotel_LinkAgoda As String
@@ -701,10 +677,6 @@ Partial Public Class Hotel
     Partial Private Sub OnHotel_PhoneNumberChanging(value As String)
     End Sub
     Partial Private Sub OnHotel_PhoneNumberChanged()
-    End Sub
-    Partial Private Sub OnHotel_PriceOfDayChanging(value As String)
-    End Sub
-    Partial Private Sub OnHotel_PriceOfDayChanged()
     End Sub
     Partial Private Sub OnHotel_GPSChanging(value As String)
     End Sub
@@ -818,22 +790,6 @@ Partial Public Class Hotel
 				Me._Hotel_PhoneNumber = value
 				Me.SendPropertyChanged("Hotel_PhoneNumber")
 				Me.OnHotel_PhoneNumberChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Hotel_PriceOfDay", DbType:="NVarChar(50)")>  _
-	Public Property Hotel_PriceOfDay() As String
-		Get
-			Return Me._Hotel_PriceOfDay
-		End Get
-		Set
-			If (String.Equals(Me._Hotel_PriceOfDay, value) = false) Then
-				Me.OnHotel_PriceOfDayChanging(value)
-				Me.SendPropertyChanging
-				Me._Hotel_PriceOfDay = value
-				Me.SendPropertyChanged("Hotel_PriceOfDay")
-				Me.OnHotel_PriceOfDayChanged
 			End If
 		End Set
 	End Property

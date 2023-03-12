@@ -29,7 +29,6 @@
                 newHTML.Append("<H5 class='mx-4 text-center'>ที่อยู่โรงแรม: " & DataOfAllInside.First.Hotel_Location & "</H4>")
                 newHTML.Append("<H5 class='mx-4 text-center'>เบอร์โทรโรงแรม: " & DataOfAllInside.First.Hotel_PhoneNumber & "</H4>")
                 newHTML.Append("<br />")
-                newHTML.Append("<H4 class='mx-4 text-center text-success my-3'>ราคาต่อคืน: " & DataOfAllInside.First.Hotel_PriceOfDay & " บาท</H5>")
                 newHTML.Append("<H4 class='mx-4 text-center'>ที่อยู่ GPS</H4>")
                 newHTML.Append("<div class='text-center'>")
                 newHTML.Append(DataOfAllInside.First.Hotel_GPS)
